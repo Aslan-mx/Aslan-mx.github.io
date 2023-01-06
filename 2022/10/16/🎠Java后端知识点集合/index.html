@@ -1,0 +1,1088 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>🍉&quot;Java&quot;后端知识点集合 | LMXA</title><meta name="keywords" content="🍇Java"><meta name="author" content="李明轩"><meta name="copyright" content="李明轩"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="🥪&quot;Java&quot;后端知识点集合">
+<meta property="og:type" content="article">
+<meta property="og:title" content="🍉&quot;Java&quot;后端知识点集合">
+<meta property="og:url" content="http://example.com/2022/10/16/%F0%9F%8E%A0Java%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9%E9%9B%86%E5%90%88/index.html">
+<meta property="og:site_name" content="LMXA">
+<meta property="og:description" content="🥪&quot;Java&quot;后端知识点集合">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-8a72afce30dc87600d65d9e10fecfd3a_r.jpg">
+<meta property="article:published_time" content="2022-10-16T05:08:55.000Z">
+<meta property="article:modified_time" content="2022-10-05T07:48:00.000Z">
+<meta property="article:author" content="李明轩">
+<meta property="article:tag" content="🍇Java">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic3.zhimg.com/v2-8a72afce30dc87600d65d9e10fecfd3a_r.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/10/16/%F0%9F%8E%A0Java%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9%E9%9B%86%E5%90%88/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '🍉"Java"后端知识点集合',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-10-05 15:48:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://widget.heweather.net/simple/static/css/he-simple.css?v=1.4.0" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/custom/custom.css"  media="defer" onload="this.media='all'"><script src="https://cyan-blog.oss-cn-shenzhen.aliyuncs.com/cdn/js/three.min.js"></script><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script async="async">const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();}, 5000);
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  document.getElementById('loading-box').addEventListener('click',()=> {preloader.endLoading()})
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://avatars.githubusercontent.com/u/46306801?s=400&amp;u=35f48272ca9e1e5279007be09883d870965a3373&amp;v=4" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comments"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="canvas-container" id="canvas"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic3.zhimg.com/v2-8a72afce30dc87600d65d9e10fecfd3a_r.jpg')"><div class="menu-container" id="menu-container"><div class="menu-item"><div class="menu-item-main"><a class="site-page faa-parent animated-hover" href="/"><i class="fa-fw fas fa-home faa-tada"></i><span> 首页</span></a></div><div class="menu-item-main"><a class="site-page faa-parent animated-hover" href="/archives/"><i class="fa-fw fas fa-archive faa-tada"></i><span> 归档</span></a></div><div class="menu-item-main"><a class="site-page faa-parent animated-hover" href="/tags/"><i class="fa-fw fas fa-tags faa-tada"></i><span> 标签</span></a></div><div class="menu-item-main"><a class="site-page faa-parent animated-hover" href="/categories/"><i class="fa-fw fas fa-folder-open faa-tada"></i><span> 类别</span></a></div><div class="menu-item-main has-child"><div class="menu-item-parent"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><i class="fa-fw fas fa-list faa-tada"></i><span> 列表</span></a></div><div class="menu-item-child"><a class="faa-parent animated-hover site-page child" href="/music/"><i class="fa-fw fas fa-music faa-tada"></i><span> 音乐</span></a></div><div class="menu-item-child"><a class="faa-parent animated-hover site-page child" href="/movies/"><i class="fa-fw fas fa-video faa-tada"></i><span> 电影</span></a></div></div><div class="menu-item-main"><a class="site-page faa-parent animated-hover" href="/link/"><i class="fa-fw fas fa-link faa-tada"></i><span> 友链</span></a></div><div class="menu-item-main"><a class="site-page faa-parent animated-hover" href="/comments"><i class="fa-fw fas fa-comments faa-tada"></i><span> 留言板</span></a></div><div class="menu-item-main"><a class="site-page faa-parent animated-hover" href="/about/"><i class="fa-fw fas fa-heart faa-tada"></i><span> 关于</span></a></div></div><div class="top-bar"><div class="message-container"><div class="message-item message-weather" onclick="btf.scrollToDest(0, 500)"><div class="message-weather-box" id="he-plugin-simple"></div></div><div class="message-item message-date" onclick="Navvisible()"><div class="message-date-box" id="message-date-box"></div><div class="message-title-box" id="message-title-box"><a id="site-name" title="欢迎光临李明轩的糖果屋，愿你有愉快的一天">categories</a></div></div><div class="message-item message-function"><div id="search-button"><a class="site-page social-icon search faa-parent animated-hover"><svg class="faa-tada icon" style="height:25px;width:25px" aria-hidden="true"><use xlink:href="#icon-search-01"></use></svg><span> 搜索</span></a></div><a class="icon-V hidden faa-parent animated-hover" onclick="switchNightMode()" title="浅色和深色模式转换"><svg class="faa-tada" width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><div id="toggle-menu"><a class="site-page faa-parent animated-hover"><svg class="faa-tada icon" style="height:25px;width:25px" aria-hidden="true"><use xlink:href="#icon-multi-window-01"></use></svg></a></div></div></div></div><button class="active-button" onclick="Navvisible()"></button></div><div id="post-info"><h1 class="post-title">🍉&quot;Java&quot;后端知识点集合</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-16T05:08:55.000Z" title="发表于 2022-10-16 13:08:55">2022-10-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-05T07:48:00.000Z" title="更新于 2022-10-05 15:48:00">2022-10-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%F0%9F%A7%81Java/">🧁Java</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="🍉&quot;Java&quot;后端知识点集合"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="Spring框架的七大模块？"><a href="#Spring框架的七大模块？" class="headerlink" title="Spring框架的七大模块？"></a>Spring框架的七大模块？</h2><p>Spring Core：框架的最基础部分，提供 IoC 容器，对 bean 进行管理。</p>
+<p>Spring Context：继承BeanFactory，提供上下文信息，扩展出JNDI、EJB、电子邮件、国际化等功能。</p>
+<p>Spring DAO：提供了JDBC的抽象层，还提供了声明性事务管理方法。</p>
+<p>Spring ORM：提供了JPA、JDO、Hibernate、MyBatis 等ORM映射层.</p>
+<p>Spring AOP：集成了所有AOP功能</p>
+<p>Spring Web：提供了基础的 Web 开发的上下文信息，现有的Web框架，如JSF、Tapestry、Structs等，提供了集成</p>
+<p>Spring Web MVC：提供了 Web 应用的 Model-View-Controller 全功能实现。</p>
+<h2 id="Bean定义5种作用域？"><a href="#Bean定义5种作用域？" class="headerlink" title="Bean定义5种作用域？"></a>Bean定义5种作用域？</h2><p>singleton（单例） prototype（原型） request session global session</p>
+<h2 id="spring-ioc初始化流程"><a href="#spring-ioc初始化流程" class="headerlink" title="spring ioc初始化流程?"></a>spring ioc初始化流程?</h2><p>resource定位 即寻找用户定义的bean资源，由 ResourceLoader通过统一的接口Resource接口来完成 beanDefinition载入 BeanDefinitionReader读取、解析Resource定位的资源 成BeanDefinition 载入到ioc中（通过HashMap进行维护BD） BeanDefinition注册 即向IOC容器注册这些BeanDefinition， 通过BeanDefinitionRegistery实现</p>
+<h2 id="BeanDefinition加载流程"><a href="#BeanDefinition加载流程" class="headerlink" title="BeanDefinition加载流程?"></a>BeanDefinition加载流程?</h2><p>定义BeanDefinitionReader解析xml的document BeanDefinitionDocumentReader解析document成beanDefinition</p>
+<h2 id="DI依赖注入流程-（实例化，处理Bean之间的依赖关系）"><a href="#DI依赖注入流程-（实例化，处理Bean之间的依赖关系）" class="headerlink" title="DI依赖注入流程? （实例化，处理Bean之间的依赖关系）"></a>DI依赖注入流程? （实例化，处理Bean之间的依赖关系）</h2><p>过程在Ioc初始化后，依赖注入的过程是用户第一次向IoC容器索要Bean时触发</p>
+<p>如果设置lazy-init=true，会在第一次getBean的时候才初始化bean， lazy-init=false，会容器启动的时候直接初始化（singleton bean）；</p>
+<p>调用BeanFactory.getBean（）生成bean的；</p>
+<p>生成bean过程运用装饰器模式产生的bean都是beanWrapper（bean的增强）；</p>
+<h2 id="依赖注入怎么处理bean之间的依赖关系"><a href="#依赖注入怎么处理bean之间的依赖关系" class="headerlink" title="依赖注入怎么处理bean之间的依赖关系?"></a>依赖注入怎么处理bean之间的依赖关系?</h2><p>其实就是通过在beanDefinition载入时，如果bean有依赖关系，通过占位符来代替，在调用getbean时候，如果遇到占位符，从ioc里获取bean注入到本实例来</p>
+<h2 id="Bean的生命周期"><a href="#Bean的生命周期" class="headerlink" title="Bean的生命周期?"></a>Bean的生命周期?</h2><p>实例化Bean：Ioc容器通过获取BeanDefinition对象中的信息进行实例化，实例化对象被包装在BeanWrapper对象中</p>
+<p>设置对象属性（DI）：通过BeanWrapper提供的设置属性的接口完成属性依赖注入；</p>
+<p>注入Aware接口（BeanFactoryAware， 可以用这个方式来获取其它 Bean，ApplicationContextAware）：Spring会检测该对象是否实现了xxxAware接口，并将相关的xxxAware实例注入给bean</p>
+<p>BeanPostProcessor：自定义的处理（分前置处理和后置处理）</p>
+<p>InitializingBean和init-method：执行我们自己定义的初始化方法</p>
+<p>使用</p>
+<p>destroy：bean的销毁</p>
+<p>IOC：控制反转：将对象的创建权，由Spring管理. DI（依赖注入）：在Spring创建对象的过程中，把对象依赖的属性注入到类中。</p>
+<h2 id="Spring的IOC注入方式？"><a href="#Spring的IOC注入方式？" class="headerlink" title="Spring的IOC注入方式？"></a>Spring的IOC注入方式？</h2><p>构造器注入 setter方法注入 注解注入 接口注入</p>
+<h2 id="怎么检测是否存在循环依赖"><a href="#怎么检测是否存在循环依赖" class="headerlink" title="怎么检测是否存在循环依赖?"></a>怎么检测是否存在循环依赖?</h2><p>Bean在创建的时候可以给该Bean打标，如果递归调用回来发现正在创建中的话，即说明了循环依赖了。</p>
+<h2 id="Spring如解决Bean循环依赖问题"><a href="#Spring如解决Bean循环依赖问题" class="headerlink" title="Spring如解决Bean循环依赖问题?"></a>Spring如解决Bean循环依赖问题?</h2><p>Spring中循环依赖场景有：</p>
+<p>构造器的循环依赖</p>
+<p>属性的循环依赖</p>
+<p>singletonObjects：第一级缓存，里面放置的是实例化好的单例对象；earlySingletonObjects：第二级缓存，里面存放的是提前曝光的单例对象；singletonFactories：第三级缓存，里面存放的是要被实例化的对象的对象工厂</p>
+<p>创建bean的时候Spring首先从一级缓存singletonObjects中获取。如果获取不到，并且对象正在创建中，就再从二级缓存earlySingletonObjects中获取，如果还是获取不到就从三级缓存singletonFactories中取（Bean调用构造函数进行实例化后，即使属性还未填充，就可以通过三级缓存向外提前暴露依赖的引用值（提前曝光），根据对象引用能定位到堆中的对象，其原理是基于Java的引用传递），取到后从三级缓存移动到了二级缓存完全初始化之后将自己放入到一级缓存中供其他使用，</p>
+<p>因为加入singletonFactories三级缓存的前提是执行了构造器，所以构造器的循环依赖没法解决。</p>
+<p>构造器循环依赖解决办法：在构造函数中使用@Lazy注解延迟加载。在注入依赖时，先注入代理对象，当首次使用时再创建对象说明：一种互斥的关系而非层次递进的关系，故称为三个Map而非三级缓存的缘由 完成注入；</p>
+<h2 id="Spring-中使用了哪些设计模式？"><a href="#Spring-中使用了哪些设计模式？" class="headerlink" title="Spring 中使用了哪些设计模式？"></a>Spring 中使用了哪些设计模式？</h2><p>工厂模式：spring中的BeanFactory就是简单工厂模式的体现，根据传入唯一的标识来获得bean对象；</p>
+<p>单例模式：提供了全局的访问点BeanFactory；</p>
+<p>代理模式：AOP功能的原理就使用代理模式（1、JDK动态代理。2、CGLib字节码生成技术代理。）</p>
+<p>装饰器模式：依赖注入就需要使用BeanWrapper；</p>
+<p>观察者模式：spring中Observer模式常用的地方是listener的实现。如ApplicationListener。</p>
+<p>策略模式：Bean的实例化的时候决定采用何种方式初始化bean实例（反射或者CGLIB动态字节码生成）</p>
+<h2 id="AOP-核心概念？"><a href="#AOP-核心概念？" class="headerlink" title="AOP 核心概念？"></a>AOP 核心概念？</h2><p>1、切面（aspect）：类是对物体特征的抽象，切面就是对横切关注点的抽象</p>
+<p>2、横切关注点：对哪些方法进行拦截，拦截后怎么处理，这些关注点称之为横切关注点。</p>
+<p>3、连接点（joinpoint）：被拦截到的点，因为 Spring 只支持方法类型的连接点，所以在Spring 中连接点指的就是被拦截到的方法，实际上连接点还可以是字段或者构造器。</p>
+<p>4、切入点（pointcut）：对连接点进行拦截的定义</p>
+<p>5、通知（advice）：所谓通知指的就是指拦截到连接点之后要执行的代码，通知分为前置、后置、异常、最终、环绕通知五类。</p>
+<p>6、目标对象：代理的目标对象</p>
+<p>7、织入（weave）：将切面应用到目标对象并导致代理对象创建的过程</p>
+<p>8、引入（introduction）：在不修改代码的前提下，引入可以在运行期为类动态地添加方法或字段。</p>
+<h2 id="解释一下AOP？"><a href="#解释一下AOP？" class="headerlink" title="解释一下AOP？"></a>解释一下AOP？</h2><p>传统oop开发代码逻辑自上而下的，这个过程中会产生一些横切性问题，这些问题与我们主业务逻辑关系不大，会散落在代码的各个地方，造成难以维护，aop思想就是把业务逻辑与横切的问题进行分离，达到解耦的目的，提高代码重用性和开发效率；</p>
+<p>AOP 主要应用场景有：<br>记录日志</p>
+<p>监控性能</p>
+<p>权限控制</p>
+<p>事务管理</p>
+<h2 id="AOP源码分析？"><a href="#AOP源码分析？" class="headerlink" title="AOP源码分析？"></a>AOP源码分析？</h2><p>@EnableAspectJAutoProxy给容器（beanFactory）中注册一个AnnotationAwareAspectJAutoProxyCreator对象；</p>
+<p>AnnotationAwareAspectJAutoProxyCreator对目标对象进行代理对象的创建，对象内部，是封装JDK和CGlib两个技术，实现动态代理对象创建的（创建代理对象过程中，会先创建一个代理工厂，获取到所有的增强器（通知方法），将这些增强器和目标类注入代理工厂，再用代理工厂创建对象）；</p>
+<p>代理对象执行目标方法，得到目标方法的拦截器链，利用拦截器的链式机制，依次进入每一个拦截器进行执行</p>
+<p>AOP应用场景</p>
+<p>日志记录</p>
+<p>事务管理</p>
+<p>线程池关闭等</p>
+<h2 id="AOP使用哪种动态代理"><a href="#AOP使用哪种动态代理" class="headerlink" title="AOP使用哪种动态代理?"></a>AOP使用哪种动态代理?</h2><p>当bean的是实现中存在接口或者是Proxy的子类，—-jdk动态代理；不存在接口，spring会采用CGLIB来生成代理对象；</p>
+<p>JDK 动态代理主要涉及到 java.lang.reflect 包中的两个类：Proxy 和 InvocationHandler。</p>
+<p>Proxy 利用 InvocationHandler（定义横切逻辑） 接口动态创建 目标类的代理对象。</p>
+<h2 id="jdk动态代理？"><a href="#jdk动态代理？" class="headerlink" title="jdk动态代理？"></a>jdk动态代理？</h2><p>通过bind方法建立代理与真实对象关系，通过Proxy.newProxyInstance（target）生成代理对象</p>
+<p>代理对象通过反射invoke方法实现调用真实对象的方法</p>
+<h2 id="动态代理与静态代理区别？"><a href="#动态代理与静态代理区别？" class="headerlink" title="动态代理与静态代理区别？"></a>动态代理与静态代理区别？</h2><p>静态代理，程序运行前代理类的.class文件就存在了；</p>
+<p>动态代理：在程序运行时利用反射动态创建代理对象&lt;复用性，易用性，更加集中都调用invoke&gt;</p>
+<h2 id="CGLIB与JDK动态代理区别？"><a href="#CGLIB与JDK动态代理区别？" class="headerlink" title="CGLIB与JDK动态代理区别？"></a>CGLIB与JDK动态代理区别？</h2><p>Jdk必须提供接口才能使用；</p>
+<p>C不需要，只要一个非抽象类就能实现动态代理</p>
+<p>Spring事务失效<br><div class="img-wrap"><div class="img-bg"><img class="img" src="https://img-blog.csdnimg.cn/img_convert/ef054c8842814b1d55f52b0ce31d5944.png"/></div></div></p>
+<h2 id="springMVC流程："><a href="#springMVC流程：" class="headerlink" title="springMVC流程："></a>springMVC流程：</h2><p>（1）：用户请求发送给DispatcherServlet，DispatcherServlet调用HandlerMapping处理器映射器；</p>
+<p>（2）：HandlerMapping根据xml或注解找到对应的处理器，生成处理器对象返回给DispatcherServlet；</p>
+<p>（3）：DispatcherServlet会调用相应的HandlerAdapter；</p>
+<p>（4）：HandlerAdapter经过适配调用具体的处理器去处理请求，生成ModelAndView返回给DispatcherServlet</p>
+<p>（5）：DispatcherServlet将ModelAndView传给ViewReslover解析生成View返回给DispatcherServlet；</p>
+<p>（6）：DispatcherServlet根据View进行渲染视图；</p>
+<p>-&gt;DispatcherServlet-&gt;HandlerMapping-&gt;Handler -&gt;DispatcherServlet-&gt;HandlerAdapter处理handler-&gt;ModelAndView -&gt;DispatcherServlet-&gt;ModelAndView-&gt;ViewReslover-&gt;View -&gt;DispatcherServlet-&gt;返回给客户</p>
+<h2 id="Mybatis原理？"><a href="#Mybatis原理？" class="headerlink" title="Mybatis原理？"></a>Mybatis原理？</h2><p>sqlsessionFactoryBuilder生成sqlsessionFactory（单例）</p>
+<p>工厂模式生成sqlsession执行sql以及控制事务</p>
+<p>Mybatis通过动态代理使Mapper（sql映射器）接口能运行起来即为接口生成代理对象将sql查询到结果映射成pojo</p>
+<p>sqlSessionFactory构建过程</p>
+<p>解析并读取配置中的xml创建Configuration对象 （单例）</p>
+<p>使用Configruation类去创建sqlSessionFactory（builder模式）</p>
+<h2 id="Mybatis一级缓存与二级缓存？"><a href="#Mybatis一级缓存与二级缓存？" class="headerlink" title="Mybatis一级缓存与二级缓存？"></a>Mybatis一级缓存与二级缓存？</h2><p>默认情况下一级缓存是开启的，而且是不能关闭的。</p>
+<p>一级缓存是指 SqlSession 级别的缓存 原理：使用的数据结构是一个 map，如果两次中间出现 commit 操作 （修改、添加、删除），本 sqlsession 中的一级缓存区域全部清空</p>
+<p>二级缓存是指可以跨 SqlSession 的缓存。是 mapper 级别的缓存；原理：是通过 CacheExecutor 实现的。CacheExecutor其实是 Executor 的代理对象</p>
+<h3 id="Zookeeper-eureka-springcloud"><a href="#Zookeeper-eureka-springcloud" class="headerlink" title="Zookeeper+eureka+springcloud"></a>Zookeeper+eureka+springcloud</h3><h2 id="SpringBoot启动流程？"><a href="#SpringBoot启动流程？" class="headerlink" title="SpringBoot启动流程？"></a>SpringBoot启动流程？</h2><p>new springApplication对象，利用spi机制加载applicationContextInitializer， applicationLister接口实例（META-INF/spring.factories）；</p>
+<p>调run方法准备Environment，加载应用上下文（applicationContext），发布事件 很多通过lister实现</p>
+<p>创建spring容器， refreshContext（） ，实现starter自动化配置，spring.factories文件加载， bean实例化</p>
+<p>SpringBoot自动配置的原理</p>
+<p>@EnableAutoConfiguration找到META-INF/spring.factories（需要创建的bean在里面）配置文件</p>
+<p>读取每个starter中的spring.factories文件 </p>
+<p>1.首先从main找到run()方法，在执行run()方法之前new一个SpringApplication对象<br>2.进入run()方法，创建应用监听器SpringApplicationRunListeners开始监听<br>3.然后加载SpringBoot配置环境(ConfigurableEnvironment)，然后把配置环境(Environment)加入监听对象中<br>4.然后加载应用上下文(ConfigurableApplicationContext)，当做run方法的返回对象<br>5.最后创建Spring容器，refreshContext(context)，实现starter自动化配置和bean的实例化等工作。</p>
+<h2 id="Spring-Boot-的核心注解？"><a href="#Spring-Boot-的核心注解？" class="headerlink" title="Spring Boot 的核心注解？"></a>Spring Boot 的核心注解？</h2><p>核心注解是@SpringBootApplication 由以下三种组成</p>
+<p>@SpringBootConfiguration：组合了 @Configuration 注解，实现配置文件的功能。</p>
+<p>@EnableAutoConfiguration：打开自动配置的功能。</p>
+<p>@ComponentScan：Spring组件扫描。</p>
+<h2 id="SpringBoot常用starter都有哪些？"><a href="#SpringBoot常用starter都有哪些？" class="headerlink" title="SpringBoot常用starter都有哪些？"></a>SpringBoot常用starter都有哪些？</h2><p>spring-boot-starter-web - Web 和 RESTful 应用程序；spring-boot-starter-test - 单元测试和集成测试；spring-boot-starter-jdbc - 传统的 JDBC；spring-boot-starter-security - 使用 SpringSecurity 进行身份验证和授权；spring-boot-starter-data-jpa - 带有 Hibernate 的 Spring Data JPA；spring-boot-starter-data-rest - 使用 Spring Data REST 公布简单的 REST 服务</p>
+<h2 id="Spring-Boot-的核心配置文件？"><a href="#Spring-Boot-的核心配置文件？" class="headerlink" title="Spring Boot 的核心配置文件？"></a>Spring Boot 的核心配置文件？</h2><p>（1）：Application.yml 一般用来定义单个应用级别的，如果搭配 spring-cloud-config 使用</p>
+<p>（2）.Bootstrap.yml（先加载） 系统级别的一些参数配置，这些参数一般是不变的</p>
+<h2 id="Zuul与Gateway区别？"><a href="#Zuul与Gateway区别？" class="headerlink" title="Zuul与Gateway区别？"></a>Zuul与Gateway区别？</h2><p>（1）：zuul则是netflix公司的项目集成在spring-cloud中使用而已， Gateway是spring-cloud的 一个子项目；</p>
+<p>（2）：zuul不提供异步支持流控等均由hystrix支持， gateway提供了异步支持，提供了抽象负载均衡，提供了抽象流控；理论上gateway则更适合于提高系统吞吐量（但不一定能有更好的性能），最终性能还需要通过严密的压测来决定</p>
+<p>（3）：两者底层实现都是servlet，但是gateway多嵌套了一层webflux框架</p>
+<p>（4）：zuul可用至其他微服务框架中，内部没有实现限流、负载均衡；gateway只能用在springcloud中；</p>
+<h2 id="Zuul原理分析？"><a href="#Zuul原理分析？" class="headerlink" title="Zuul原理分析？"></a>Zuul原理分析？</h2><p>（1）：请求给zuulservlet处理（HttpServlet子类） zuulservlet中有一个zuulRunner对象，该对象中初始化了RequestContext（存储请求的数据），RequestContext被所有的zuulfilter共享；</p>
+<p>（2）：zuulRunner中有 FilterProcessor（zuulfilter的管理器），其从filterloader 中获取zuulfilter；</p>
+<p>（3）：有了这些filter之后， zuulservelet执行的Pre-&gt; route-&gt; post 类型的过滤器，如果在执行这些过滤器有错误的时候则会执行error类型的过滤器，执行完后把结果返回给客户端.</p>
+<h2 id="Gateway原理分析？"><a href="#Gateway原理分析？" class="headerlink" title="Gateway原理分析？"></a>Gateway原理分析？</h2><p>（1）：请求到达DispatcherHandler， DispatchHandler在IOC容器初始化时会在容器中实例化HandlerMapping接口</p>
+<p>（2）：用handlerMapping根据请求URL匹配到对应的Route，然后有对应的filter做对应的请求转发最终response返回去</p>
+<h2 id="Zookeeper-工作原理（待查）？"><a href="#Zookeeper-工作原理（待查）？" class="headerlink" title="Zookeeper 工作原理（待查）？"></a>Zookeeper 工作原理（待查）？</h2><p>Zookeeper 的核心是原子广播，这个机制保证了各个 server 之间的同步。实现这个机制的协议叫做 Zab 协议。Zab 协议有两种模式，它们分别是恢复模式和广播模式。</p>
+<h2 id="zoo与eur区别？"><a href="#zoo与eur区别？" class="headerlink" title="zoo与eur区别？"></a>zoo与eur区别？</h2><p>zookeeper保证cp（一致性）</p>
+<p>eureka保证ap（可用性）</p>
+<p>zoo在选举期间注册服务瘫痪，期间不可用</p>
+<p>eur各个节点平等关系，只要有一台就可保证服务可用，而查询到的数据可能不是最新的，可以很好应对网络故障导致部分节点失联情况</p>
+<p>zoo有leader和follower角色，eur各个节点平等</p>
+<p>zoo采用半数存活原则（避免脑裂），eur采用自我保护机制来解决分区问题</p>
+<p>eur本质是个工程，zoo只是一个进程 ZooKeeper基于CP，不保证高可用，如果zookeeper正在选主，或者Zookeeper集群中半数以上机器不可用，那么将无法获得数据。Eureka基于AP，能保证高可用，即使所有机器都挂了，也能拿到本地缓存的数据。作为注册中心，其实配置是不经常变动的，只有发版（发布新的版本）和机器出故障时会变。对于不经常变动的配置来说，CP是不合适的，而AP在遇到问题时可以用牺牲一致性来保证可用性，既返回旧数据，缓存数据。所以理论上Eureka是更适合做注册中心。而现实环境中大部分项目可能会使用ZooKeeper，那是因为集群不够大，并且基本不会遇到用做注册中心的机器一半以上都挂了的情况。所以实际上也没什么大问题。</p>
+<h2 id="Hystrix原理（待查）？"><a href="#Hystrix原理（待查）？" class="headerlink" title="Hystrix原理（待查）？"></a>Hystrix原理（待查）？</h2><p>通过维护一个自己的线程池，当线程池达到阈值的时候，就启动服务降级，返回fallback默认值</p>
+<h2 id="为什么需要hystrix熔断？"><a href="#为什么需要hystrix熔断？" class="headerlink" title="为什么需要hystrix熔断？"></a>为什么需要hystrix熔断？</h2><p>防止雪崩，及时释放资源，防止系统发生更多的额级联故障，需要对故障和延迟进行隔离，防止单个依赖关系的失败影响整个应用程序；</p>
+<h2 id="微服务优缺点？"><a href="#微服务优缺点？" class="headerlink" title="微服务优缺点？"></a>微服务优缺点？</h2><p>每个服务高内聚，松耦合，面向接口编程；</p>
+<p>服务间通信成本，数据一致性，多服务运维难度增加，http传输效率不如rpc</p>
+<h2 id="eureka自我保护机制？"><a href="#eureka自我保护机制？" class="headerlink" title="eureka自我保护机制？"></a>eureka自我保护机制？</h2><p>eur不移除长时间没收到心跳而应该过期的服务</p>
+<p>仍然接受新服务注册和查询请求，但是不会同步到其它节点（高可用）</p>
+<p>当网络稳定后，当前实例新注册信息会同步到其它节点（最终一致性）</p>
+<h2 id="MQ对比？"><a href="#MQ对比？" class="headerlink" title="MQ对比？"></a>MQ对比？</h2><p>ActiveMQ：Apache出品，最早使用的消息队列产品，时间比较长了，最近版本更新比较缓慢。RabbitMQ：erlang语言开发，支持很多的协议，非常重量级，更适合于企业级的开发。性能较好，但是不利于做二次开发和维护。RocketMQ：阿里开源的消息中间件，纯Java开发，具有高吞吐量、高可用性、适合大规模分布式系统应用的特点，分布式事务。ZeroMQ：号称最快的消息队列系统，尤其针对大吞吐量的需求场景，采用 C 语言实现。消息队列的选型需要根据具体应用需求而定，ZeroMQ 小而美，RabbitMQ 大而稳，Kakfa 和 RocketMQ 快而强劲</p>
+<h3 id="JAVA基础"><a href="#JAVA基础" class="headerlink" title="JAVA基础"></a>JAVA基础</h3><h2 id="AVL树与红黑树（R-B树）的区别与联系"><a href="#AVL树与红黑树（R-B树）的区别与联系" class="headerlink" title="AVL树与红黑树（R-B树）的区别与联系"></a>AVL树与红黑树（R-B树）的区别与联系</h2><p>AVL是严格的平衡树，因此在增加或者删除节点的时候，根据不同情况，旋转的次数比红黑树要多；</p>
+<p>红黑树是用非严格的平衡来换取增删节点时候旋转次数的降低开销；</p>
+<p>所以简单说，查询多选择AVL树，查询更新次数差不多选红黑树</p>
+<p>AVL树顺序插入和删除时有20%左右的性能优势，红黑树随机操作15%左右优势，现实应用当然一般都是随机情况，所以红黑树得到了更广泛的应用 索引为B+树 Hashmap为红黑树</p>
+<h2 id="为啥redis-zset使用跳跃链表而不用红黑树实现？"><a href="#为啥redis-zset使用跳跃链表而不用红黑树实现？" class="headerlink" title="为啥redis zset使用跳跃链表而不用红黑树实现？"></a>为啥redis zset使用跳跃链表而不用红黑树实现？</h2><p>skiplist的复杂度和红黑树一样，而且实现起来更简单。</p>
+<p>在并发环境下红黑树在插入和删除时需要rebalance，性能不如跳表。</p>
+<h2 id="JAVA基本数据类型？"><a href="#JAVA基本数据类型？" class="headerlink" title="JAVA基本数据类型？"></a>JAVA基本数据类型？</h2><p>（1个字节是8个bit） 整数型：byte（1字节）、short（2字节）、int（4字节）、long（8字节） 浮点型：float（4字节）、double（8字节） 布尔型：boolean（1字节） 字符型：char（2字节）</p>
+<h2 id="IO与NIO？"><a href="#IO与NIO？" class="headerlink" title="IO与NIO？"></a>IO与NIO？</h2><p>包括 类File，outputStream，inputStream，writer，readerseralizable（5类1接口）</p>
+<p>NIO三大核心内容 selector（选择器，用于监听channel），channel（通道），buffer（缓冲区）</p>
+<p>NIO与IO区别，IO面向流，NIO面向缓冲区；io阻塞，nio非阻塞</p>
+<h2 id="异常类？"><a href="#异常类？" class="headerlink" title="异常类？"></a>异常类？</h2><p>throwable为父类，子为error跟exception，exception分runtime（空指针，越界等）跟checkexception（sql，io，找不到类等异常）</p>
+<h2 id="LVS（4层与7层）原理？"><a href="#LVS（4层与7层）原理？" class="headerlink" title="LVS（4层与7层）原理？"></a>LVS（4层与7层）原理？</h2><p>由前端虚拟负载均衡器和后端真实服务器群组成；</p>
+<p>请求发送给虚拟服务器后其根据包转发策略以及负载均衡调度算法转发给真实服务器</p>
+<p>所谓四层（lvs，f5）就是基于IP+端口的负载均衡；七层（nginx）就是基于URL等应用层信息的负载均衡</p>
+<h2 id="StringBuilder与StringBuffer？"><a href="#StringBuilder与StringBuffer？" class="headerlink" title="StringBuilder与StringBuffer？"></a>StringBuilder与StringBuffer？</h2><p>StringBuilder 更快；</p>
+<p>StringBuffer是线程安全的</p>
+<h2 id="interrupt-isInterrupted-interrupt区别？"><a href="#interrupt-isInterrupted-interrupt区别？" class="headerlink" title="interrupt/isInterrupted/interrupt区别？"></a>interrupt/isInterrupted/interrupt区别？</h2><p>interrupt（） 调用该方法的线程的状态为将被置为”中断”状态（set操作）</p>
+<p>isinterrupted（） 是作用于调用该方法的线程对象所对应的线程的中断信号是true还是false（get操作）。例如我们可以在A线程中去调用B线程对象的isInterrupted方法，查看的是A</p>
+<p>interrupted（）是静态方法：内部实现是调用的当前线程的isInterrupted（），并且会重置当前线程的中断状态（getandset）</p>
+<h2 id="sleep与wait区别？"><a href="#sleep与wait区别？" class="headerlink" title="sleep与wait区别？"></a>sleep与wait区别？</h2><p>sleep属于线程类，wait属于object类；sleep不释放锁</p>
+<h2 id="CountDownLatch和CyclicBarrier区别？"><a href="#CountDownLatch和CyclicBarrier区别？" class="headerlink" title="CountDownLatch和CyclicBarrier区别？"></a>CountDownLatch和CyclicBarrier区别？</h2><p>con用于主线程等待其他子线程任务都执行完毕后再执行，cyc用于一组线程相互等待大家都达到某个状态后，再同时执行；</p>
+<p>CountDownLatch是不可重用的，CyclicBarrier可重用</p>
+<h2 id="终止线程方法？"><a href="#终止线程方法？" class="headerlink" title="终止线程方法？"></a>终止线程方法？</h2><p>使用退出标志，说线程正常退出；</p>
+<p>通过判断this.interrupted（） throw new InterruptedException（）来停止 使用String常量池作为锁对象会导致两个线程持有相同的锁，另一个线程不执行，改用其他如new Object（）</p>
+<h2 id="ThreadLocal的原理和应用？"><a href="#ThreadLocal的原理和应用？" class="headerlink" title="ThreadLocal的原理和应用？"></a>ThreadLocal的原理和应用？</h2><p>原理：</p>
+<p>线程中创建副本，访问自己内部的副本变量，内部实现是其内部类名叫ThreadLocalMap的成员变量threadLocals，key为本身，value为实际存值的变量副本</p>
+<p>应用：</p>
+<p>用来解决数据库连接，存放connection对象，不同线程存放各自session；</p>
+<p>解决simpleDateFormat线程安全问题；</p>
+<p>会出现内存泄漏，显式remove..不要与线程池配合，因为worker往往是不会退出的；</p>
+<h2 id="threadLocal-内存泄漏问题？"><a href="#threadLocal-内存泄漏问题？" class="headerlink" title="threadLocal 内存泄漏问题？"></a>threadLocal 内存泄漏问题？</h2><p>如果是强引用，设置tl=null，但是key的引用依然指向ThreadLocal对象，所以会有内存泄漏，而使用弱引用则不会；但是还是会有内存泄漏存在，ThreadLocal被回收，key的值变成null，导致整个value再也无法被访问到；解决办法：在使用结束时，调用ThreadLocal.remove来释放其value的引用；</p>
+<h2 id="如果我们要获取父线程的ThreadLocal值呢？"><a href="#如果我们要获取父线程的ThreadLocal值呢？" class="headerlink" title="如果我们要获取父线程的ThreadLocal值呢？"></a>如果我们要获取父线程的ThreadLocal值呢？</h2><p>ThreadLocal是不具备继承性的，所以是无法获取到的，但是我们可以用InteritableThreadLocal来实现这个功能。InteritableThreadLocal继承来ThreadLocal，重写了createdMap方法，已经对应的get和set方法，不是在利用了threadLocals，而是interitableThreadLocals变量。</p>
+<p>这个变量会在线程初始化的时候（调用init方法），会判断父线程的interitableThreadLocals变量是否为空，如果不为空，则把放入子线程中，但是其实这玩意没啥鸟用，当父线程创建完子线程后，如果改变父线程内容是同步不到子线程的。。。同样，如果在子线程创建完后，再去赋值，也是没啥鸟用的</p>
+<h2 id="线程状态？"><a href="#线程状态？" class="headerlink" title="线程状态？"></a>线程状态？</h2><p>线程池有5种状态：running，showdown，stop，Tidying，TERMINATED。</p>
+<p>running：线程池处于运行状态，可以接受任务，执行任务，创建线程默认就是这个状态了</p>
+<p>showdown：调用showdown（）函数，不会接受新任务，但是会慢慢处理完堆积的任务。</p>
+<p>stop：调用showdownnow（）函数，不会接受新任务，不处理已有的任务，会中断现有的任务。</p>
+<p>Tidying：当线程池状态为showdown或者stop，任务数量为0，就会变为tidying。这个时候会调用钩子函数terminated（）。</p>
+<p>TERMINATED：terminated（）执行完成。</p>
+<p>在线程池中，用了一个原子类来记录线程池的信息，用了int的高3位表示状态，后面的29位表示线程池中线程的个数。</p>
+<h2 id="Java中的线程池是如何实现的？"><a href="#Java中的线程池是如何实现的？" class="headerlink" title="Java中的线程池是如何实现的？"></a>Java中的线程池是如何实现的？</h2><p>线程中线程被抽象为静态内部类Worker，是基于AQS实现的存放在HashSet中；</p>
+<p>要被执行的线程存放在BlockingQueue中；</p>
+<p>基本思想就是从workQueue中取出要执行的任务，放在worker中处理；</p>
+<h2 id="如果线程池中的一个线程运行时出现了异常，会发生什么？"><a href="#如果线程池中的一个线程运行时出现了异常，会发生什么？" class="headerlink" title="如果线程池中的一个线程运行时出现了异常，会发生什么？"></a>如果线程池中的一个线程运行时出现了异常，会发生什么？</h2><p>如果提交任务的时候使用了submit，则返回的feature里会存有异常信息，但是如果数execute则会打印出异常栈。但是不会给其他线程造成影响。之后线程池会删除该线程，会新增加一个worker。</p>
+<h2 id="线程池原理？"><a href="#线程池原理？" class="headerlink" title="线程池原理？"></a>线程池原理？</h2><p>提交一个任务，线程池里存活的核心线程数小于corePoolSize时，线程池会创建一个核心线程去处理提交的任务</p>
+<p>如果线程池核心线程数已满，即线程数已经等于corePoolSize，一个新提交的任务，会被放进任务队列workQueue排队等待执行。</p>
+<p>当线程池里面存活的线程数已经等于corePoolSize了，并且任务队列workQueue也满，判断线程数是否达到maximumPoolSize，即最大线程数是否已满，如果没到达，创建非核心线程执行提交的任务。</p>
+<p>如果当前的线程数达到了maximumPoolSize，还有新的任务过来的话，直接采用拒绝策略处理。</p>
+<h2 id="拒绝策略？"><a href="#拒绝策略？" class="headerlink" title="拒绝策略？"></a>拒绝策略？</h2><p>AbortPolicy直接抛出异常阻止线程运行；</p>
+<p>CallerRunsPolicy如果被丢弃的线程任务未关闭，则执行该线程；</p>
+<p>DiscardOldestPolicy移除队列最早线程尝试提交当前任务</p>
+<p>DiscardPolicy丢弃当前任务，不做处理</p>
+<h2 id="newFixedThreadPool-（固定数目线程的线程池）？"><a href="#newFixedThreadPool-（固定数目线程的线程池）？" class="headerlink" title="newFixedThreadPool （固定数目线程的线程池）？"></a>newFixedThreadPool （固定数目线程的线程池）？</h2><p>阻塞队列为无界队列LinkedBlockingQueue</p>
+<p>适用于处理CPU密集型的任务，适用执行长期的任务</p>
+<h2 id="newCachedThreadPool（可缓存线程的线程池）？"><a href="#newCachedThreadPool（可缓存线程的线程池）？" class="headerlink" title="newCachedThreadPool（可缓存线程的线程池）？"></a>newCachedThreadPool（可缓存线程的线程池）？</h2><p>阻塞队列是SynchronousQueue</p>
+<p>适用于并发执行大量短期的小任务</p>
+<p>newSingleThreadExecutor（单线程的线程池）<br>阻塞队列是LinkedBlockingQueue</p>
+<p>适用于串行执行任务的场景，一个任务一个任务地执行</p>
+<p>newScheduledThreadPool（定时及周期执行的线程池）<br>阻塞队列是DelayedWorkQueue</p>
+<p>周期性执行任务的场景，需要限制线程数量的场景</p>
+<h3 id="java锁相关"><a href="#java锁相关" class="headerlink" title="java锁相关"></a>java锁相关</h3><h2 id="synchronized实现原理"><a href="#synchronized实现原理" class="headerlink" title="synchronized实现原理"></a>synchronized实现原理</h2><p>contentionList（请求锁线程队列） entryList（有资格的候选者队列） waitSet（wait方法后阻塞队列） onDeck（竞争候选者） ower（竞争到锁线程） !ower（执行成功释放锁后状态）；Synchronized 是非公平锁。</p>
+<p>Synchronized 在线程进入 ContentionList 时，等待的线程会先尝试自旋获取锁，如果获取不到就进入 ContentionList，这明显对于已经进入队列的线程是不公平的，还有一个不公平的事情就是自旋获取锁的线程还可能直接抢占 OnDeck 线程的锁资源。</p>
+<p>底层是由一对monitorenter和monitorexit指令实现的（监视器锁）</p>
+<p>每个对象有一个监视器锁（monitor）。当monitor被占用时就会处于锁定状态，线程执行monitorenter指令时尝试获取monitor的所有权，过程：</p>
+<p>如果monitor的进入数为0，则该线程进入monitor，然后将进入数设置为1，该线程即为monitor的所有者。</p>
+<p>如果线程已经占有该monitor，只是重新进入，则进入monitor的进入数加1.</p>
+<p>如果其他线程已经占用了monitor，则该线程进入阻塞状态，直到monitor的进入数为0，再重新尝试获取monitor的所有权。</p>
+<h2 id="ReentrantLock-是如何实现可重入性的-？"><a href="#ReentrantLock-是如何实现可重入性的-？" class="headerlink" title="ReentrantLock 是如何实现可重入性的 ？"></a>ReentrantLock 是如何实现可重入性的 ？</h2><p>内部自定义了同步器 Sync，加锁的时候通过CAS 算法 ，将线程对象放到一个双向链表 中，每次获取锁的时候 ，看下当前维 护的那个线程ID和当前请求的线程ID是否一样，一样就可重入了；</p>
+<h2 id="ReentrantLock如何避免死锁"><a href="#ReentrantLock如何避免死锁" class="headerlink" title="ReentrantLock如何避免死锁?"></a>ReentrantLock如何避免死锁?</h2><p>响应中断lockInterruptibly（）</p>
+<p>可轮询锁tryLock（）</p>
+<p>定时锁tryLock（long time）</p>
+<h2 id="tryLock-和-lock-和-lockInterruptibly-的区别？"><a href="#tryLock-和-lock-和-lockInterruptibly-的区别？" class="headerlink" title="tryLock 和 lock 和 lockInterruptibly 的区别？"></a>tryLock 和 lock 和 lockInterruptibly 的区别？</h2><p>（1）：tryLock 能获得锁就返回 true，不能就立即返回 false，</p>
+<p>（2）：tryLock（long timeout，TimeUnit unit），可以增加时间限制，如果超过该时间段还没获得锁，返回 false</p>
+<p>（3）：lock 能获得锁就返回 true，不能的话一直等待获得锁</p>
+<p>（4）：lock 和 lockInterruptibly，如果两个线程分别执行这两个方法，但此时中断这两个线程， lock 不会抛出异常，而 lockInterruptibly 会抛出异常。</p>
+<h2 id="CountDownLatch和CyclicBarrier的区别是什么？"><a href="#CountDownLatch和CyclicBarrier的区别是什么？" class="headerlink" title="CountDownLatch和CyclicBarrier的区别是什么？"></a>CountDownLatch和CyclicBarrier的区别是什么？</h2><p>CountDownLatch是等待其他线程执行到某一个点的时候，在继续执行逻辑（子线程不会被阻塞，会继续执行），只能被使用一次。最常见的就是join形式，主线程等待子线程执行完任务，在用主线程去获取结果的方式（当然不一定），内部是用计数器相减实现的（没错，又特么是AQS），AQS的state承担了计数器的作用，初始化的时候，使用CAS赋值，主线程调用await（）则被加入共享线程等待队列里面，子线程调用countDown的时候，使用自旋的方式，减1，知道为0，就触发唤醒。</p>
+<p>CyclicBarrier回环屏障，主要是等待一组线程到底同一个状态的时候，放闸。CyclicBarrier还可以传递一个Runnable对象，可以到放闸的时候，执行这个任务。CyclicBarrier是可循环的，当调用await的时候如果count变成0了则会重置状态，如何重置呢，CyclicBarrier新增了一个字段parties，用来保存初始值，当count变为0的时候，就重新赋值。还有一个不同点，CyclicBarrier不是基于AQS的，而是基于RentrantLock实现的。存放的等待队列是用了条件变量的方式。</p>
+<h2 id="synchronized与ReentrantLock区别？"><a href="#synchronized与ReentrantLock区别？" class="headerlink" title="synchronized与ReentrantLock区别？"></a>synchronized与ReentrantLock区别？</h2><p>都是可重入锁；R是显示获取和释放锁，s是隐式；</p>
+<p>R更灵活可以知道有没有成功获取锁，可以定义读写锁，是api级别，s是JVM级别；</p>
+<p>R可以定义公平锁；Lock是接口，s是java中的关键字</p>
+<h2 id="什么是信号量Semaphore？"><a href="#什么是信号量Semaphore？" class="headerlink" title="什么是信号量Semaphore？"></a>什么是信号量Semaphore？</h2><p>信号量是一种固定资源的限制的一种并发工具包，基于AQS实现的，在构造的时候会设置一个值，代表着资源数量。信号量主要是应用于是用于多个共享资源的互斥使用，和用于并发线程数的控制（druid的数据库连接数，就是用这个实现的），信号量也分公平和非公平的情况，基本方式和reentrantLock差不多，在请求资源调用task时，会用自旋的方式减1，如果成功，则获取成功了，如果失败，导致资源数变为了0，就会加入队列里面去等待。调用release的时候会加一，补充资源,并唤醒等待队列。</p>
+<h2 id="Semaphore-应用？"><a href="#Semaphore-应用？" class="headerlink" title="Semaphore 应用？"></a>Semaphore 应用？</h2><p>acquire（） release（） 可用于对象池，资源池的构建，比如静态全局对象池，数据库连接池；</p>
+<p>可创建计数为1的S，作为互斥锁（二元信号量）</p>
+<p>可重入锁概念<br>（1）：可重入锁是指同一个线程可以多次获取同一把锁，不会因为之前已经获取过还没释放而阻塞；</p>
+<p>（2）：reentrantLock和synchronized都是可重入锁</p>
+<p>（3）：可重入锁的一个优点是可一定程度避免死锁</p>
+<h3 id="ReentrantLock原理（CAS-AQS）"><a href="#ReentrantLock原理（CAS-AQS）" class="headerlink" title="ReentrantLock原理（CAS+AQS）"></a>ReentrantLock原理（CAS+AQS）</h3><h2 id="CAS-AQS队列来实现？"><a href="#CAS-AQS队列来实现？" class="headerlink" title="CAS+AQS队列来实现？"></a>CAS+AQS队列来实现？</h2><p>（1）：先通过CAS尝试获取锁， 如果此时已经有线程占据了锁，那就加入AQS队列并且被挂起；</p>
+<p>（2）：当锁被释放之后， 排在队首的线程会被唤醒CAS再次尝试获取锁，</p>
+<p>（3）：如果是非公平锁， 同时还有另一个线程进来尝试获取可能会让这个线程抢到锁；</p>
+<p>（4）：如果是公平锁， 会排到队尾，由队首的线程获取到锁。</p>
+<h2 id="AQS-原理？"><a href="#AQS-原理？" class="headerlink" title="AQS 原理？"></a>AQS 原理？</h2><p>Node内部类构成的一个双向链表结构的同步队列，通过控制（volatile的int类型）state状态来判断锁的状态，对于非可重入锁状态不是0则去阻塞；</p>
+<p>对于可重入锁如果是0则执行，非0则判断当前线程是否是获取到这个锁的线程，是的话把state状态＋1，比如重入5次，那么state=5。而在释放锁的时候，同样需要释放5次直到state=0其他线程才有资格获得锁</p>
+<h2 id="AQS两种资源共享方式？"><a href="#AQS两种资源共享方式？" class="headerlink" title="AQS两种资源共享方式？"></a>AQS两种资源共享方式？</h2><p>Exclusive：独占，只有一个线程能执行，如ReentrantLock</p>
+<p>Share：共享，多个线程可以同时执行，如Semaphore、CountDownLatch、ReadWriteLock，CyclicBarrier</p>
+<h2 id="CAS原理？"><a href="#CAS原理？" class="headerlink" title="CAS原理？"></a>CAS原理？</h2><p>内存值V，旧的预期值A，要修改的新值B，当A=V时，将内存值修改为B，否则什么都不做；</p>
+<p>CAS的缺点：</p>
+<p>（1）：ABA问题；（2）：如果CAS失败，自旋会给CPU带来压力；（3）：只能保证对一个变量的原子性操作，i++这种是不能保证的</p>
+<p>CAS在java中的应用：</p>
+<p>（1）：Atomic系列</p>
+<h2 id="公平锁与分公平锁？"><a href="#公平锁与分公平锁？" class="headerlink" title="公平锁与分公平锁？"></a>公平锁与分公平锁？</h2><p>（1）：公平锁指在分配锁前检查是否有线程在排队等待获取该锁，优先分配排队时间最长的线程，非公平直接尝试获取锁 （2）：公平锁需多维护一个锁线程队列，效率低；默认非公平</p>
+<p>独占锁与共享锁</p>
+<p>（1）：ReentrantLock为独占锁（悲观加锁策略） （2）：ReentrantReadWriteLock中读锁为共享锁 （3）：JDK1.8 邮戳锁（StampedLock）， 不可重入锁 读的过程中也允许获取写锁后写入！这样一来，我们读的数据就可能不一致，所以，需要一点额外的代码来判断读的过程中是否有写入，这种读锁是一种乐观锁， 乐观锁的并发效率更高，但一旦有小概率的写入导致读取的数据不一致，需要能检测出来，再读一遍就行</p>
+<h2 id="4种锁状态？"><a href="#4种锁状态？" class="headerlink" title="4种锁状态？"></a>4种锁状态？</h2><p>无锁</p>
+<p>偏向锁 会偏向第一个访问锁的线程，当一个线程访问同步代码块获得锁时，会在对象头和栈帧记录里存储锁偏向的线程ID，当这个线程再次进入同步代码块时，就不需要CAS操作来加锁了，只要测试一下对象头里是否存储着指向当前线程的偏向锁 如果偏向锁未启动，new出的对象是普通对象（即无锁，有稍微竞争会成轻量级锁），如果启动，new出的对象是匿名偏向（偏向锁） 对象头主要包括两部分数据：Mark Word（标记字段， 存储对象自身的运行时数据）、class Pointer（类型指针， 是对象指向它的类元数据的指针）</p>
+<p>轻量级锁（自旋锁） （1）：在把线程进行阻塞操作之前先让线程自旋等待一段时间，可能在等待期间其他线程已经 解锁，这时就无需再让线程执行阻塞操作，避免了用户态到内核态的切换。（自适应自旋时间为一个线程上下文切换的时间）</p>
+<p>（2）：在用自旋锁时有可能造成死锁，当递归调用时有可能造成死锁</p>
+<p>（3）：自旋锁底层是通过指向线程栈中Lock Record的指针来实现的</p>
+<p>重量级锁</p>
+<h2 id="轻量级锁与偏向锁的区别？"><a href="#轻量级锁与偏向锁的区别？" class="headerlink" title="轻量级锁与偏向锁的区别？"></a>轻量级锁与偏向锁的区别？</h2><p>（1）：轻量级锁是通过CAS来避免进入开销较大的互斥操作</p>
+<p>（2）：偏向锁是在无竞争场景下完全消除同步，连CAS也不执行</p>
+<h2 id="自旋锁升级到重量级锁条件？"><a href="#自旋锁升级到重量级锁条件？" class="headerlink" title="自旋锁升级到重量级锁条件？"></a>自旋锁升级到重量级锁条件？</h2><p>（1）：某线程自旋次数超过10次；</p>
+<p>（2）：等待的自旋线程超过了系统core数的一半；</p>
+<h2 id="读写锁了解嘛，知道读写锁的实现方式嘛？"><a href="#读写锁了解嘛，知道读写锁的实现方式嘛？" class="headerlink" title="读写锁了解嘛，知道读写锁的实现方式嘛？"></a>读写锁了解嘛，知道读写锁的实现方式嘛？</h2><p>常用的读写锁ReentrantReanWritelock，这个其实和reentrantLock相似，也是基于AQS的，但是这个是基于共享资源的，不是互斥，关键在于state的处理，读写锁把高16为记为读状态，低16位记为写状态，就分开了，读读情况其实就是读锁重入，读写/写读/写写都是互斥的，只要判断低16位就好了。</p>
+<h2 id="zookeeper实现分布式锁？"><a href="#zookeeper实现分布式锁？" class="headerlink" title="zookeeper实现分布式锁？"></a>zookeeper实现分布式锁？</h2><p>（1）：利用节点名称唯一性来实现，加锁时所有客户端一起创建节点，只有一个创建成功者获得锁，解锁时删除节点。</p>
+<p>（2）：利用临时顺序节点实现，加锁时所有客户端都创建临时顺序节点，创建节点序列号最小的获得锁，否则监视比自己序列号次小的节点进行等待</p>
+<p>（3）：方案2比1好处是当zookeeper宕机后，临时顺序节点会自动删除释放锁，不会造成锁等待；</p>
+<p>（4）：方案1会产生惊群效应（当有很多进程在等待锁的时候，在释放锁的时候会有很多进程就过来争夺锁）。</p>
+<p>（5）：由于需要频繁创建和删除节点，性能上不如redis锁</p>
+<h2 id="volatile变量？"><a href="#volatile变量？" class="headerlink" title="volatile变量？"></a>volatile变量？</h2><p>（1）：变量可见性</p>
+<p>（2）：防止指令重排序</p>
+<p>（3）：保障变量单次读，写操作的原子性，但不能保证i++这种操作的原子性，因为本质是读，写两次操作</p>
+<h2 id="volatile如何保证线程间可见和避免指令重排？"><a href="#volatile如何保证线程间可见和避免指令重排？" class="headerlink" title="volatile如何保证线程间可见和避免指令重排？"></a>volatile如何保证线程间可见和避免指令重排？</h2><p>volatile可见性是有指令原子性保证的，在jmm中定义了8类原子性指令，比如write，store，read，load。而volatile就要求write-store，load-read成为一个原子性操作，这样子可以确保在读取的时候都是从主内存读入，写入的时候会同步到主内存中（准确来说也是内存屏障），指令重排则是由内存屏障来保证的，由两个内存屏障:</p>
+<p>一个是编译器屏障：阻止编译器重排，保证编译程序时在优化屏障之前的指令不会在优化屏障之后执行。</p>
+<p>第二个是cpu屏障：sfence保证写入，lfence保证读取，lock类似于锁的方式。java多执行了一个“load addl $0x0, (%esp)”操作，这个操作相当于一个lock指令，就是增加一个完全的内存屏障指令。</p>
+<h3 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h3><h2 id="jre、jdk、jvm的关系："><a href="#jre、jdk、jvm的关系：" class="headerlink" title="jre、jdk、jvm的关系："></a>jre、jdk、jvm的关系：</h2><p>jdk是最小的开发环境，由jre++java工具组成。</p>
+<p>jre是java运行的最小环境，由jvm+核心类库组成。</p>
+<p>jvm是虚拟机，是java字节码运行的容器，如果只有jvm是无法运行java的，因为缺少了核心类库。</p>
+<h2 id="JVM内存模型？"><a href="#JVM内存模型？" class="headerlink" title="JVM内存模型？"></a>JVM内存模型？</h2><p>（1）：堆&lt;对象，静态变量，共享</p>
+<p>（2）：方法区&lt;存放类信息，常量池，共享&gt;（java8移除了永久代（PermGen），替换为元空间（Metaspace））</p>
+<p>（3）：虚拟机栈&lt;线程执行方法的时候内部存局部变量会存堆中对象的地址等等数据&gt;</p>
+<p>（4）：本地方法栈&lt;存放各种native方法的局部变量表之类的信息&gt;</p>
+<p>（5）：程序计数器&lt;记录当前线程执行到哪一条字节码指令位置&gt;</p>
+<h2 id="对象4种引用？"><a href="#对象4种引用？" class="headerlink" title="对象4种引用？"></a>对象4种引用？</h2><p>（1）：强（内存泄露主因）</p>
+<p>（2）：软（只有软引用的话，空间不足将被回收），适合缓存用</p>
+<p>（3）：弱（只，GC会回收）</p>
+<p>（4）：虚引用（用于跟踪GC状态）用于管理堆外内存</p>
+<h2 id="对象的构成？"><a href="#对象的构成？" class="headerlink" title="对象的构成？"></a>对象的构成？</h2><p>一个对象分为3个区域：对象头、实例数据、对齐填充</p>
+<p>对象头：主要是包括两部分，1.存储自身的运行时数据比如hash码，分代年龄，锁标记等（但是不是绝对哦，锁状态如果是偏向锁，轻量级锁，是没有hash码的。。。是不固定的）2.指向类的元数据指针。还有可能存在第三部分，那就是数组类型，会多一块记录数组的长度（因为数组的长度是jvm判断不出来的，jvm只有元数据信息）</p>
+<p>实例数据：会根据虚拟机分配策略来定，分配策略中，会把相同大小的类型放在一起，并按照定义顺序排列（父类的变量也会在哦）</p>
+<p>对齐填充：这个意义不是很大，主要在虚拟机规范中对象必须是8字节的整数，所以当对象不满足这个情况时，就会用占位符填充</p>
+<h2 id="如果判断一个对象是否存活？"><a href="#如果判断一个对象是否存活？" class="headerlink" title="如果判断一个对象是否存活？"></a>如果判断一个对象是否存活？</h2><p>一般判断对象是否存活有两种算法，一种是引用计数，另外一种是可达性分析。在java中主要是第二种</p>
+<h2 id="java是根据什么来执行可达性分析的？"><a href="#java是根据什么来执行可达性分析的？" class="headerlink" title="java是根据什么来执行可达性分析的？"></a>java是根据什么来执行可达性分析的？</h2><p>根据GC ROOTS。GC ROOTS可以的对象有：虚拟机栈中的引用对象，方法区的类变量的引用，方法区中的常量引用，本地方法栈中的对象引用。</p>
+<h2 id="JVM-类加载顺序？"><a href="#JVM-类加载顺序？" class="headerlink" title="JVM 类加载顺序？"></a>JVM 类加载顺序？</h2><p>（1）：加载 获取类的二进制字节流，将其静态存储结构转化为方法区的运行时数据结构</p>
+<p>（2）：校验 文件格式验证，元数据验证，字节码验证，符号引用验证</p>
+<p>（3）：准备 在方法区中对类的static变量分配内存并设置类变量数据类型默认的初始值，不包括实例变量，实例变量将会在对象实例化的时候随着对象一起分配在Java堆中</p>
+<p>（4）：解析 将常量池内的符号引用替换为直接引用的过程</p>
+<p>（5）：初始化 为类的静态变量赋予正确的初始值（Java代码中被显式地赋予的值）</p>
+<h2 id="JVM三种类加载器？"><a href="#JVM三种类加载器？" class="headerlink" title="JVM三种类加载器？"></a>JVM三种类加载器？</h2><p>（1）：启动类加载器（home） 加载jvm核心类库，如java.lang.*等</p>
+<p>（2）：扩展类加载器（ext）， 父加载器为启动类加载器，从jre/lib/ext下加载类库</p>
+<p>（3）：应用程序类加载器（用户classpath路径） 父加载器为扩展类加载器，从环境变量中加载类</p>
+<h2 id="双亲委派机制？"><a href="#双亲委派机制？" class="headerlink" title="双亲委派机制？"></a>双亲委派机制？</h2><p>（1）：类加载器收到类加载的请求</p>
+<p>（2）：把这个请求委托给父加载器去完成，一直向上委托，直到启动类加载器</p>
+<p>（3）：启动器加载器检查能不能加载，能就加载（结束）；否则，抛出异常，通知子加载器进行加载</p>
+<p>（4）：保障类的唯一性和安全性以及保证JDK核心类的优先加载</p>
+<h2 id="双亲委派模型有啥作用？"><a href="#双亲委派模型有啥作用？" class="headerlink" title="双亲委派模型有啥作用？"></a>双亲委派模型有啥作用？</h2><p>保证java基础类在不同的环境还是同一个Class对象，避免出现了自定义类覆盖基础类的情况，导致出现安全问题。还可以避免类的重复加载。</p>
+<h2 id="如何打破双亲委派模型？"><a href="#如何打破双亲委派模型？" class="headerlink" title="如何打破双亲委派模型？"></a>如何打破双亲委派模型？</h2><p>（1）：自定义类加载器，继承ClassLoader类重写loadClass方法；</p>
+<p>（2）：SPI</p>
+<p>tomcat是如何打破双亲委派模型：</p>
+<p>tomcat有着特殊性，它需要容纳多个应用，需要做到应用级别的隔离，而且需要减少重复性加载，所以划分为：/common 容器和应用共享的类信息，/server容器本身的类信息，/share应用通用的类信息,/WEB-INF/lib应用级别的类信息。整体可以分为：boostrapClassLoader-&gt;ExtensionClassLoader-&gt;ApplicationClassLoader-&gt;CommonClassLoader-&gt;CatalinaClassLoader（容器本身的加载器）/ShareClassLoader（共享的）-&gt;WebAppClassLoader。虽然第一眼是满足双亲委派模型的，但是不是的，因为双亲委派模型是要先提交给父类装载，而tomcat是优先判断是否是自己负责的文件位置，进行加载的。</p>
+<p>SPI：（Service Provider interface）</p>
+<p>（1）：服务提供接口（服务发现机制）：</p>
+<p>（2）：通过加载ClassPath下META_INF/services，自动加载文件里所定义的类</p>
+<p>（3）：通过ServiceLoader.load/Service.providers方法通过反射拿到实现类的实例</p>
+<p>SPI应用?</p>
+<p>（1）：应用于JDBC获取数据库驱动连接过程就是应用这一机制</p>
+<p>（2）：apache最早提供的common-logging只有接口.没有实现..发现日志的提供商通过SPI来具体找到日志提供商实现类</p>
+<h2 id="双亲委派机制缺陷"><a href="#双亲委派机制缺陷" class="headerlink" title="双亲委派机制缺陷?"></a>双亲委派机制缺陷?</h2><p>（1）：双亲委派核心是越基础的类由越上层的加载器进行加载， 基础的类总是作为被调用代码调用的API，无法实现基础类调用用户的代码….</p>
+<p>（2）：JNDI服务它的代码由启动类加载器去加载，但是他需要调独立厂商实现的应用程序，如何解决? 线程上下文件类加载器（Thread Context ClassLoader）， JNDI服务使用这个线程上下文类加载器去加载所需要的SPI代码，也就是父类加载器请求子类加载器去完成类加载动作Java中所有涉及SPI的加载动作基本上都采用这种方式，例如JNDI，JDBC</p>
+<h2 id="导致fullGC的原因？"><a href="#导致fullGC的原因？" class="headerlink" title="导致fullGC的原因？"></a>导致fullGC的原因？</h2><p>（1）：老年代空间不足</p>
+<p>（2）：永久代（方法区）空间不足</p>
+<p>（3）：显式调用system.gc（）</p>
+<h2 id="堆外内存的优缺点？"><a href="#堆外内存的优缺点？" class="headerlink" title="堆外内存的优缺点？"></a>堆外内存的优缺点？</h2><p>Ehcache中的一些版本，各种 NIO 框架，Dubbo，Memcache 等中会用到，NIO包下ByteBuffer来创建堆外内存 堆外内存，其实就是不受JVM控制的内存。</p>
+<p>相比于堆内内存有几个优势：</p>
+<p>减少了垃圾回收的工作，因为垃圾回收会暂停其他的工作。加快了复制的速度。因为堆内在 flush 到远程时，会先复制到直接内存（非堆内存），然后在发送；而堆外内存相当于省略掉了复制这项工作。可以扩展至更大的内存空间。比如超过 1TB 甚至比主存还大的空间。</p>
+<p>缺点总结如下：</p>
+<p>堆外内存难以控制，如果内存泄漏，那么很难排查，通过-XX：MaxDirectMemerySize来指定，当达到阈值的时候，调用system.gc来进行一次full gc 堆外内存相对来说，不适合存储很复杂的对象。一般简单的对象或者扁平化的比较适合 jstat查看内存回收概况，实时查看各个分区的分配回收情况， jmap查看内存栈，查看内存中对象占用大小， jstack查看线程栈，死锁，性能瓶颈</p>
+<h2 id="JVM七种垃圾收集器？"><a href="#JVM七种垃圾收集器？" class="headerlink" title="JVM七种垃圾收集器？"></a>JVM七种垃圾收集器？</h2><p>（1）：Serial 收集器 复制算法，单线程，新生代）</p>
+<p>（2）：ParNew 收集器（复制算法，多线程，新生代）</p>
+<p>（3）：Parallel Scavenge 收集器（多线程，复制算法，新生代，高吞吐量）</p>
+<p>（4）：Serial Old 收集器（标记-整理算法，老年代）</p>
+<p>（5）：Parallel Old 收集器（标记-整理算法，老年代，注重吞吐量的场景下，jdk8默认采用 Parallel Scavenge + Parallel Old 的组合）</p>
+<p>（6）：CMS 收集器（标记-清除算法，老年代，垃圾回收线程几乎能做到与用户线程同时工作，吞吐量低，内存碎片）以牺牲吞吐量为代价来获得最短回收停顿时间-XX：+UseConcMarkSweepGC jdk1.8 默认垃圾收集器Parallel Scavenge（新生代）+Parallel Old（老年代） jdk1.9 默认垃圾收集器G1</p>
+<p>使用场景：</p>
+<p>（1）：应用程序对停顿比较敏感</p>
+<p>（2）：在JVM中，有相对较多存活时间较长的对象（老年代比较大）会更适合使用CMS</p>
+<p>cms垃圾回收过程：</p>
+<p>（1）：初始标识&lt;找到gcroot（stw）&gt;</p>
+<p>GC Roots有以下几种：</p>
+<p>1：系统类加载器加载的对象</p>
+<p>2：处于激活状态的线程</p>
+<p>3：JNI栈中的对象</p>
+<p>4：正在被用于同步的各种锁对象</p>
+<p>5：JVM自身持有的对象，比如系统类加载器等。</p>
+<p>（2）：并发标记（三色标记算法） 三色标记算法处理并发标记出现对象引用变化情况：黑：自己+子对象标记完成 灰：自己完成，子对象未完成 白：未标记；并发标记 黑-&gt;灰-&gt;白 重新标记 灰-&gt;白引用消失，黑引用指向-&gt;白，导致白漏标 cms处理办法是incremental update方案 （增量更新）把黑色变成灰色 多线程下并发标记依旧会产生漏标问题，所以cms必须remark一遍（jdk1.9以后不用cms了）</p>
+<p>G1 处理方案：</p>
+<p>SATB（snapshot at the begining）把白放入栈中，标记过程是和应用程序并发运行的（不需要Stop-The-World） 这种方式会造成某些是垃圾的对象也被当做是存活的，所以G1会使得占用的内存被实际需要的内存大。不过下一次就回收了 ZGC 处理方案：颜色指针（color pointers） 2*42方=4T</p>
+<p>（3）：重新标记（stw）</p>
+<p>（4）并发清理</p>
+<p>备注：重新标记是防止标记成垃圾之后，对象被引用</p>
+<p>G1 收集器（新生代 + 老年代，在多 CPU 和大内存的场景下有很好的性能） G1在java9 便是默认的垃圾收集器，是cms 的替代者 逻辑分代，用分区（region）的思想（默认分2048份） 还是有stw 为解决CMS算法产生空间碎片HotSpot提供垃圾收集器，通过-XX：+UseG1GC来启用</p>
+<p>G1中提供了三种模式垃圾回收模式</p>
+<p>（1）：young gc（eden region被耗尽无法申请内存时，就会触发）</p>
+<p>（2）：mixed gc（当老年代大小占整个堆大小百分比达到该阈值时，会触发）</p>
+<p>（3）：full gc（对象内存分配速度过快，mixed gc来不及回收，导致老年代被填满，就会触发）</p>
+<p>（8）：ZGC和shenandoah （oracle产收费） no stw</p>
+<h2 id="arthas-监控工具？"><a href="#arthas-监控工具？" class="headerlink" title="arthas 监控工具？"></a>arthas 监控工具？</h2><p>（1）：dashboard命令查看总体jvm运行情况</p>
+<p>（2）：jvm显示jvm详细信息</p>
+<p>（3）：thread 显示jvm里面所有线程信息（类似于jstack）  查看死锁线程命令thread -b</p>
+<p>（4）：sc * 显示所有类（search class）</p>
+<p>（5）：trace 跟踪方法</p>
+<h2 id="定位频繁full-GC，堆内存满-oom？"><a href="#定位频繁full-GC，堆内存满-oom？" class="headerlink" title="定位频繁full GC，堆内存满 oom？"></a>定位频繁full GC，堆内存满 oom？</h2><p>第一步：jps获取进程号 第二步：jmap -histo pid | head -20 得知有个对象在不断创建 备注：jmap如果线上服务器堆内存特别大，，会卡死需堆转存（一般会说在测试环境压测，导出转存） -XX：+HeapDumpOnOutOfMemoryError或jmap -dumpLformat=b，file=xxx pid 转出文件进行分析 （arthas没有实现jmap命令）heapdump —live /xxx/xx.hprof导出文件</p>
+<h2 id="G1垃圾回收器（重点）？"><a href="#G1垃圾回收器（重点）？" class="headerlink" title="G1垃圾回收器（重点）？"></a>G1垃圾回收器（重点）？</h2><p>回收过程 （1）：young gc（年轻代回收）—当年轻代的Eden区用尽时—stw 第一阶段，扫描根。根是指static变量指向的对象，正在执行的方法调用链条上的局部变量等 第二阶段，更新RS（Remembered Sets）。处理dirty card queue中的card，更新RS。此阶段完成后，RS可以准确的反映老年代对所在的内存分段中对象的引用 第三阶段，处理RS。识别被老年代对象指向的Eden中的对象，这些被指向的Eden中的对象被认为是存活的对象。第四阶段，复制对象。此阶段，对象树被遍历，Eden区内存段中存活的对象会被复制到Survivor区中空的内存分段 第五阶段，处理引用。处理Soft，Weak，Phantom，Final，JNI Weak 等引用。</p>
+<p>（2）：concrruent marking（老年代并发标记） 当堆内存使用达到一定值（默认45%）时，不需要Stop-The-World，在并发标记前先进行一次young gc</p>
+<p>（3）：混合回收（mixed gc） 并发标记过程结束以后，紧跟着就会开始混合回收过程。混合回收的意思是年轻代和老年代会同时被回收</p>
+<p>（4）：Full GC? Full GC是指上述方式不能正常工作，G1会停止应用程序的执行，使用单线程的内存回收算法进行垃圾回收，性能会非常差，应用程序停顿时间会很长。要避免Full GC的发生，一旦发生需要进行调整。</p>
+<h2 id="什么时候发生Full-GC呢？"><a href="#什么时候发生Full-GC呢？" class="headerlink" title="什么时候发生Full GC呢？"></a>什么时候发生Full GC呢？</h2><p>比如堆内存太小，当G1在复制存活对象的时候没有空的内存分段可用，则会回退到full gc，这种情况可以通过增大内存解决</p>
+<p>尽管G1堆内存仍然是分代的，但是同一个代的内存不再采用连续的内存结构</p>
+<p>年轻代分为Eden和Survivor两个区，老年代分为Old和Humongous两个区</p>
+<p>新分配的对象会被分配到Eden区的内存分段上</p>
+<p>Humongous区用于保存大对象，如果一个对象占用的空间超过内存分段Region的一半；</p>
+<p>如果对象的大小超过一个甚至几个分段的大小，则对象会分配在物理连续的多个Humongous分段上。</p>
+<p>Humongous对象因为占用内存较大并且连续会被优先回收</p>
+<p>为了在回收单个内存分段的时候不必对整个堆内存的对象进行扫描（单个内存分段中的对象可能被其他内存分段中的对象引用）引入了RS数据结构。RS使得G1可以在年轻代回收的时候不必去扫描老年代的对象，从而提高了性能。每一个内存分段都对应一个RS，RS保存了来自其他分段内的对象对于此分段的引用</p>
+<p>JVM会对应用程序的每一个引用赋值语句object.field=object进行记录和处理，把引用关系更新到RS中。但是这个RS的更新并不是实时的。G1维护了一个Dirty Card Queue</p>
+<h2 id="那为什么不在引用赋值语句处直接更新RS呢？"><a href="#那为什么不在引用赋值语句处直接更新RS呢？" class="headerlink" title="那为什么不在引用赋值语句处直接更新RS呢？"></a>那为什么不在引用赋值语句处直接更新RS呢？</h2><p>这是为了性能的需要，使用队列性能会好很多。</p>
+<h2 id="线程本地分配缓冲区（TLAB：Thread-Local-Allocation-Buffer）"><a href="#线程本地分配缓冲区（TLAB：Thread-Local-Allocation-Buffer）" class="headerlink" title="线程本地分配缓冲区（TLAB：Thread Local Allocation Buffer）?"></a>线程本地分配缓冲区（TLAB：Thread Local Allocation Buffer）?</h2><p>栈上分配-&gt;tlab-&gt;堆上分配 由于堆内存是应用程序共享的，应用程序的多个线程在分配内存的时候需要加锁以进行同步。为了避免加锁，提高性能每一个应用程序的线程会被分配一个TLAB。TLAB中的内存来自于G1年轻代中的内存分段。当对象不是Humongous对象，TLAB也能装的下的时候，对象会被优先分配于创建此对象的线程的TLAB中。这样分配会很快，因为TLAB隶属于线程，所以不需要加锁</p>
+<h2 id="PLAB：Promotion-Thread-Local-Allocation-Buffer？"><a href="#PLAB：Promotion-Thread-Local-Allocation-Buffer？" class="headerlink" title="PLAB：Promotion Thread Local Allocation Buffer？"></a>PLAB：Promotion Thread Local Allocation Buffer？</h2><p>G1会在年轻代回收过程中把Eden区中的对象复制（“提升”）到Survivor区中，Survivor区中的对象复制到Old区中。G1的回收过程是多线程执行的，为了避免多个线程往同一个内存分段进行复制，那么复制的过程也需要加锁。为了避免加锁，G1的每个线程都关联了一个PLAB，这样就不需要进行加锁了</p>
+<h2 id="OOM问题定位方法？"><a href="#OOM问题定位方法？" class="headerlink" title="OOM问题定位方法？"></a>OOM问题定位方法？</h2><p>（1）：jmap -heap 10765如上图，可以查看新生代，老生代堆内存的分配大小以及使用情况；</p>
+<p>（2）：jstat 查看GC收集情况</p>
+<p>（3）：jmap -dump：live，format=b，file=到本地</p>
+<p>（4）：通过MAT工具打开分析</p>
+<h2 id="CPU占用过高？"><a href="#CPU占用过高？" class="headerlink" title="CPU占用过高？"></a>CPU占用过高？</h2><p>1.top</p>
+<p>搜索java 进程 </p>
+<p>2.top -Hp 14980</p>
+<p>查询出来几个cpu比较高的线程</p>
+<p>将线程转换成16进制(必须要转)</p>
+<p>3.printf “%x\n” tid （tid=线程id）</p>
+<p>获得到对应的16进制的线程id后,查看对应的线程堆栈信息</p>
+<p>4.jstack pid | grep tid 「pid 进程id,tid是16进制后的线程id」</p>
+<h3 id="DUBBO"><a href="#DUBBO" class="headerlink" title="DUBBO"></a>DUBBO</h3><h2 id="dubbo流程？"><a href="#dubbo流程？" class="headerlink" title="dubbo流程？"></a>dubbo流程？</h2><p>（1）：生产者（Provider）启动，向注册中心（Register）注册</p>
+<p>（2）：消费者（Consumer）订阅，而后注册中心通知消费者</p>
+<p>（3）：消费者从生产者进行消费</p>
+<p>（4）：监控中心（Monitor）统计生产者和消费者</p>
+<h2 id="Dubbo推荐使用什么序列化框架，还有哪些？"><a href="#Dubbo推荐使用什么序列化框架，还有哪些？" class="headerlink" title="Dubbo推荐使用什么序列化框架，还有哪些？"></a>Dubbo推荐使用什么序列化框架，还有哪些？</h2><p>推荐使用Hessian序列化，还有Duddo、FastJson、Java自带序列化</p>
+<h2 id="Dubbo默认使用的是什么通信框架，还有哪些？"><a href="#Dubbo默认使用的是什么通信框架，还有哪些？" class="headerlink" title="Dubbo默认使用的是什么通信框架，还有哪些？"></a>Dubbo默认使用的是什么通信框架，还有哪些？</h2><p>默认使用 Netty 框架，也是推荐的选择，另外内容还集成有Mina、Grizzly。</p>
+<h2 id="Dubbo有哪几种负载均衡策略，默认是哪种"><a href="#Dubbo有哪几种负载均衡策略，默认是哪种" class="headerlink" title="Dubbo有哪几种负载均衡策略，默认是哪种?"></a>Dubbo有哪几种负载均衡策略，默认是哪种?</h2><p>（1）：随机调用&lt;默认&gt;</p>
+<p>（2）：权重轮询</p>
+<p>（3）：最少活跃数</p>
+<p>（4）：一致性Hash</p>
+<h2 id="RPC流程？"><a href="#RPC流程？" class="headerlink" title="RPC流程？"></a>RPC流程？</h2><p>（1）消费者调用需要消费的服务，</p>
+<p>（2）：客户端存根将方法、入参等信息序列化发送给服务端存根</p>
+<p>（3）：服务端存根反序列化操作根据解码结果调用本地的服务进行相关处理</p>
+<p>（4）：本地服务执行具体业务逻辑并将处理结果返回给服务端存根</p>
+<p>（5）：服务端存根序列化</p>
+<p>（6）：客户端存根反序列化</p>
+<p>（7）：服务消费方得到最终结果</p>
+<p>RPC框架的实现目标PC框架的实现目标是把调用、编码/解码的过程给封装起来，让用户感觉上像调用本地服务一样的调用远程服务</p>
+<h2 id="服务暴露？"><a href="#服务暴露？" class="headerlink" title="服务暴露？"></a>服务暴露？</h2><p>服务的暴露起始于 Spring IOC 容器刷新完毕之后，会根据配置参数组装成 URL， 然后根据 URL 的参数来进行本地或者远程调用。</p>
+<p>会通过 proxyFactory.getInvoker，利用 javassist 来进行动态代理，封装真的实现类，然后再通过 URL 参数选择对应的协议来进行 protocol.export，默认是 Dubbo 协议。</p>
+<p>在第一次暴露的时候会调用 createServer 来创建 Server，默认是 NettyServer。</p>
+<p>然后将 export 得到的 exporter 存入一个 Map 中，供之后的远程调用查找，然后会向注册中心注册提供者的信息。<br><div class="img-wrap"><div class="img-bg"><img class="img" src="https://img-blog.csdnimg.cn/img_convert/2ba6ecdb9cdc0176f58fcfed2bc4693e.png"/></div></div></p>
+<h2 id="服务引用？"><a href="#服务引用？" class="headerlink" title="服务引用？"></a>服务引用？</h2><p>服务的引入时机有两种，第一种是饿汉式，第二种是懒汉式。</p>
+<p>饿汉式就是加载完毕就会引入，懒汉式是只有当这个服务被注入到其他类中时启动引入流程，默认是懒汉式。</p>
+<p>会先根据配置参数组装成 URL ，一般而言我们都会配置的注册中心，所以会构建 RegistryDirectory<br>向注册中心注册消费者的信息，并且订阅提供者、配置、路由等节点。</p>
+<p>得知提供者的信息之后会进入 Dubbo 协议的引入，会创建 Invoker ，期间会包含 NettyClient，来进行远程通信，最后通过 Cluster 来包装 Invoker，默认是 FailoverCluster，最终返回代理类。</p>
+<p>引入的三种方式：本地引入、直连远程引入、通过注册中心引入。</p>
+<h2 id="服务调用？"><a href="#服务调用？" class="headerlink" title="服务调用？"></a>服务调用？</h2><p>调用某个接口的方法会调用之前生成的代理类，然后会从 cluster 中经过路由的过滤、负载均衡机制选择一个 invoker 发起远程调用，此时会记录此请求和请求的 ID 等待服务端的响应。</p>
+<p>服务端接受请求之后会通过参数找到之前暴露存储的 map，得到相应的 exporter ，然后最终调用真正的实现类，再组装好结果返回，这个响应会带上之前请求的 ID。</p>
+<p>消费者收到这个响应之后会通过 ID 去找之前记录的请求，然后找到请求之后将响应塞到对应的 Future 中，唤醒等待的线程，最后消费者得到响应，一个流程完毕。</p>
+<p>关键的就是 cluster、路由、负载均衡，然后 Dubbo 默认是异步的，所以请求和响应是如何对应上的。</p>
+<h3 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h3><h2 id="redis单线程为什么执行速度这么快"><a href="#redis单线程为什么执行速度这么快" class="headerlink" title="redis单线程为什么执行速度这么快?"></a>redis单线程为什么执行速度这么快?</h2><p>（1）：纯内存操作，避免大量访问数据库，减少直接读取磁盘数据，redis将数据储存在内存里面，读写数据的时候都不会受到硬盘 I/O 速度的限制，所以速度快</p>
+<p>（2）：单线程操作，避免了不必要的上下文切换和竞争条件，也不存在多进程或者多线程导致的切换而消耗CPU，不用去考虑各种锁的问题，不存在加锁释放锁操作，没有因为可能出现死锁而导致的性能消耗</p>
+<p>（3）：采用了非阻塞I/O多路复用机制</p>
+<h2 id="Redis数据结构底层实现"><a href="#Redis数据结构底层实现" class="headerlink" title="Redis数据结构底层实现"></a>Redis数据结构底层实现</h2><p>String：</p>
+<p>（1）Simple dynamic string（SDS）的数据结构<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">struct sdshdr&#123;</span><br><span class="line"> //记录buf数组中已使用字节的数量</span><br><span class="line"> //等于 SDS 保存字符串的长度</span><br><span class="line"> int len；</span><br><span class="line"> //记录 buf 数组中未使用字节的数量</span><br><span class="line"> int free；</span><br><span class="line"> //字节数组，用于保存字符串</span><br><span class="line"> char buf[]；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>它的优点：（1）不会出现字符串变更造成的内存溢出问题</p>
+<p>（2）获取字符串长度时间复杂度为1</p>
+<p>（3）空间预分配， 惰性空间释放free字段，会默认留够一定的空间防止多次重分配内存</p>
+<p>应用场景：String 缓存结构体用户信息，计数</p>
+<p>Hash：</p>
+<p>数组+链表的基础上，进行了一些rehash优化；1.Reids的Hash采用链地址法来处理冲突，然后它没有使用红黑树优化。</p>
+<p>2.哈希表节点采用单链表结构。</p>
+<p>3.rehash优化 （采用分而治之的思想，将庞大的迁移工作量划分到每一次CURD中，避免了服务繁忙）</p>
+<p>应用场景：保存结构体信息可部分获取不用序列化所有字段</p>
+<p>List：</p>
+<p>应用场景：（1）：比如twitter的关注列表，粉丝列表等都可以用Redis的list结构来实现</p>
+<p>（2）：list的实现为一个双向链表，即可以支持反向查找和遍历</p>
+<p>Set：</p>
+<p>内部实现是一个 value为null的HashMap，实际就是通过计算hash的方式来快速排重的，这也是set能提供判断一个成员 是否在集合内的原因。应用场景：去重的场景，交集（sinter）、并集（sunion）、差集（sdiff），实现如共同关注、共同喜好、二度好友等功能</p>
+<p>Zset：</p>
+<p>内部使用HashMap和跳跃表（SkipList）来保证数据的存储和有序，HashMap里放的是成员到score的映射，而跳跃表里存放的是所有的成员，排序依据是HashMap里存的score，使用跳跃表的结构可以获得比较高的查找效率，并且在实现上比较简单。跳表：每个节点中维持多个指向其他节点的指针，从而达到快速访问节点的目的 应用场景：实现延时队列</p>
+<h2 id="redis事务"><a href="#redis事务" class="headerlink" title="redis事务?"></a>redis事务?</h2><p>（1）：Multi开启事务</p>
+<p>（2）：Exec执行事务块内命令</p>
+<p>（3）：Discard 取消事务</p>
+<p>（4）：Watch 监视一个或多个key，如果事务执行前key被改动，事务将打断</p>
+<h2 id="redis事务的实现特征"><a href="#redis事务的实现特征" class="headerlink" title="redis事务的实现特征?"></a>redis事务的实现特征?</h2><p>（1）：所有命令都将会被串行化的顺序执行，事务执行期间，Redis不会再为其它客户端的请求提供任何服务，从而保证了事物中的所有命令被原子的执行</p>
+<p>（2）：Redis事务中如果有某一条命令执行失败，其后的命令仍然会被继续执行</p>
+<p>（3）：在事务开启之前，如果客户端与服务器之间出现通讯故障并导致网络断开，其后所有待执行的语句都将不会被服务器执行。然而如果网络中断事件是发生在客户端执行EXEC命令之后，那么该事务中的所有命令都会被服务器执行</p>
+<p>（4）：当使用Append-Only模式时，Redis会通过调用系统函数write将该事务内的所有写操作在本次调用中全部写入磁盘。</p>
+<p>然而如果在写入的过程中出现系统崩溃，如电源故障导致的宕机，那么此时也许只有部分数据被写入到磁盘，而另外一部分数据却已经丢失。</p>
+<p>Redis服务器会在重新启动时执行一系列必要的一致性检测，一旦发现类似问题，就会立即退出并给出相应的错误提示。此时，我们就要充分利用Redis工具包中提供的redis-check-aof工具，该工具可以帮助我们定位到数据不一致的错误，并将已经写入的部分数据进行回滚。修复之后我们就可以再次重新启动Redis服务器了</p>
+<h2 id="Redis的同步机制？"><a href="#Redis的同步机制？" class="headerlink" title="Redis的同步机制？"></a>Redis的同步机制？</h2><p>（1）：全量拷贝， 1.slave第一次启动时，连接Master，发送PSYNC命令，</p>
+<p>2.master会执行bgsave命令来生成rdb文件，期间的所有写命令将被写入缓冲区。</p>
+<p>master bgsave执行完毕，向slave发送rdb文件</p>
+<p>slave收到rdb文件，丢弃所有旧数据，开始载入rdb文件</p>
+<p>rdb文件同步结束之后，slave执行从master缓冲区发送过来的所以写命令。</p>
+<p>此后 master 每执行一个写命令，就向slave发送相同的写命令。</p>
+<p>（2）：增量拷贝 如果出现网络闪断或者命令丢失等异常情况，从节点之前保存了自身已复制的偏移量和主节点的运行ID</p>
+<p>主节点根据偏移量把复制积压缓冲区里的数据发送给从节点，保证主从复制进入正常状态。</p>
+<h2 id="redis集群模式性能优化"><a href="#redis集群模式性能优化" class="headerlink" title="redis集群模式性能优化?"></a>redis集群模式性能优化?</h2><p>（1） Master最好不要做任何持久化工作，如RDB内存快照和AOF日志文件</p>
+<p>（2） 如果数据比较重要，某个Slave开启AOF备份数据，策略设置为每秒同步一次</p>
+<p>（3） 为了主从复制的速度和连接的稳定性，Master和Slave最好在同一个局域网内</p>
+<p>（4） 尽量避免在压力很大的主库上增加从库</p>
+<p>（5） 主从复制不要用图状结构，用单向链表结构更为稳定，即：Master &lt;- Slave1 &lt;- Slave2 &lt;- Slave3…这样的结构方便解决单点故障问题，实现Slave对Master的替换。如果Master挂了，可以立刻启用Slave1做Master，其他不变。</p>
+<h2 id="Redis集群方案"><a href="#Redis集群方案" class="headerlink" title="Redis集群方案?"></a>Redis集群方案?</h2><p>（1）：官方cluster方案</p>
+<p>（2）：twemproxy</p>
+<p>代理方案twemproxy是一个单点，很容易对其造成很大的压力，所以通常会结合keepalived来实twemproy的高可用</p>
+<p>（3）：codis 基于客户端来进行分片</p>
+<h2 id="集群不可用场景"><a href="#集群不可用场景" class="headerlink" title="集群不可用场景?"></a>集群不可用场景?</h2><p>（1）：master挂掉，且当前master没有slave</p>
+<p>（2）：集群超过半数以上master挂掉，无论是否有slave集群进入fail状态</p>
+<h2 id="redis-最适合的场景"><a href="#redis-最适合的场景" class="headerlink" title="redis 最适合的场景?"></a>redis 最适合的场景?</h2><p>（1）：会话缓存session cache</p>
+<p>（2）：排行榜/计数器ZRANGE</p>
+<p>（3）：发布/订阅</p>
+<h2 id="缓存淘汰策略"><a href="#缓存淘汰策略" class="headerlink" title="缓存淘汰策略?"></a>缓存淘汰策略?</h2><p>（1）：先进先出算法（FIFO）</p>
+<p>（2）：最近使用最少Least Frequently Used（LFU）</p>
+<p>（3）：最长时间未被使用的Least Recently Used（LRU）</p>
+<p>当存在热点数据时，LRU的效率很好，但偶发性的、周期性的批量操作会导致LRU命中率急剧下降，缓存污染情况比较严重</p>
+<h2 id="redis过期key删除策略"><a href="#redis过期key删除策略" class="headerlink" title="redis过期key删除策略?"></a>redis过期key删除策略?</h2><p>1）、定时删除</p>
+<p>在设置某个 key 的过期时间同时，我们创建一个定时器，让定时器在该过期时间到来时，立即执行对其进行删除的操作。</p>
+<p>优点：定时删除对内存是最友好的，能够保存内存的 key 一旦过期就能立即从内存中删除；<br>缺点：对 CPU 最不友好，在过期键比较多的时候，删除过期键会占用一部分 CPU 时间，对服务器的响应时间和吞吐量造成影响。</p>
+<p>2）、惰性删除</p>
+<p>设置该 key 过期时间后，我们不去管它，当需要该 key 时，我们在检查其是否过期，如果过期，我们就删掉它，反之返回该 key。</p>
+<p>优点：对 CPU 友好，我们只会在使用该键时才会进行过期检查，对于很多用不到的 key 不用浪费时间进行过期检查；<br>缺点：对内存不友好，如果一个键已经过期，但是一直没有使用，那么该键就会一直存在内存中，如果数据库中有很多这种使用不到的过期键，这些键便永远不会被删除，内存永远不会释放，从而造成内存泄漏。</p>
+<p>3）、定期删除</p>
+<p>每隔一段时间，我们就对一些 key 进行检查，删除里面过期的 key。</p>
+<p>优点：可以通过限制删除操作执行的时长和频率来减少删除操作对 CPU 的影响。另外定期删除，也能有效释放过期键占用的内存。<br>缺点：难以确定删除操作执行的时长和频率。如果执行的太频繁，定期删除策略变得和定时删除策略一样，对CPU不友好。如果执行的太少，那又和惰性删除一样了，过期键占用的内存不会及时得到释放。另外最重要的是，在获取某个键时，如果某个键的过期时间已经到了，但是还没执行定期删除，那么就会返回这个键的值，这是业务不能忍受的错误。</p>
+<h2 id="Redis内存淘汰策略"><a href="#Redis内存淘汰策略" class="headerlink" title="Redis内存淘汰策略?"></a>Redis内存淘汰策略?</h2><p>当使用的内存大于 maxmemory 时，就会触发 Redis 主动淘汰内存方式：</p>
+<p>volatile-lru：利用 LRU 算法移除设置过过期时间的 key (LRU：最近使用 Least Recently Used )；<br>allkeys-lru：利用 LRU 算法移除任何key （和上一个相比，删除的 key 包括设置过期时间和不设置过期时间的），通常使用该方式；<br>volatile-random：移除设置过过期时间的随机key ；<br>allkeys-random：无差别的随机移除；<br>volatile-ttl：移除即将过期的 key (minor TTL)；<br>noeviction：不移除任何 key，只是返回一个写错误 ，默认选项，一般不会选用。</p>
+<h2 id="缓存雪崩以及处理办法"><a href="#缓存雪崩以及处理办法" class="headerlink" title="缓存雪崩以及处理办法?"></a>缓存雪崩以及处理办法?</h2><p>同一时刻大量缓存失效；</p>
+<p>处理方法：</p>
+<p>（1）：缓存数据增加过期标记</p>
+<p>（2）：设置不同的缓存失效时间</p>
+<p>（3）：双层缓存策略C1为短期，C2为长期</p>
+<p>（4）：定时更新策略</p>
+<h2 id="缓存击穿原因以及处理办法"><a href="#缓存击穿原因以及处理办法" class="headerlink" title="缓存击穿原因以及处理办法?"></a>缓存击穿原因以及处理办法?</h2><p>频繁请求查询系统中不存在的数据导致；</p>
+<p>处理方法：</p>
+<p>（1）：cache null策略，查询反馈结果为null仍然缓存这个null结果，设置不超过5分钟过期时间</p>
+<p>（2）：布隆过滤器，所有可能存在的数据映射到足够大的bitmap中 google布隆过滤器：基于内存，重启失效不支持大数据量，无法在分布式场景 redis布隆过滤器：可扩展性，不存在重启失效问题，需要网络io，性能低于google</p>
+<h2 id="redis阻塞原因"><a href="#redis阻塞原因" class="headerlink" title="redis阻塞原因?"></a>redis阻塞原因?</h2><p>（1）：数据结构使用不合理bigkey</p>
+<p>（2）：CPU饱和</p>
+<p>（3）：持久化阻塞，rdb fork子线程，aof每秒刷盘等</p>
+<h2 id="hot-key出现造成集群访问量倾斜解决办法"><a href="#hot-key出现造成集群访问量倾斜解决办法" class="headerlink" title="hot key出现造成集群访问量倾斜解决办法?"></a>hot key出现造成集群访问量倾斜解决办法?</h2><p>（1）：使用本地缓存</p>
+<p>（2）：利用分片算法的特性，对key进行打散处理（给hot key加上前缀或者后缀，把一个hotkey 的数量变成 redis 实例个数N的倍数M，从而由访问一个 redis key 变成访问 N * M 个redis key）</p>
+<h2 id="Redis分布式锁"><a href="#Redis分布式锁" class="headerlink" title="Redis分布式锁?"></a>Redis分布式锁?</h2><p>2.6版本以后lua脚本保证setnx跟setex进行原子性（setnx之后，未setex，服务挂了，锁不释放） a获取锁，超过过期时间，自动释放锁，b获取到锁执行，a代码执行完remove锁，a和b是一样的key，导致a释放了b的锁。解决办法：remove之前判断value（高并发下value可能被修改，应该用lua来保证原子性）</p>
+<h2 id="Redis如何做持久化"><a href="#Redis如何做持久化" class="headerlink" title="Redis如何做持久化?"></a>Redis如何做持久化?</h2><p>bgsave做镜像全量持久化，aof做增量持久化。因为bgsave会耗费较长时间，不够实时，在停机的时候会导致大量丢失数据 ，所以需要aof来配合使用。在redis实例重启时，会使用bgsave持久化文件重新构建内存，再使用aof重放近期的操作指令来 实 现完整恢复重启之前的状态。</p>
+<h2 id="对方追问那如果突然机器掉电会怎样？"><a href="#对方追问那如果突然机器掉电会怎样？" class="headerlink" title="对方追问那如果突然机器掉电会怎样？"></a>对方追问那如果突然机器掉电会怎样？</h2><p>取决于aof日志sync属性的配置，如果不要求性能，在每条写指令时都sync一下磁盘，就不会丢失数据。但是在高性能的要求下每次都sync是不现实的，一般都使用定时sync，比如1s1次，这个时候最多就会丢失1s的数据.</p>
+<h2 id="redis锁续租问题"><a href="#redis锁续租问题" class="headerlink" title="redis锁续租问题?"></a>redis锁续租问题?</h2><p>（1）：基于redis的redission分布式可重入锁RLock，以及配合java集合中lock；</p>
+<p>（2）：Redission 内部提供了一个监控锁的看门狗，不断延长锁的有效期，默认检查锁的超时时间是30秒</p>
+<p>（3）：此方案的问题：如果你对某个redis master实例，写入了myLock这种锁key的value，此时会异步复制给对应的master ，slave实例。但是这个过程中一旦发生redis master宕机，主备切换，redis slave变为了redis master。</p>
+<p>接着就会导致，客户端2来尝试加锁的时候，在新的redis master上完成了加锁，而客户端1也以为自己成功加了锁。此时就会导致多个客户端对一个分布式锁完成了加锁 解决办法：只需要将新的redis实例，在一个TTL时间内，对客户端不可用即可，在这个时间内，所有客户端锁将被失效或者自动释放.</p>
+<h2 id="bgsave的原理是什么？"><a href="#bgsave的原理是什么？" class="headerlink" title="bgsave的原理是什么？"></a>bgsave的原理是什么？</h2><p>fork和cow。fork是指redis通过创建子进程来进行bgsave操作，cow指的是copy on write，子进程创建后，父子进程共享数据段，父进程继续提供读写服务，写进的页面数据会逐渐和子进程分离开来。</p>
+<h2 id="RDB与AOF区别"><a href="#RDB与AOF区别" class="headerlink" title="RDB与AOF区别?"></a>RDB与AOF区别?</h2><p>（1）：R文件格式紧凑，方便数据恢复，保存rdb文件时父进程会fork出子进程由其完成具体持久化工作，最大化redis性能，恢复大数据集速度更快，只有手动提交save命令或关闭命令时才触发备份操作；</p>
+<p>（2）：A记录对服务器的每次写操作（默认1s写入一次），保存数据更完整，在redis重启是会重放这些命令来恢复数据，操作效率高，故障丢失数据更少，但是文件体积更大；</p>
+<h2 id="1亿个key，其中有10w个key是以某个固定的已知的前缀开头的，如果将它们全部找出来？"><a href="#1亿个key，其中有10w个key是以某个固定的已知的前缀开头的，如果将它们全部找出来？" class="headerlink" title="1亿个key，其中有10w个key是以某个固定的已知的前缀开头的，如果将它们全部找出来？"></a>1亿个key，其中有10w个key是以某个固定的已知的前缀开头的，如果将它们全部找出来？</h2><p>使用keys指令可以扫出指定模式的key列表。如果这个redis正在给线上的业务提供服务，那使用keys指令会有什么问题？redis的单线程的。keys指令会导致线程阻塞一段时间，线上服务会停顿，直到指令执行完毕，服务才能恢复。这个时候可以使用scan指令，scan指令可以无阻塞的提取出指定模式的key列表，但是会有一定的重复概率，在客户端做一次去重就可以了 ，但是整体所花费的时间会比直接用keys指令长。</p>
+<h2 id="如何使用Redis做异步队列"><a href="#如何使用Redis做异步队列" class="headerlink" title="如何使用Redis做异步队列?"></a>如何使用Redis做异步队列?</h2><p>一般使用list结构作为队列，rpush生产消息，lpop消费消息。当lpop没有消息的时候，要适当sleep一会再重试。</p>
+<h2 id="可不可以不用sleep呢？"><a href="#可不可以不用sleep呢？" class="headerlink" title="可不可以不用sleep呢？"></a>可不可以不用sleep呢？</h2><p>list还有个指令叫blpop，在没有消息的时候，它会阻塞住直到消息到来。</p>
+<h2 id="能不能生产一次消费多次呢？"><a href="#能不能生产一次消费多次呢？" class="headerlink" title="能不能生产一次消费多次呢？"></a>能不能生产一次消费多次呢？</h2><p>使用pub/sub主题订阅者模式，可以实现1：N的消息队列。</p>
+<h2 id="pub-sub有什么缺点？"><a href="#pub-sub有什么缺点？" class="headerlink" title="pub/sub有什么缺点？"></a>pub/sub有什么缺点？</h2><p>在消费者下线的情况下，生产的消息会丢失，得使用专业的消息队列如rabbitmq等。</p>
+<h2 id="redis如何实现延时队列？"><a href="#redis如何实现延时队列？" class="headerlink" title="redis如何实现延时队列？"></a>redis如何实现延时队列？</h2><p>使用sortedset，想要执行时间的时间戳作为score，消息内容作为key调用zadd来生产消息，消费者用zrangebyscore指令获取N秒之前的数据轮询进行处理。</p>
+<h2 id="为啥redis-zset使用跳跃链表而不用红黑树实现"><a href="#为啥redis-zset使用跳跃链表而不用红黑树实现" class="headerlink" title="为啥redis zset使用跳跃链表而不用红黑树实现?"></a>为啥redis zset使用跳跃链表而不用红黑树实现?</h2><p>（1）：skiplist的复杂度和红黑树一样，而且实现起来更简单。</p>
+<p>（2）：在并发环境下红黑树在插入和删除时需要rebalance，性能不如跳表。</p>
+<h3 id="MYSQL"><a href="#MYSQL" class="headerlink" title="MYSQL"></a>MYSQL</h3><h2 id="数据库三范式"><a href="#数据库三范式" class="headerlink" title="数据库三范式"></a>数据库三范式</h2><p>一：确保每列的原子性</p>
+<p>二：非主键列不存在对主键的部分依赖 （要求每个表只描述一件事情）</p>
+<p>三：满足第二范式，并且表中的列不存在对非主键列的传递依赖</p>
+<h2 id="数据库主从复制原理"><a href="#数据库主从复制原理" class="headerlink" title="数据库主从复制原理?"></a>数据库主从复制原理?</h2><p>（1）：主库db的更新事件（update、insert、delete）被写到binlog</p>
+<p>（2）：主库创建一个binlog dump thread线程，把binlog的内容发送到从库</p>
+<p>（3）：从库创建一个I/O线程，读取主库传过来的binlog内容并写入到relay log.</p>
+<p>（4）：从库还会创建一个SQL线程，从relay log里面读取内容写入到slave的db.</p>
+<h2 id="复制方式分类"><a href="#复制方式分类" class="headerlink" title="复制方式分类?"></a>复制方式分类?</h2><p>（1）：异步复制（默认） 主库写入binlog日志后即可成功返回客户端，无须等待binlog日志传递给从库的过程，但是一旦主库宕机，就有可能出现丢失数据的情况。</p>
+<p>（2）半同步复制：（ 5.5版本之后） （安装半同步复制插件）确保从库接收完成主库传递过来的binlog内容已经写入到自己的relay log（传送log）后才会通知主库上面的等待线程。如果等待超时，则关闭半同步复制，并自动转换为异步复制模式，直到至少有一台从库通知主库已经接收到binlog信息为止</p>
+<h2 id="存储引擎"><a href="#存储引擎" class="headerlink" title="存储引擎?"></a>存储引擎?</h2><p>（1）：Myiasm是mysql默认的存储引擎，不支持数据库事务，行级锁，外键；插入更新需锁表，效率低，查询速度快，Myisam使用的是非聚集索引</p>
+<p>（2）：innodb 支持事务，底层为B+树实现，适合处理多重并发更新操作，普通select都是快照读，快照读不加锁。InnoDb使用的是聚集索引</p>
+<h2 id="聚集索引"><a href="#聚集索引" class="headerlink" title="聚集索引?"></a>聚集索引?</h2><p>（1）：聚集索引就是以主键创建的索引</p>
+<p>（2）：每个表只能有一个聚簇索引，因为一个表中的记录只能以一种物理顺序存放，实际的数据页只能按照一颗 B+ 树进行排序</p>
+<p>（3）：表记录的排列顺序和与索引的排列顺序一致</p>
+<p>（4）：聚集索引存储记录是物理上连续存在</p>
+<p>（5）：聚簇索引主键的插入速度要比非聚簇索引主键的插入速度慢很多</p>
+<p>（6）：聚簇索引适合排序，非聚簇索引不适合用在排序的场合，因为聚簇索引叶节点本身就是索引和数据按相同顺序放置在一起，索引序即是数据序，数据序即是索引序，所以很快。非聚簇索引叶节点是保留了一个指向数据的指针，索引本身当然是排序的，但是数据并未排序，数据查询的时候需要消耗额外更多的I/O，所以较慢</p>
+<p>（7）：更新聚集索引列的代价很高，因为会强制innodb将每个被更新的行移动到新的位置</p>
+<h2 id="非聚集索引"><a href="#非聚集索引" class="headerlink" title="非聚集索引?"></a>非聚集索引?</h2><p>（1）：除了主键以外的索引</p>
+<p>（2）：聚集索引的叶节点就是数据节点，而非聚簇索引的叶节点仍然是索引节点，并保留一个链接指向对应数据块</p>
+<p>（3）：聚簇索引适合排序，非聚簇索引不适合用在排序的场合</p>
+<p>（4）：聚集索引存储记录是物理上连续存在，非聚集索引是逻辑上的连续。</p>
+<h2 id="使用聚集索引为什么查询速度会变快？"><a href="#使用聚集索引为什么查询速度会变快？" class="headerlink" title="使用聚集索引为什么查询速度会变快？"></a>使用聚集索引为什么查询速度会变快？</h2><p>使用聚簇索引找到包含第一个值的行后，便可以确保包含后续索引值的行在物理相邻</p>
+<h2 id="建立聚集索引有什么需要注意的地方吗？"><a href="#建立聚集索引有什么需要注意的地方吗？" class="headerlink" title="建立聚集索引有什么需要注意的地方吗？"></a>建立聚集索引有什么需要注意的地方吗？</h2><p>在聚簇索引中不要包含经常修改的列，因为码值修改后，数据行必须移动到新的位置，索引此时会重排，会造成很大的资源浪费</p>
+<h2 id="innoDB和MyIsam区别"><a href="#innoDB和MyIsam区别" class="headerlink" title="innoDB和MyIsam区别?"></a>innoDB和MyIsam区别?</h2><p>1、innodb支持事务，而myisam不支持事务。<br>2、innodb支持外键，而myisam不支持外键。<br>3、innodb默认表锁，使用索引检索条件时是行锁，而myisam是表锁（每次更新增加删除都会锁住表）。<br>4、innodb和myisam的索引都是基于b+树，但他们具体实现不一样，innodb的b+树的叶子节点是存放数据的，myisam的b+树的叶子节点是存放指针的。<br>5、innodb是聚簇索引，必须要有主键，一定会基于主键查询，但是辅助索引就会查询两次，myisam是非聚簇索引，索引和数据是分离的，索引里保存的是数据地址的指针，主键索引和辅助索引是分开的。<br>6、innodb不存储表的行数，所以select count( <em> )的时候会全表查询，而myisam会存放表的行数，select count(</em>）的时候会查的很快。</p>
+<p>总结:mysql默认使用innodb，如果要用事务和外键就使用innodb，如果这张表只用来查询，可以用myisam。如果更新删除增加频繁就使用innodb。</p>
+<h2 id="InnoDB-表对主键生成策略是什么样的？"><a href="#InnoDB-表对主键生成策略是什么样的？" class="headerlink" title="InnoDB 表对主键生成策略是什么样的？"></a>InnoDB 表对主键生成策略是什么样的？</h2><p>优先使用用户自定义主键作为主键，如果用户没有定义主键，则选取一个Unique键作为主键，如果表中连Unique键都没有定义的话，则InnoDB会为表默认添加一个名为row_id隐藏列作为主键。</p>
+<h2 id="非聚集索引最多可以有多少个？"><a href="#非聚集索引最多可以有多少个？" class="headerlink" title="非聚集索引最多可以有多少个？"></a>非聚集索引最多可以有多少个？</h2><p>每个表你最多可以建立249个非聚簇索引。非聚簇索引需要大量的硬盘空间和内存</p>
+<h2 id="BTree-与-Hash-索引有什么区别？"><a href="#BTree-与-Hash-索引有什么区别？" class="headerlink" title="BTree 与 Hash 索引有什么区别？"></a>BTree 与 Hash 索引有什么区别？</h2><p>（1）：BTree索引可能需要多次运用折半查找来找到对应的数据块 （2）：HASH索引是通过HASH函数，计算出HASH值，在表中找出对应的数据 （3）：大量不同数据等值精确查询，HASH索引效率通常比B+TREE高 （4）：HASH索引不支持模糊查询、范围查询和联合索引中的最左匹配规则，而这些Btree索引都支持</p>
+<h2 id="数据库索引优缺点"><a href="#数据库索引优缺点" class="headerlink" title="数据库索引优缺点?"></a>数据库索引优缺点?</h2><p>（1）：需要查询，排序，分组和联合操作的字段适合建立索引</p>
+<p>（2）：索引多，数据更新表越慢，尽量使用字段值不重复比例大的字段作为索引，联合索引比多个独立索引效率高</p>
+<p>（3）：对数据进行频繁查询进建立索引，如果要频繁更改数据不建议使用索引</p>
+<p>（4）：当对表中的数据进行增加、删除和修改的时候，索引也要动态的维护，降低了数据的维护速度。</p>
+<h2 id="索引的底层实现是B-树，为何不采用红黑树，B树"><a href="#索引的底层实现是B-树，为何不采用红黑树，B树" class="headerlink" title="索引的底层实现是B+树，为何不采用红黑树，B树?"></a>索引的底层实现是B+树，为何不采用红黑树，B树?</h2><p>（1）：B+Tree非叶子节点只存储键值信息，降低B+Tree的高度，所有叶子节点之间都有一个链指针，数据记录都存放在叶子节点中</p>
+<p>（2）：红黑树这种结构，h明显要深的多，效率明显比B-Tree差很多</p>
+<p>（3）：B+树也存在劣势，由于键会重复出现，因此会占用更多的空间。但是与带来的性能优势相比，空间劣势往往可以接受，因此B+树的在数据库中的使用比B树更加广泛</p>
+<h2 id="索引失效条件"><a href="#索引失效条件" class="headerlink" title="索引失效条件?"></a>索引失效条件?</h2><p>（1）：条件是or，如果还想让or条件生效，给or每个字段加个索引</p>
+<p>（2）：like开头%</p>
+<p>（3）：如果列类型是字符串，那一定要在条件中将数据使用引号引用起来，否则不会使用索引</p>
+<p>（4）：where中索引列使用了函数或有运算</p>
+<p>1、like以%开头索引无效，当like以%/&amp;结尾有效。<br>2、or语句两边没有全部使用索引<br>3、组合索引，使用的不是第一列索引，索引失效，即最左匹配规则。<br>4、数据类型出现隐式转换，如varchar不加单引号的时候可能会自动转换为int类型，这个时候索引失效。<br>5、在索引列上使用IS NULL或者IS NOT NULL时候，索引失效，因为索引是不索引空值的。<br>6、在索引字段上使用not 、&lt;&gt; 、!=时不会使用索引，对于这样的处理只会进行全表扫描（&gt;=和=&lt;可以使用索引）<br>7、对索引字段进行计算操作，函数操作时不会使用索引。<br>8、对全表扫描速度比索引速度快的时候不会使用索引。</p>
+<h2 id="数据库事务特点"><a href="#数据库事务特点" class="headerlink" title="数据库事务特点?"></a>数据库事务特点?</h2><p>ACID 原子性，一致性，隔离性，永久性</p>
+<p>数据库事务说是如何实现的?</p>
+<p>（1）：通过预写日志方式实现的，redo和undo机制是数据库实现事务的基础</p>
+<p>（2）：redo日志用来在断电/数据库崩溃等状况发生时重演一次刷数据的过程，把redo日志里的数据刷到数据库里，保证了事务 的持久性（Durability）</p>
+<p>（3）：undo日志是在事务执行失败的时候撤销对数据库的操作，保证了事务的原子性</p>
+<p>数据库事务隔离级别</p>
+<p>（1）：读未提交read-uncommitted— 脏，不可重复读—幻读 A读取了B未提交的事务，B回滚，A 出现脏读；</p>
+<p>（2）：不可重复读read-committed— 不可重复读—幻读 A只能读B已提交的事务，但是A还没结束，B又更新数据隐式提交，然后A又读了一次出现不可重复读；</p>
+<p>（3）：可重复读repeatable-read&lt;默认&gt;— 幻读 事务开启，不允许其他事务的UPDATE修改操作 A读取B已提交的事务，然而B在该表插入新的行，之后A在读取的时候多出一行，出现幻读；</p>
+<p>（4）：串行化serializable—</p>
+<h2 id="七种事务传播行为"><a href="#七种事务传播行为" class="headerlink" title="七种事务传播行为?"></a>七种事务传播行为?</h2><p>（1）Propagation.REQUIRED&lt;默认&gt; 如果当前存在事务，则加入该事务，如果当前不存在事务，则创建一个新的事务。</p>
+<p>（2）Propagation.SUPPORTS 如果当前存在事务，则加入该事务；如果当前不存在事务，则以非事务的方式继续运行。</p>
+<p>（3）Propagation.MANDATORY 如果当前存在事务，则加入该事务；如果当前不存在事务，则抛出异常。</p>
+<p>（4）Propagation.REQUIRES_NEW 重新创建一个新的事务，如果当前存在事务，延缓当前的事务。</p>
+<p>（5）Propagation.NOT_SUPPORTED 以非事务的方式运行，如果当前存在事务，暂停当前的事务。</p>
+<p>（6）Propagation.NEVER 以非事务的方式运行，如果当前存在事务，则抛出异常。</p>
+<p>（7）Propagation.NESTED 如果没有，就新建一个事务；如果有，就在当前事务中嵌套其他事务。</p>
+<h2 id="产生死锁的四个必要条件"><a href="#产生死锁的四个必要条件" class="headerlink" title="产生死锁的四个必要条件?"></a>产生死锁的四个必要条件?</h2><p>（1）：互斥：资源x的任意一个时刻只能被一个线程持有 （2）：占有且等待：线程1占有资源x的同时等待资源y，并不释放x （3）：不可抢占：资源x一旦被线程1占有，其他线程不能抢占x （4）：循环等待：线程1持有x，等待y，线程2持有y，等待x 当全部满足时才会死锁</p>
+<p>所谓死锁，是指两个或两个以上的进程在执行过程中，因争夺资源而造成的一种互相等待的现象，若无外力作用，它们都将无法推进下去。此时称系统处于死锁状态或系统产生了死锁，这些永远在互相等待的进程称为死锁进程。表级锁不会产生死锁。所以解决死锁主要还是针对于最常用的InnoDB。</p>
+<p>死锁的关键在于：两个（或以上）的 Session 加锁的顺序不一致。</p>
+<p>那么对应的解决死锁问题的关键就是：让不同的 Session 加锁有次序。</p>
+<h2 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h2><p>以固定的顺序访问表和行。比如对第二节两个job批量更新的情形，简单方法是对id列表现排序，后执行，这样避免了交叉等待锁的情形。<br>大事务拆小。大事务更倾向于死锁，如果业务允许，将大事务拆小。<br>在同一个事务中，尽可能做到一次锁定所需要的所有资源，减少死锁概率。<br>降低隔离级别。如果业务允许，将隔离级别调低也是较号的选择，比如将隔离级别从 RR 调整为 RC，可以避免掉很多因为 gap 锁造成的死锁。<br>为表添加合理的索引。可以看到如果不走索引将会为表的每一行记录添加上锁，死锁的概率大大增大。</p>
+<h2 id="Transaction"><a href="#Transaction" class="headerlink" title="@Transaction"></a>@Transaction</h2><p>底层实现是AOP，动态代理 （1）：实现是通过Spring代理来实现的。生成当前类的代理类，调用代理类的invoke（）方法，在invoke（）方法中调用 TransactionInterceptor拦截器的invoke（）方法；</p>
+<p>（2）：非public方式其事务是失效的；</p>
+<p>（3）：自调用也会失效，因为动态代理机制导致</p>
+<p>（4）多个方法外层加入try…catch，解决办法是可以在catch里 throw new RuntimeException（）来处理</p>
+<h3 id="MVCC"><a href="#MVCC" class="headerlink" title="MVCC"></a>MVCC</h3><h2 id="MVCC使得数据库读不会对数据加锁，普通的SELECT请求不会加锁，提高了数据库的并发处理能力？"><a href="#MVCC使得数据库读不会对数据加锁，普通的SELECT请求不会加锁，提高了数据库的并发处理能力？" class="headerlink" title="MVCC使得数据库读不会对数据加锁，普通的SELECT请求不会加锁，提高了数据库的并发处理能力？"></a>MVCC使得数据库读不会对数据加锁，普通的SELECT请求不会加锁，提高了数据库的并发处理能力？</h2><p>InnoDB的MVCC是通过在每行记录后面保存两个隐藏的列来实现的。一个保存了行的事务ID（DB_TRX_ID），一个保存了行的回滚指针（DB_ROLL_PT）。MVCC 在mysql 中的实现依赖的是 undo log 与 read view </p>
+<h3 id="分布式事务"><a href="#分布式事务" class="headerlink" title="分布式事务"></a>分布式事务</h3><h2 id="XA方案"><a href="#XA方案" class="headerlink" title="XA方案"></a>XA方案</h2><p>有一个事务管理器的概念，负责协调多个数据库（资源管理器）的事务 不适合高并发场景，严重依赖数据库层面，同步阻塞问题；协调者故障则所有参与者会阻塞</p>
+<p>二阶段提交(Two-phaseCommit)是指，在计算机网络以及数据库领域内，为了使基于分布式系统架构下的所有节点在进行事务提交时保持一致性而设计的一种算法(Algorithm)。通常，二阶段提交也被称为是一种协议(Protocol))。在分布式系统中，每个节点虽然可以知晓自己的操作时成功或者失败，却无法知道其他节点的操作的成功或失败。当一个事务跨越多个节点时，为了保持事务的 ACID 特性，需要引入一个作为协调者的组件来统一掌控所有节点(称作参与者)的操作结果并最终指示这些节点是否要把操作结果进行真正的提交(比如将更新后的数据写入磁盘等等)。。因此，二阶段提交的算法思路可以概括为：参与者将操作成败通知协调者，再由协调者根据所有参与者的反馈情报决定各参与者是否要提交操作还是中止操作。</p>
+<p>准备阶段</p>
+<p>  事务协调者(事务管理器)给每个参与者(资源管理器)发送 Prepare 消息，每个参与者要么直接返回失败(如权限验证失败)，要么在本地执行事务，写本地的 redo 和 undo 日志，但不提交，到达一种“万事俱备，只欠东风”的状态。</p>
+<p>提交阶段</p>
+<pre><code>    如果协调者收到了参与者的失败消息或者超时，直接给每个参与者发送回滚(Rollback)消息；否则，发送提交(Commit)消息；参与者根据协调者的指令执行提交或者回滚操作，释放所有事务处理过程中使用的锁资源。(注意:必须在最后阶段释放锁资源)
+</code></pre><h2 id="TCC方案？"><a href="#TCC方案？" class="headerlink" title="TCC方案？"></a>TCC方案？</h2><p>严重依赖代码补偿和回滚，一般银行用，和钱相关的支付、交易等相关的场景，我们会用TCC Try，对各个服务的资源做检测，对资源进行锁定或者预留 Confirm，在各个服务中执行实际的操作 Cancel，如果任何一个服务的业务方法执行出错，那么这里就需要进行补偿，即执行已操作成功的业务逻辑的回滚操作</p>
+<h2 id="可靠消息最终一致性方案"><a href="#可靠消息最终一致性方案" class="headerlink" title="可靠消息最终一致性方案"></a>可靠消息最终一致性方案</h2><p>1）：本地消息服务 本地消息表其实是国外的 ebay 搞出来的这么一套思想。主动方是认证服务，有个消息异常处理系统，mq，还有消息消费端应用系统，还有采集服务；</p>
+<p>在我认证返回数据中如果有发票是已经认证的，在处理认证数据的操作与发送消息在同一个本地事务中，业务执行完，消息数据也同时存在一条待确认的数据；</p>
+<p>发送消息给mq，，mq发送消息给消息消费端服务，同时存一份消息数据，然后发送给采集服务，进行抵账表更新操作；</p>
+<p>采集服务逻辑处理完以后反馈给消息消费端服务，其服务删除消息数据，同时通知认证服务，把消息记录改为已确认成功费状态；</p>
+<p>对于异常流程，消息异常处理系统会查询认证服务中过期未确认的消息发送给mq，相当于重试</p>
+<p>2）：独立消息最终一致性方案：A 主动方应用系统，B消息服务子系统，C消息状态确认子系统，C2消息管理子系统 D 消息恢复子系统，mq ，消息消费端E ，被动系统F<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> 流程：</span><br><span class="line">A预发送消息给B，然后执行A业务逻辑，B存储预发送消息，A执行完业务逻辑发送业务操作结果给B，B更新预发送消息为确认并发送消息状态同时发送消息给mq，然后被E监听然后发送给F消费掉</span><br><span class="line">C：对预发送消息异常的处理，去查询待确认状态超时的消息，去A中查询进行数据处理，如果A中业务处理成功了，那么C需改消息状态为确认并发送状态，然后发送消息给mq；如果A中业务处理失败了..那么C直接把消息删除即可.</span><br><span class="line">C2 ： 查询消息的页面，对消息的可视化，以及批量处理死亡消息；</span><br><span class="line">D：B给mq放入数据如果失败，，通过D去重试，多次重试失败，消息设置为死亡 </span><br><span class="line">E：确保F执行完成，发送消息给B删除消息</span><br><span class="line">优化建议： </span><br><span class="line"> （1）数据库：如果用redis，持久化要配置成appendfsync always，确保每次新添加消息都能持久化进磁盘</span><br><span class="line"> （2）在被动方应用业务幂等性判断比较麻烦或者比较耗性能情况下，增加消息日志记录表.用于判断之前有无发送过；</span><br></pre></td></tr></table></figure></p>
+<h2 id="最大努力通知性（定期校对）"><a href="#最大努力通知性（定期校对）" class="headerlink" title="最大努力通知性（定期校对）"></a>最大努力通知性（定期校对）</h2><p>（1）业务主动方完成业务处理之后，设置时间阶梯型通知规则向业务活动的被动方发送消息，允许消息丢失.</p>
+<p>（2）被动方根据定时策略，向主动方查询，恢复丢失的业务消息</p>
+<p>（3）被动方的处理结果不影响主动方的处理结果</p>
+<p>（4）需增加业务查询，通知服务，校对系统服务的建设成本</p>
+<p>（5）适用于对业务最终一致性的时间敏感度低，跨企业的业务通知活动</p>
+<p>（6）比如银行通知，商户通知，交易业务平台间商户通知，多次通知，查询校对等</p>
+<h2 id="Seata（阿里）？"><a href="#Seata（阿里）？" class="headerlink" title="Seata（阿里）？"></a>Seata（阿里）？</h2><p>应用层基于SQL解析实现了自动补偿，从而最大程度的降低业务侵入性；将分布式事务中TC（事务协调者）独立部署，负责事务的注册、回滚；通过全局锁实现了写隔离与读隔离。</p>
+<h3 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h3><h2 id="TCP和UDP的比较？"><a href="#TCP和UDP的比较？" class="headerlink" title="TCP和UDP的比较？"></a>TCP和UDP的比较？</h2><p>TCP向上层提供面向连接的可靠服务 ，UDP向上层提供无连接不可靠服务。虽然 UDP 并没有 TCP 传输来的准确，但是也能在很多实时性要求高的地方有所作为 对数据准确性要求高，速度可以相对较慢的，可以选用TCP</p>
+<h2 id="TCP三次握手"><a href="#TCP三次握手" class="headerlink" title="TCP三次握手?"></a>TCP三次握手?</h2><div class="img-wrap"><div class="img-bg"><img class="img" src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X2pwZy91Q2htZWVYMUZweEsxbE14TUlzc24yWTJzWDFyZWt3aExOR2dWQTh0dkNtb0xlTmw5eVQ0UGhkYkpadGVXWVlpYWNIU1g3anpvbmtsbkhsNmdSNTlWT0EvNjQw?x-oss-process=image/format,png"/></div></div>
+<p>（1）：客户端发送终止命令FIN</p>
+<p>（2）：服务端收到后回复ACK，处于close_wait状态</p>
+<p>（3）：服务器将关闭前需要发送信息发送给客户端后处于last_ack状态</p>
+<p>（4）：客户端收到FIN后发送ack后处于tim-wait而后进入close状态<br><div class="img-wrap"><div class="img-bg"><img class="img" src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X2pwZy91Q2htZWVYMUZweEsxbE14TUlzc24yWTJzWDFyZWt3aDl6YWlhbk5FdU1ZM0ZiM2hxVXdZWk0wcGZIV2ZQQXJMaE9tZUpwa1BtUXBBTXB1YU1DNlp5TUEvNjQw?x-oss-process=image/format,png,alt="/></div></div><br>为什么要进行第三次握手<br>为了防止服务器端开启一些无用的连接增加服务器开销以及防止已失效的连接请求报文段突然又传送到了服务端</p>
+<h2 id="HTTPS原理"><a href="#HTTPS原理" class="headerlink" title="HTTPS原理?"></a>HTTPS原理?</h2><div class="img-wrap"><div class="img-bg"><img class="img" src="https://img-blog.csdnimg.cn/img_convert/ee46bf52d4205ed636cc5f575a888112.png"/></div></div>
+<p>① 证书验证阶段</p>
+<p>浏览器发起 HTTPS 请求</p>
+<p>服务端返回 HTTPS 证书</p>
+<p>客户端验证证书是否合法，如果不合法则提示告警</p>
+<p>② 数据传输阶段</p>
+<p>1.当证书验证合法后，在本地生成随机数</p>
+<p>2.通过公钥加密随机数，并把加密后的随机数传输到服务端</p>
+<p>3.服务端通过私钥对随机数进行解密</p>
+<p>4.服务端通过客户端传入的随机数构造对称加密算法，对返回结果内容进行加密后传输</p>
+<h2 id="为什么数据传输是用对称加密？"><a href="#为什么数据传输是用对称加密？" class="headerlink" title="为什么数据传输是用对称加密？"></a>为什么数据传输是用对称加密？</h2><p>首先，非对称加密的加解密效率是非常低的，而 http 的应用场景中通常端与端之间存在大量的交互，非对称加密的效率是无法接受的；</p>
+<p>另外，在 HTTPS 的场景中只有服务端保存了私钥，一对公私钥只能实现单向的加解密，所以 HTTPS 中内容传输加密采取的是对称加密，而不是非对称加密。</p>
+<h2 id="为什么需要-CA-认证机构颁发证书？"><a href="#为什么需要-CA-认证机构颁发证书？" class="headerlink" title="为什么需要 CA 认证机构颁发证书？"></a>为什么需要 CA 认证机构颁发证书？</h2><p>HTTP 协议被认为不安全是因为传输过程容易被监听者勾线监听、伪造服务器，而 HTTPS 协议主要解决的便是网络传输的安全性问题。</p>
+<p>首先我们假设不存在认证机构，任何人都可以制作证书，这带来的安全风险便是经典的“中间人攻击”问题。</p>
+<h2 id="select、poll、epoll"><a href="#select、poll、epoll" class="headerlink" title="select、poll、epoll?"></a>select、poll、epoll?</h2><p>IO多路复用概念</p>
+<p>IO多路复用是指内核一旦发现进程指定的一个或者多个IO条件准备读取，它就通知该进程。<br>其实就是在单个线程中通过记录跟踪每一个I/O流的状态来管理多个I/O流。</p>
+<p>它们三的作用</p>
+<p>提供一种IO复用的方式。即让单个进程可以监视多个文件描述符，一旦某个fd就绪（一般是读就绪或写就绪），能够通知程序进行相应的读写操作。</p>
+<p>fd是什么？</p>
+<p>fd：文件描述符<br>文件描述符（file descriptor）是内核为了高效管理这些已经被打开的文件所创建的索引，其是一个非负整数（通常是小整数），用于指代被打开的文件，所有执行I/O操作的系统调用都通过文件描述符来实现。</p>
+<p>select</p>
+<p>select基于fd_set结构体（一个long类型数组），数组内的每一个元素都与一个fd相关联。select是基于遍历来查找fd事件的，所以时间复杂度为O(n)。</p>
+<p>select在监听过程中，每次需要把fd列表从用户态拷贝到内核态，然后再遍历所有fd，判断有无读写事件发生。这也导致select在监听IO数量较多的情况下，性能开销极大（poll也有这个缺点）</p>
+<p>为了减少数据拷贝带来的性能损坏，所以内核对单个进程可监视的fd数量做了限制。</p>
+<p>水平触发：如果用户程序没有处理select所报告的fd，则下一次select时会继续报告此fd。</p>
+<p>poll</p>
+<p>poll与select的机制基本一致。由于poll是基于链表存储fd关联的，所以poll没有最大连接数限制。poll也是基于遍历来查找fd事件的，时间复杂度也是O(n)。</p>
+<p>水平触发：如果用户程序没有处理poll所报告的fd，则下一次poll时会继续报告此fd。</p>
+<p>poll的缺点：</p>
+<p>和select一样，每次都把全部fd拷贝进内核态，再从中遍历查找有新事件的fd，性能开销大。</p>
+<p>epoll</p>
+<p>epoll底层是基于哈希表和回调函数的，所以时间复杂度为O(1)。</p>
+<p>epoll有两种模式，LT和ET，LT是默认的模式，ET是高速模式。</p>
+<p>LT模式（水平触发）：epoll_wait检测到某fd事件就绪并通知用户程序时，如果用户程序不处理该事件，则每次epoll_wait都会返回这个fd事件，不断提醒用户程序去操作。</p>
+<p>ET模式（边缘触发）：当一个fd里有新的数据变化时，epoll只会向用户程序返回一次报告，直到下次再有新的数据流入之后，才会再次返回报告，无论fd中是否还有数据可读。</p>
+<h3 id="JDK1-8新特性"><a href="#JDK1-8新特性" class="headerlink" title="JDK1.8新特性"></a>JDK1.8新特性</h3><h2 id="Lambda表达式"><a href="#Lambda表达式" class="headerlink" title="Lambda表达式?"></a>Lambda表达式?</h2><p>java也开始承认了函数式编程， 就是说函数既可以作为参数，也可以作为返回值， 大大的简化了代码的开发</p>
+<h2 id="default关键字"><a href="#default关键字" class="headerlink" title="default关键字?"></a>default关键字?</h2><p>打破接口里面是只能有抽象方法，不能有任何方法的实现，接口里面也可以有方法的实现了</p>
+<h2 id="新时间日期APILocalDate-LocalTime-LocalDateTime"><a href="#新时间日期APILocalDate-LocalTime-LocalDateTime" class="headerlink" title="新时间日期APILocalDate | LocalTime | LocalDateTime?"></a>新时间日期APILocalDate | LocalTime | LocalDateTime?</h2><p>之前使用的java.util.Date月份从0开始，我们一般会+1使用，很不方便，java.time.LocalDate月份和星期都改成了enum java.util.Date和SimpleDateFormat都不是线程安全的，而LocalDate和LocalTime和最基本的String一样，是不变类型，不但线程安全，而且不能修改。新接口更好用的原因是考虑到了日期时间的操作，经常发生往前推或往后推几天的情况。用java.util.Date配合Calendar要写好多代码，而且一般的开发人员还不一定能写对。</p>
+<h2 id="JDK1-7与JDK1-8-ConcurrentHashMap对比"><a href="#JDK1-7与JDK1-8-ConcurrentHashMap对比" class="headerlink" title="JDK1.7与JDK1.8 ConcurrentHashMap对比?"></a>JDK1.7与JDK1.8 ConcurrentHashMap对比?</h2><p>（1）：JDK1.7版本的ReentrantLock+Segment+HashEntry（数组）</p>
+<p>（2）：JDK1.7采用segment的分段锁机制实现线程安全</p>
+<p>（3）：JDK1.8版本中synchronized+CAS+HashEntry（数组）+红黑树</p>
+<p>（4）：JDK1.8采用CAS+Synchronized保证线程安全</p>
+<p>（5）：查询时间复杂度从原来的遍历链表O（n），变成遍历红黑树O（logN）</p>
+<p>1.8 HashMap数组+链表+红黑树来实现hashmap，当碰撞的元素个数大于8时 &amp; 总容量大于64，会有红黑树的引入 除了添加之后，效率都比链表高，1.8之后链表新进元素加到末尾</p>
+<h2 id="JDK1-8使用synchronized来代替重入锁ReentrantLock"><a href="#JDK1-8使用synchronized来代替重入锁ReentrantLock" class="headerlink" title="JDK1.8使用synchronized来代替重入锁ReentrantLock?"></a>JDK1.8使用synchronized来代替重入锁ReentrantLock?</h2><p>（1）：因为粒度降低了，在相对而言的低粒度加锁方式，synchronized并不比ReentrantLock差</p>
+<p>（2）：基于JVM的synchronized优化空间更大</p>
+<p>（3）：在大数据量下，基于API的ReentrantLock会比基于JVM的内存压力开销更多的内存</p>
+<h3 id="JDK1-9新特性"><a href="#JDK1-9新特性" class="headerlink" title="JDK1.9新特性"></a>JDK1.9新特性</h3><h2 id="模块系统："><a href="#模块系统：" class="headerlink" title="模块系统："></a>模块系统：</h2><p>模块是一个包的容器，Java 9 最大的变化之一是引入了模块系统（Jigsaw 项目）。</p>
+<h2 id="集合工厂方法"><a href="#集合工厂方法" class="headerlink" title="集合工厂方法?"></a>集合工厂方法?</h2><p>通常，您希望在代码中创建一个集合（例如，List 或 Set ），并直接用一些元素填充它。实例化集合，几个 “add” 调用，使得代码重复。Java 9，添加了几种集合工厂方法：</p>
+<p>Set<Integer> ints = Set.of（1， 2， 3）；<br>List<String> strings = List.of（”first”， “second”）；</p>
+<h2 id="改进的-Stream-API"><a href="#改进的-Stream-API" class="headerlink" title="改进的 Stream API?"></a>改进的 Stream API?</h2><p>Stream 接口中添加了 4 个新的方法：dropWhile， takeWhile， ofNullable。还有个 iterate 方法的新重载方法</p>
+<h2 id="改进的-Javadoc"><a href="#改进的-Javadoc" class="headerlink" title="改进的 Javadoc?"></a>改进的 Javadoc?</h2><p>Javadoc 现在支持在 API 文档中的进行搜索。另外，Javadoc 的输出现在符合兼容 HTML5 标准。</p>
+<p>redis代理集群模式，spring有哪些注解，b+b 红黑树区别，三次握手，valitile重排序底层代码， cas 事务的4个特性，java8 java11 特性， filter和interceptor的区别 @autowired原理， dispatcherservlet，分布式事务解决方案spring都有哪些模块，fork join队列，排序算法，</p>
+<h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><h2 id="java的集合框架有哪几种"><a href="#java的集合框架有哪几种" class="headerlink" title="java的集合框架有哪几种?"></a>java的集合框架有哪几种?</h2><p>两种：collection和map，其中collection分为set和List。</p>
+<h2 id="List你使用过哪些"><a href="#List你使用过哪些" class="headerlink" title="List你使用过哪些?"></a>List你使用过哪些?</h2><p>ArrayList和linkedList使用的最多，也最具代表性。</p>
+<h2 id="你知道vector和ArrayList和linkedList的区别嘛"><a href="#你知道vector和ArrayList和linkedList的区别嘛" class="headerlink" title="你知道vector和ArrayList和linkedList的区别嘛?"></a>你知道vector和ArrayList和linkedList的区别嘛?</h2><p>ArrayList实现是一个数组，可变数组，默认初始化长度为10，也可以我们设置容量，但是没有设置的时候是默认的空数组，只有在第一步add的时候会进行扩容至10（重新创建了数组），后续扩容按照3/2的大小进行扩容，是线程不安全的，适用多读取，少插入的情况</p>
+<p>linkedList是基于双向链表的实现，使用了尾插法的方式，内部维护了链表的长度，以及头节点和尾节点，所以获取长度不需要遍历。适合一些插入/删除频繁的情况。</p>
+<p>Vector是线程安全的，实现方式和ArrayList相似，也是基于数组，但是方法上面都有synchronized关键词修饰。其扩容方式是原来的两倍。</p>
+<h2 id="hashMap和hashTable和ConcurrentHashMap的区别"><a href="#hashMap和hashTable和ConcurrentHashMap的区别" class="headerlink" title="hashMap和hashTable和ConcurrentHashMap的区别?"></a>hashMap和hashTable和ConcurrentHashMap的区别?</h2><p>hashMap是map类型的一种最常用的数据结构，其底部实现是数组+链表（在1.8版本后变为了数组+链表/红黑树的方式），其key是可以为null的，默认hash值为0。扩容以2的幂等次（为什么。。。因为只有是2的幂等次的时候（n-1）&amp;x==x%n，当然不一定只有一个原因）。是线程不安全的</p>
+<p>hashTable的实现形式和hashMap差不多，它是线程安全的，是继承了Dictionary，也是key-value的模式，但是其key不能为null。</p>
+<p>ConcurrentHashMap是JUC并发包的一种，在hashMap的基础上做了修改，因为hashmap其实是线程不安全的，那在并发情况下使用hashTable嘛，但是hashTable是全程加锁的，性能不好，所以采用分段的思想，把原本的一个数组分成默认16段，就可以最多容纳16个线程并发操作，16个段叫做Segment，是基于ReetrantLock来实现的</p>
+<h2 id="说说你了解的hashmap吧"><a href="#说说你了解的hashmap吧" class="headerlink" title="说说你了解的hashmap吧?"></a>说说你了解的hashmap吧?</h2><p>hashMap是Map的结构，内部用了数组+链表的方式，在1.8后，当链表长度达到8的时候，会变成红黑树，这样子就可以把查询的复杂度变成O（nlogn）了，默认负载因子是0.75，为什么是0.75呢？</p>
+<p>我们知道当负载因子太小，就很容易触发扩容，如果负载因子太大就容易出现碰撞。所以这个是空间和时间的一个均衡点，在1.8的hashmap介绍中，就有描述了，貌似是0.75的负载因子中，能让随机hash更加满足0.5的泊松分布。</p>
+<p>除此之外，1.7的时候是头插法，1.8后就变成了尾插法，主要是为了解决rehash出现的死循环问题，而且1.7的时候是先扩容后插入，1.8则是先插入后扩容(为什么？正常来说，如果先插入，就有可能节点变为树化，那么是不是多做一次树转化，比1.7要多损耗，个人猜测，因为读写问题，因为hashmap并不是线程安全的，如果说是先扩容，后写入，那么在扩容期间，是访问不到新放入的值的，是不是不太合适，所以会先放入值，这样子在扩容期间，那个值是在的）。</p>
+<p>1.7版本的时候用了9次扰动，5次异或，4次位移，减少hash冲突，但是1.8就只用了两次，觉得就足够了一次异或，一次位移。</p>
+<h2 id="concurrentHashMap呢"><a href="#concurrentHashMap呢" class="headerlink" title="concurrentHashMap呢?"></a>concurrentHashMap呢?</h2><p>concurrentHashMap是线程安全的map结构，它的核心思想是分段锁。在1.7版本的时候，内部维护了segment数组，默认是16个，segment中有一个table数组（相当于一个segmeng存放着一个hashmap。。。），segment继承了reentrantlock，使用了互斥锁，map的size其实就是segment数组的count和。而在1.8的时候做了一个大改版，废除了segment，采用了cas加synchronize方式来进行分段锁（还有自旋锁的保证），而且节点对象改用了Node不是之前的HashEntity。</p>
+<p>Node可以支持链表和红黑树的转化，比如TreeBin就是继承了Node，这样子可以直接用instanceof来区分。1.8的put就很复杂来，会先计算出hash值，然后根据hash值选出Node数组的下标（默认数组是空的，所以一开始put的时候会初始化，指定负载因子是0.75，不可变），判断是否为空，如果为空，则用cas的操作来赋值首节点，如果失败，则因为自旋，会进入非空节点的逻辑，这个时候会用synchronize加锁头节点（保证整条链路锁定）这个时候还会进行二次判断，是否是同一个首节点，在分首节点到底是链表还是树结构，进行遍历判断。</p>
+<h2 id="concurrentHashMap的扩容方式"><a href="#concurrentHashMap的扩容方式" class="headerlink" title="concurrentHashMap的扩容方式?"></a>concurrentHashMap的扩容方式?</h2><p>1.7版本的concurrentHashMap是基于了segment的，segment内部维护了HashEntity数组，所以扩容是在这个基础上的，类比hashmap的扩容，</p>
+<p>1.8版本的concurrentHashMap扩容方式比较复杂，利用了ForwardingNode,先会根据机器内核数来分配每个线程能分到的busket数，（最小是16），这样子可以做到多线程协助迁移，提升速度。然后根据自己分配的busket数来进行节点转移，如果为空，就放置ForwardingNode，代表已经迁移完成，如果是非空节点（判断是不是ForwardingNode，是就结束了），加锁，链路循环,进行迁移。</p>
+<h2 id="hashMap的put方法的过程"><a href="#hashMap的put方法的过程" class="headerlink" title="hashMap的put方法的过程?"></a>hashMap的put方法的过程?</h2><p>判断key是否是null，如果是null对应的hash值就是0，获得hash值过后则进行扰动，（1.7是9次，5次异或，4次位移，1.8是2次），获取到的新hash值找出所在的index，（n-1）&amp;hash，根据下标找到对应的Node/entity，然后遍历链表/红黑树，如果遇到hash值相同且equals相同，则覆盖值，如果不是则新增。如果节点数大于8了，则进行树化（1.8）。完成后，判断当前的长度是否大于阀值，是就扩容（1.7是先扩容在put）。</p>
+<h2 id="为什么修改hashcode方法要修改equals"><a href="#为什么修改hashcode方法要修改equals" class="headerlink" title="为什么修改hashcode方法要修改equals?"></a>为什么修改hashcode方法要修改equals?</h2><p>都是map惹的祸，我们知道在map中判断是否是同一个对象的时候，会先判断hash值，在判断equals的，如果我们只是重写了hashcode，没有顺便修改equals，比如Intger，hashcode就是value值，如果我们不改写equals，而是用了Object的equals，那么就是判断两者指针是否一致了，那就会出现valueOf和new出来的对象会对于map而言是两个对象，那就是个问题了</p>
+<h2 id="TreeMap了解嘛"><a href="#TreeMap了解嘛" class="headerlink" title="TreeMap了解嘛?"></a>TreeMap了解嘛?</h2><p>TreeMap是Map中的一种很特殊的map，我们知道Map基本是无序的，但是TreeMap是会自动进行排序的，也就是一个有序Map(使用了红黑树来实现），如果设置了Comparator比较器，则会根据比较器来对比两者的大小，如果没有则key需要是Comparable的子类（代码中没有事先check，会直接抛出转化异常，有点坑啊）。</p>
+<h2 id="LinkedHashMap了解嘛"><a href="#LinkedHashMap了解嘛" class="headerlink" title="LinkedHashMap了解嘛?"></a>LinkedHashMap了解嘛?</h2><p>LinkedHashMap是HashMap的一种特殊分支，是某种有序的hashMap，和TreeMap是不一样的概念，是用了HashMap+链表的方式来构造的，有两者有序模式：访问有序，插入顺序，插入顺序是一直存在的，因为是调用了hashMap的put方法，并没有重载，但是重载了newNode方法，在这个方法中，会把节点插入链表中，访问有序默认是关闭的，如果打开，则在每次get的时候都会把链表的节点移除掉，放到链表的最后面。这样子就是一个LRU的一种实现方式。</p>
+<h2 id="rocketmq"><a href="#rocketmq" class="headerlink" title="rocketmq?"></a>rocketmq?</h2><p>01.为什么要用RocketMq？</p>
+<p>总得来说，RocketMq具有以下几个优势：</p>
+<p>吞吐量高：单机吞吐量可达十万级<br>可用性高：分布式架构<br>消息可靠性高：经过参数优化配置，消息可以做到0丢失<br>功能支持完善：MQ功能较为完善，还是分布式的，扩展性好<br>支持10亿级别的消息堆积：不会因为堆积导致性能下降<br>源码是java：方便我们查看源码了解它的每个环节的实现逻辑，并针对不同的业务场景进行扩展<br>可靠性高：天生为金融互联网领域而生，对于要求很高的场景，尤其是电商里面的订单扣款，以及业务削峰，在大量交易涌入时，后端可能无法及时处理的情况<br>稳定性高：RoketMQ在上可能更值得信赖，这些业务场景在阿里双11已经经历了多次考验</p>
+<p>02.RocketMq的部署架构了解吗？<br><div class="img-wrap"><div class="img-bg"><img class="img" src="https://img-blog.csdnimg.cn/img_convert/c2a02f088a0add5f9cd87492451f52ab.png"/></div></div><br>这个是rocketMq的集群架构图，里面包含了四个主要部分：NameServer集群,Producer集群,Cosumer集群以及Broker集群</p>
+<p>NameServer 担任路由消息的提供者。生产者或消费者能够通过NameServer查找各Topic相应的Broker IP列表分别进行发送消息和消费消息。nameServer由多个无状态的节点构成，节点之间无任何信息同步</p>
+<p>broker会定期向NameServer以发送心跳包的方式，轮询向所有NameServer注册以下元数据信息：</p>
+<p>1）broker的基本信息（ip port等）</p>
+<p>2）主题topic的地址信息</p>
+<p>3）broker集群信息</p>
+<p>4）存活的broker信息</p>
+<p>5）filter 过滤器</p>
+<p>也就是说，每个NameServer注册的信息都是一样的，而且是当前系统中的所有broker的元数据信息</p>
+<p>Producer负责生产消息，一般由业务系统负责生产消息。一个消息生产者会把业务应用系统里产生的消息发送到broker服务器。RocketMQ提供多种发送方式，同步发送、异步发送、顺序发送、单向发送。同步和异步方式均需要Broker返回确认信息，单向发送不需要</p>
+<p>Broker，消息中转角色，负责存储消息、转发消息。在RocketMQ系统中负责接收从生产者发送来的消息并存储、同时为消费者的拉取请求作准备</p>
+<p>Consumer负责消费消息，一般是后台系统负责异步消费。一个消息消费者会从Broker服务器拉取消息、并将其提供给应用程序。从用户应用的角度而言提供了两种消费形式：拉取式消费、推动式消费</p>
+<p>03.它有哪几种部署类型？分别有什么特点？</p>
+<p>RocketMQ有4种部署类型</p>
+<p>1）单Master</p>
+<p>单机模式, 即只有一个Broker, 如果Broker宕机了, 会导致RocketMQ服务不可用, 不推荐使用</p>
+<p>2）多Master模式</p>
+<p>组成一个集群, 集群每个节点都是Master节点, 配置简单, 性能也是最高, 某节点宕机重启不会影响RocketMQ服务</p>
+<p>缺点：如果某个节点宕机了, 会导致该节点存在未被消费的消息在节点恢复之前不能被消费</p>
+<p>3）多Master多Slave模式，异步复制</p>
+<p>每个Master配置一个Slave, 多对Master-Slave, Master与Slave消息采用异步复制方式, 主从消息一致只会有毫秒级的延迟</p>
+<p>优点是弥补了多Master模式（无slave）下节点宕机后在恢复前不可订阅的问题。在Master宕机后, 消费者还可以从Slave节点进行消费。采用异步模式复制，提升了一定的吞吐量。总结一句就是，采用多Master多Slave模式，异步复制模式进行部署，系统将会有较低的延迟和较高的吞吐量</p>
+<p>缺点就是如果Master宕机, 磁盘损坏的情况下, 如果没有及时将消息复制到Slave, 会导致有少量消息丢失</p>
+<p>4）多Master多Slave模式，同步双写</p>
+<p>与多Master多Slave模式，异步复制方式基本一致，唯一不同的是消息复制采用同步方式，只有master和slave都写成功以后，才会向客户端返回成功</p>
+<p>优点：数据与服务都无单点，Master宕机情况下，消息无延迟，服务可用性与数据可用性都非常高</p>
+<p>缺点就是会降低消息写入的效率，并影响系统的吞吐量</p>
+<p>实际部署中，一般会根据业务场景的所需要的性能和消息可靠性等方面来选择后两种</p>
+<p>04.</p>
+<p>04.分布式事务：</p>
+<p>Half Message(半消息)</p>
+<p>是指暂不能被Consumer消费的消息。Producer 已经把消息成功发送到了 Broker 端，但此消息被标记为暂不能投递状态，处于该种状态下的消息称为半消息。需要 Producer</p>
+<p>对消息的二次确认后，Consumer才能去消费它。</p>
+<p>05.rocketmq如何保证高可用性？</p>
+<p>1）集群化部署NameServer。Broker集群会将所有的broker基本信息、topic信息以及两者之间的映射关系，轮询存储在每个NameServer中（也就是说每个NameServer存储的信息完全一样）。因此，NameServer集群化，不会因为其中的一两台服务器挂掉，而影响整个架构的消息发送与接收；</p>
+<p>2）集群化部署多broker。producer发送消息到broker的master，若当前的master挂掉，则会自动切换到其他的master</p>
+<p>cosumer默认会访问broker的master节点获取消息，那么master节点挂了之后，该怎么办呢？它就会自动切换到同一个broker组的slave节点进行消费</p>
+<p>那么你肯定会想到会有这样一个问题：consumer要是直接消费slave节点，那master在宕机前没有来得及把消息同步到slave节点，那这个时候，不就会出现消费者不就取不到消息的情况了？</p>
+<p>这样，就引出了下一个措施，来保证消息的高可用性</p>
+<p>3）设置同步复制</p>
+<p>前面已经提到，消息发送到broker的master节点上，master需要将消息复制到slave节点上，rocketmq提供两种复制方式：同步复制和异步复制</p>
+<p>异步复制，就是消息发送到master节点，只要master写成功，就直接向客户端返回成功，后续再异步写入slave节点</p>
+<p>同步复制，就是等master和slave都成功写入内存之后，才会向客户端返回成功</p>
+<p>那么，要保证高可用性，就需要将复制方式配置成同步复制，这样即使master节点挂了，slave上也有当前master的所有备份数据，那么不仅保证消费者消费到的消息是完整的，并且当master节点恢复之后，也容易恢复消息数据</p>
+<p>在master的配置文件中直接配置brokerRole：SYNC_MASTER即可</p>
+<p>06.rocketmq的工作流程是怎样的？</p>
+<p>RocketMq的工作流程如下：</p>
+<p>1）首先启动NameServer。NameServer启动后监听端口，等待Broker、Producer以及Consumer连上来</p>
+<p>2）启动Broker。启动之后，会跟所有的NameServer建立并保持一个长连接，定时发送心跳包。心跳包中包含当前Broker信息(ip、port等)、Topic信息以及Borker与Topic的映射关系</p>
+<p>3）创建Topic。创建时需要指定该Topic要存储在哪些Broker上，也可以在发送消息时自动创建Topic</p>
+<p>4）Producer发送消息。启动时先跟NameServer集群中的其中一台建立长连接，并从NameServer中获取当前发送的Topic所在的Broker；然后从队列列表中轮询选择一个队列，与队列所在的Broker建立长连接，进行消息的发送</p>
+<p>5）Consumer消费消息。跟其中一台NameServer建立长连接，获取当前订阅Topic存在哪些Broker上，然后直接跟Broker建立连接通道，进行消息的消费</p>
+<p>07.RocketMq使用哪种方式消费消息，pull还是push？</p>
+<p>RocketMq提供两种方式：pull和push进行消息的消费</p>
+<p>而RocketMq的push方式，本质上也是采用pull的方式进行实现的。也就是说这两种方式本质上都是采用consumer轮询从broker拉取消息的</p>
+<p>push方式里，consumer把轮询过程封装了一层，并注册了MessageListener监听器。当轮询取到消息后，便唤醒MessageListener的consumeMessage()来消费，对用户而言，感觉好像消息是被推送过来的</p>
+<p>其实想想，消息统一都发到了broker，而broker又不会主动去push消息，那么消息肯定都是需要消费者主动去拉的喽~</p>
+<p>08.RocketMq如何负载均衡？</p>
+<p>1）producer发送消息的负载均衡：默认会轮询向Topic的所有queue发送消息，以达到消息平均落到不同的queue上；而由于queue可以落在不同的broker上，就可以发到不同broker上（当然也可以指定发送到某个特定的queue上）</p>
+<p>2）consumer订阅消息的负载均衡：假设有5个队列，两个消费者，则第一个消费者消费3个队列，第二个则消费2个队列，以达到平均消费的效果。而需要注意的是，当consumer的数量大于队列的数量的话，根据rocketMq的机制，多出来的队列不会去消费数据，因此建议consumer的数量小于或者等于queue的数量，避免不必要的浪费</p>
+<p>09.RocketMq的存储机制了解吗？</p>
+<p>RocketMq采用文件系统进行消息的存储，相对于ActiveMq采用关系型数据库进行存储的方式就更直接，性能更高了</p>
+<p>RocketMq与Kafka在写消息与发送消息上，继续沿用了Kafka的这两个方面：顺序写和零拷贝</p>
+<p>1）顺序写<br>我们知道，操作系统每次从磁盘读写数据的时候，都需要找到数据在磁盘上的地址，再进行读写。而如果是机械硬盘，寻址需要的时间往往会比较长<br>而一般来说，如果把数据存储在内存上面，少了寻址的过程，性能会好很多；但Kafka 的数据存储在磁盘上面，依然性能很好，这是为什么呢？<br>这是因为，Kafka采用的是顺序写，直接追加数据到末尾。实际上，磁盘顺序写的性能极高，在磁盘个数一定，转数一定的情况下，基本和内存速度一致<br>因此，磁盘的顺序写这一机制，极大地保证了Kafka本身的性能<br>2）零拷贝<br>比如：读取文件，再用socket发送出去这一过程</p>
+<p>buffer = File.read<br>Socket.send(buffer)</p>
+<p>传统方式实现：<br>先读取、再发送，实际会经过以下四次复制<br>1、将磁盘文件，读取到操作系统内核缓冲区Read Buffer<br>2、将内核缓冲区的数据，复制到应用程序缓冲区Application Buffer<br>3、将应用程序缓冲区Application Buffer中的数据，复制到socket网络发送缓冲区<br>4、将Socket buffer的数据，复制到网卡，由网卡进行网络传输<br><div class="img-wrap"><div class="img-bg"><img class="img" src="https://img-blog.csdnimg.cn/img_convert/fea25ada773cdf6925f373a0d3da306d.png"/></div></div><br>传统方式，读取磁盘文件并进行网络发送，经过的四次数据copy是非常繁琐的<br>重新思考传统IO方式，会注意到在读取磁盘文件后，不需要做其他处理，直接用网络发送出去的这种场景下，第二次和第三次数据的复制过程，不仅没有任何帮助，反而带来了巨大的开销。那么这里使用了零拷贝，也就是说，直接由内核缓冲区Read Buffer将数据复制到网卡，省去第二步和第三步的复制。<br>图片<br>那么采用零拷贝的方式发送消息，必定会大大减少读取的开销，使得RocketMq读取消息的性能有一个质的提升</p>
+<p>此外，还需要再提一点，零拷贝技术采用了MappedByteBuffer内存映射技术，采用这种技术有一些限制，其中有一条就是传输的文件不能超过2G，这也就是为什么RocketMq的存储消息的文件CommitLog的大小规定为1G的原因</p>
+<p>小结：RocketMq采用文件系统存储消息，并采用顺序写写入消息，使用零拷贝发送消息，极大得保证了RocketMq的性能</p>
+<p>10.RocketMq的存储结构是怎样的？<br><div class="img-wrap"><div class="img-bg"><img class="img" src="https://img-blog.csdnimg.cn/img_convert/0e4ccbaa3ab74575592dc7d0df30dccb.png"/></div></div><br>如图所示，消息生产者发送消息到broker，都是会按照顺序存储在CommitLog文件中，每个commitLog文件的大小为1G</p>
+<p>CommitLog-存储所有的消息元数据，包括Topic、QueueId以及message</p>
+<p>CosumerQueue-消费逻辑队列：存储消息在CommitLog的offset</p>
+<p>IndexFile-索引文件：存储消息的key和时间戳等信息，使得RocketMq可以采用key和时间区间来查询消息</p>
+<p>也就是说，rocketMq将消息均存储在CommitLog中，并分别提供了CosumerQueue和IndexFile两个索引，来快速检索消息</p>
+<p>11.RocketMq如何进行消息的去重？</p>
+<p>我们知道，只要通过网络交换数据，就无法避免因为网络不可靠而造成的消息重复这个问题。比如说RocketMq中，当consumer消费完消息后，因为网络问题未及时发送ack到broker,broker就不会删掉当前已经消费过的消息，那么，该消息将会被重复投递给消费者去消费</p>
+<p>虽然rocketMq保证了同一个消费组只能消费一次，但会被不同的消费组重复消费，因此这种重复消费的情况不可避免</p>
+<p>RocketMq本身并不保证消息不重复，这样肯定会因为每次的判断，导致性能打折扣，所以它将去重操作直接放在了消费端：</p>
+<p>1）消费端处理消息的业务逻辑保持幂等性。那么不管来多少条重复消息，可以实现处理的结果都一样</p>
+<p>2）还可以建立一张日志表，使用消息主键作为表的主键，在处理消息前，先insert表，再做消息处理。这样可以避免消息重复消费</p>
+<p>12.RocketMq性能比较高的原因？</p>
+<p>就是前面在文件存储机制中所提到的：RocketMq采用文件系统存储消息，采用顺序写的方式写入消息，使用零拷贝发送消息，这三者的结合极大地保证了RocketMq的性能</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">李明轩</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2022/10/16/%F0%9F%8E%A0Java%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9%E9%9B%86%E5%90%88/">http://example.com/2022/10/16/%F0%9F%8E%A0Java%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9%E9%9B%86%E5%90%88/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">LMXA</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%F0%9F%8D%87Java/">🍇Java</a></div><div class="post_share"><div class="social-share" data-image="https://pic3.zhimg.com/v2-8a72afce30dc87600d65d9e10fecfd3a_r.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/10/17/%F0%9F%8D%B9TypeScript%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"><img class="prev-cover" src="https://pic.dmjnb.com/pic/1bc703de2be38fa1f15300627e1bf0fa?imageMogr2/thumbnail/x380/quality/90!" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">🦀&quot;TypeScript知识点总结&quot;</div></div></a></div><div class="next-post pull-right"><a href="/2022/09/29/%F0%9F%A5%AA%E3%80%90Redux%E3%80%91%E7%AE%80%E8%A7%A3%E5%8F%8A%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/"><img class="next-cover" src="https://pic3.zhimg.com/v2-0963391e035d6fdcf11f90978e85e07f_r.jpg?source=172ae18b" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">🐦【Redux】简解及工作流程分析</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://avatars.githubusercontent.com/u/46306801?s=400&amp;u=35f48272ca9e1e5279007be09883d870965a3373&amp;v=4" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">李明轩</div><div class="author-info__description">李明轩的博客呀</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Aslan-mx"><i class="fab fa-github"></i><span>引导站</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://im.qq.com/index" target="_blank" title="953081241"><i class="fab fa-qq"></i></a><a class="social-icon" href="https://weixin.qq.com/" target="_blank" title="WeiXin"><i class="fab fa-weixin"></i></a><a class="social-icon" href="https://github.com/Aslan-mx" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://weibo.com/" target="_blank" title="WeiBo"><i class="fab fa-weibo"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这是我的博客站呀 分享一些有的没的···</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Spring%E6%A1%86%E6%9E%B6%E7%9A%84%E4%B8%83%E5%A4%A7%E6%A8%A1%E5%9D%97%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">Spring框架的七大模块？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Bean%E5%AE%9A%E4%B9%895%E7%A7%8D%E4%BD%9C%E7%94%A8%E5%9F%9F%EF%BC%9F"><span class="toc-number">2.</span> <span class="toc-text">Bean定义5种作用域？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#spring-ioc%E5%88%9D%E5%A7%8B%E5%8C%96%E6%B5%81%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">spring ioc初始化流程?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BeanDefinition%E5%8A%A0%E8%BD%BD%E6%B5%81%E7%A8%8B"><span class="toc-number">4.</span> <span class="toc-text">BeanDefinition加载流程?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DI%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E6%B5%81%E7%A8%8B-%EF%BC%88%E5%AE%9E%E4%BE%8B%E5%8C%96%EF%BC%8C%E5%A4%84%E7%90%86Bean%E4%B9%8B%E9%97%B4%E7%9A%84%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">DI依赖注入流程? （实例化，处理Bean之间的依赖关系）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86bean%E4%B9%8B%E9%97%B4%E7%9A%84%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB"><span class="toc-number">6.</span> <span class="toc-text">依赖注入怎么处理bean之间的依赖关系?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">7.</span> <span class="toc-text">Bean的生命周期?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spring%E7%9A%84IOC%E6%B3%A8%E5%85%A5%E6%96%B9%E5%BC%8F%EF%BC%9F"><span class="toc-number">8.</span> <span class="toc-text">Spring的IOC注入方式？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%8E%E4%B9%88%E6%A3%80%E6%B5%8B%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E5%BE%AA%E7%8E%AF%E4%BE%9D%E8%B5%96"><span class="toc-number">9.</span> <span class="toc-text">怎么检测是否存在循环依赖?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spring%E5%A6%82%E8%A7%A3%E5%86%B3Bean%E5%BE%AA%E7%8E%AF%E4%BE%9D%E8%B5%96%E9%97%AE%E9%A2%98"><span class="toc-number">10.</span> <span class="toc-text">Spring如解决Bean循环依赖问题?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spring-%E4%B8%AD%E4%BD%BF%E7%94%A8%E4%BA%86%E5%93%AA%E4%BA%9B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%9F"><span class="toc-number">11.</span> <span class="toc-text">Spring 中使用了哪些设计模式？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AOP-%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%EF%BC%9F"><span class="toc-number">12.</span> <span class="toc-text">AOP 核心概念？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E9%87%8A%E4%B8%80%E4%B8%8BAOP%EF%BC%9F"><span class="toc-number">13.</span> <span class="toc-text">解释一下AOP？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AOP%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%EF%BC%9F"><span class="toc-number">14.</span> <span class="toc-text">AOP源码分析？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AOP%E4%BD%BF%E7%94%A8%E5%93%AA%E7%A7%8D%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86"><span class="toc-number">15.</span> <span class="toc-text">AOP使用哪种动态代理?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jdk%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%EF%BC%9F"><span class="toc-number">16.</span> <span class="toc-text">jdk动态代理？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E4%B8%8E%E9%9D%99%E6%80%81%E4%BB%A3%E7%90%86%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">17.</span> <span class="toc-text">动态代理与静态代理区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CGLIB%E4%B8%8EJDK%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">18.</span> <span class="toc-text">CGLIB与JDK动态代理区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#springMVC%E6%B5%81%E7%A8%8B%EF%BC%9A"><span class="toc-number">19.</span> <span class="toc-text">springMVC流程：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mybatis%E5%8E%9F%E7%90%86%EF%BC%9F"><span class="toc-number">20.</span> <span class="toc-text">Mybatis原理？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mybatis%E4%B8%80%E7%BA%A7%E7%BC%93%E5%AD%98%E4%B8%8E%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98%EF%BC%9F"><span class="toc-number">21.</span> <span class="toc-text">Mybatis一级缓存与二级缓存？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Zookeeper-eureka-springcloud"><span class="toc-number">21.1.</span> <span class="toc-text">Zookeeper+eureka+springcloud</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SpringBoot%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B%EF%BC%9F"><span class="toc-number">22.</span> <span class="toc-text">SpringBoot启动流程？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spring-Boot-%E7%9A%84%E6%A0%B8%E5%BF%83%E6%B3%A8%E8%A7%A3%EF%BC%9F"><span class="toc-number">23.</span> <span class="toc-text">Spring Boot 的核心注解？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SpringBoot%E5%B8%B8%E7%94%A8starter%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">24.</span> <span class="toc-text">SpringBoot常用starter都有哪些？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spring-Boot-%E7%9A%84%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%9F"><span class="toc-number">25.</span> <span class="toc-text">Spring Boot 的核心配置文件？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Zuul%E4%B8%8EGateway%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">26.</span> <span class="toc-text">Zuul与Gateway区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Zuul%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%EF%BC%9F"><span class="toc-number">27.</span> <span class="toc-text">Zuul原理分析？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Gateway%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%EF%BC%9F"><span class="toc-number">28.</span> <span class="toc-text">Gateway原理分析？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Zookeeper-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%EF%BC%88%E5%BE%85%E6%9F%A5%EF%BC%89%EF%BC%9F"><span class="toc-number">29.</span> <span class="toc-text">Zookeeper 工作原理（待查）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#zoo%E4%B8%8Eeur%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">30.</span> <span class="toc-text">zoo与eur区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hystrix%E5%8E%9F%E7%90%86%EF%BC%88%E5%BE%85%E6%9F%A5%EF%BC%89%EF%BC%9F"><span class="toc-number">31.</span> <span class="toc-text">Hystrix原理（待查）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81hystrix%E7%86%94%E6%96%AD%EF%BC%9F"><span class="toc-number">32.</span> <span class="toc-text">为什么需要hystrix熔断？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%AE%E6%9C%8D%E5%8A%A1%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F"><span class="toc-number">33.</span> <span class="toc-text">微服务优缺点？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#eureka%E8%87%AA%E6%88%91%E4%BF%9D%E6%8A%A4%E6%9C%BA%E5%88%B6%EF%BC%9F"><span class="toc-number">34.</span> <span class="toc-text">eureka自我保护机制？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MQ%E5%AF%B9%E6%AF%94%EF%BC%9F"><span class="toc-number">35.</span> <span class="toc-text">MQ对比？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JAVA%E5%9F%BA%E7%A1%80"><span class="toc-number">35.1.</span> <span class="toc-text">JAVA基础</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AVL%E6%A0%91%E4%B8%8E%E7%BA%A2%E9%BB%91%E6%A0%91%EF%BC%88R-B%E6%A0%91%EF%BC%89%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB"><span class="toc-number">36.</span> <span class="toc-text">AVL树与红黑树（R-B树）的区别与联系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E5%95%A5redis-zset%E4%BD%BF%E7%94%A8%E8%B7%B3%E8%B7%83%E9%93%BE%E8%A1%A8%E8%80%8C%E4%B8%8D%E7%94%A8%E7%BA%A2%E9%BB%91%E6%A0%91%E5%AE%9E%E7%8E%B0%EF%BC%9F"><span class="toc-number">37.</span> <span class="toc-text">为啥redis zset使用跳跃链表而不用红黑树实现？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JAVA%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%EF%BC%9F"><span class="toc-number">38.</span> <span class="toc-text">JAVA基本数据类型？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IO%E4%B8%8ENIO%EF%BC%9F"><span class="toc-number">39.</span> <span class="toc-text">IO与NIO？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%E7%B1%BB%EF%BC%9F"><span class="toc-number">40.</span> <span class="toc-text">异常类？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LVS%EF%BC%884%E5%B1%82%E4%B8%8E7%E5%B1%82%EF%BC%89%E5%8E%9F%E7%90%86%EF%BC%9F"><span class="toc-number">41.</span> <span class="toc-text">LVS（4层与7层）原理？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#StringBuilder%E4%B8%8EStringBuffer%EF%BC%9F"><span class="toc-number">42.</span> <span class="toc-text">StringBuilder与StringBuffer？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#interrupt-isInterrupted-interrupt%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">43.</span> <span class="toc-text">interrupt&#x2F;isInterrupted&#x2F;interrupt区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sleep%E4%B8%8Ewait%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">44.</span> <span class="toc-text">sleep与wait区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CountDownLatch%E5%92%8CCyclicBarrier%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">45.</span> <span class="toc-text">CountDownLatch和CyclicBarrier区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%88%E6%AD%A2%E7%BA%BF%E7%A8%8B%E6%96%B9%E6%B3%95%EF%BC%9F"><span class="toc-number">46.</span> <span class="toc-text">终止线程方法？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ThreadLocal%E7%9A%84%E5%8E%9F%E7%90%86%E5%92%8C%E5%BA%94%E7%94%A8%EF%BC%9F"><span class="toc-number">47.</span> <span class="toc-text">ThreadLocal的原理和应用？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#threadLocal-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E9%97%AE%E9%A2%98%EF%BC%9F"><span class="toc-number">48.</span> <span class="toc-text">threadLocal 内存泄漏问题？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E6%88%91%E4%BB%AC%E8%A6%81%E8%8E%B7%E5%8F%96%E7%88%B6%E7%BA%BF%E7%A8%8B%E7%9A%84ThreadLocal%E5%80%BC%E5%91%A2%EF%BC%9F"><span class="toc-number">49.</span> <span class="toc-text">如果我们要获取父线程的ThreadLocal值呢？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81%EF%BC%9F"><span class="toc-number">50.</span> <span class="toc-text">线程状态？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E4%B8%AD%E7%9A%84%E7%BA%BF%E7%A8%8B%E6%B1%A0%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84%EF%BC%9F"><span class="toc-number">51.</span> <span class="toc-text">Java中的线程池是如何实现的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%AD%E7%9A%84%E4%B8%80%E4%B8%AA%E7%BA%BF%E7%A8%8B%E8%BF%90%E8%A1%8C%E6%97%B6%E5%87%BA%E7%8E%B0%E4%BA%86%E5%BC%82%E5%B8%B8%EF%BC%8C%E4%BC%9A%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">52.</span> <span class="toc-text">如果线程池中的一个线程运行时出现了异常，会发生什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%8E%9F%E7%90%86%EF%BC%9F"><span class="toc-number">53.</span> <span class="toc-text">线程池原理？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%92%E7%BB%9D%E7%AD%96%E7%95%A5%EF%BC%9F"><span class="toc-number">54.</span> <span class="toc-text">拒绝策略？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#newFixedThreadPool-%EF%BC%88%E5%9B%BA%E5%AE%9A%E6%95%B0%E7%9B%AE%E7%BA%BF%E7%A8%8B%E7%9A%84%E7%BA%BF%E7%A8%8B%E6%B1%A0%EF%BC%89%EF%BC%9F"><span class="toc-number">55.</span> <span class="toc-text">newFixedThreadPool （固定数目线程的线程池）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#newCachedThreadPool%EF%BC%88%E5%8F%AF%E7%BC%93%E5%AD%98%E7%BA%BF%E7%A8%8B%E7%9A%84%E7%BA%BF%E7%A8%8B%E6%B1%A0%EF%BC%89%EF%BC%9F"><span class="toc-number">56.</span> <span class="toc-text">newCachedThreadPool（可缓存线程的线程池）？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#java%E9%94%81%E7%9B%B8%E5%85%B3"><span class="toc-number">56.1.</span> <span class="toc-text">java锁相关</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#synchronized%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="toc-number">57.</span> <span class="toc-text">synchronized实现原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ReentrantLock-%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8F%AF%E9%87%8D%E5%85%A5%E6%80%A7%E7%9A%84-%EF%BC%9F"><span class="toc-number">58.</span> <span class="toc-text">ReentrantLock 是如何实现可重入性的 ？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ReentrantLock%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E6%AD%BB%E9%94%81"><span class="toc-number">59.</span> <span class="toc-text">ReentrantLock如何避免死锁?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tryLock-%E5%92%8C-lock-%E5%92%8C-lockInterruptibly-%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">60.</span> <span class="toc-text">tryLock 和 lock 和 lockInterruptibly 的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CountDownLatch%E5%92%8CCyclicBarrier%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">61.</span> <span class="toc-text">CountDownLatch和CyclicBarrier的区别是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#synchronized%E4%B8%8EReentrantLock%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">62.</span> <span class="toc-text">synchronized与ReentrantLock区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E4%BF%A1%E5%8F%B7%E9%87%8FSemaphore%EF%BC%9F"><span class="toc-number">63.</span> <span class="toc-text">什么是信号量Semaphore？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Semaphore-%E5%BA%94%E7%94%A8%EF%BC%9F"><span class="toc-number">64.</span> <span class="toc-text">Semaphore 应用？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ReentrantLock%E5%8E%9F%E7%90%86%EF%BC%88CAS-AQS%EF%BC%89"><span class="toc-number">64.1.</span> <span class="toc-text">ReentrantLock原理（CAS+AQS）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CAS-AQS%E9%98%9F%E5%88%97%E6%9D%A5%E5%AE%9E%E7%8E%B0%EF%BC%9F"><span class="toc-number">65.</span> <span class="toc-text">CAS+AQS队列来实现？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AQS-%E5%8E%9F%E7%90%86%EF%BC%9F"><span class="toc-number">66.</span> <span class="toc-text">AQS 原理？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AQS%E4%B8%A4%E7%A7%8D%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB%E6%96%B9%E5%BC%8F%EF%BC%9F"><span class="toc-number">67.</span> <span class="toc-text">AQS两种资源共享方式？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CAS%E5%8E%9F%E7%90%86%EF%BC%9F"><span class="toc-number">68.</span> <span class="toc-text">CAS原理？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AC%E5%B9%B3%E9%94%81%E4%B8%8E%E5%88%86%E5%85%AC%E5%B9%B3%E9%94%81%EF%BC%9F"><span class="toc-number">69.</span> <span class="toc-text">公平锁与分公平锁？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E7%A7%8D%E9%94%81%E7%8A%B6%E6%80%81%EF%BC%9F"><span class="toc-number">70.</span> <span class="toc-text">4种锁状态？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%94%81%E4%B8%8E%E5%81%8F%E5%90%91%E9%94%81%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">71.</span> <span class="toc-text">轻量级锁与偏向锁的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E6%97%8B%E9%94%81%E5%8D%87%E7%BA%A7%E5%88%B0%E9%87%8D%E9%87%8F%E7%BA%A7%E9%94%81%E6%9D%A1%E4%BB%B6%EF%BC%9F"><span class="toc-number">72.</span> <span class="toc-text">自旋锁升级到重量级锁条件？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%BB%E5%86%99%E9%94%81%E4%BA%86%E8%A7%A3%E5%98%9B%EF%BC%8C%E7%9F%A5%E9%81%93%E8%AF%BB%E5%86%99%E9%94%81%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E5%98%9B%EF%BC%9F"><span class="toc-number">73.</span> <span class="toc-text">读写锁了解嘛，知道读写锁的实现方式嘛？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#zookeeper%E5%AE%9E%E7%8E%B0%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%EF%BC%9F"><span class="toc-number">74.</span> <span class="toc-text">zookeeper实现分布式锁？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#volatile%E5%8F%98%E9%87%8F%EF%BC%9F"><span class="toc-number">75.</span> <span class="toc-text">volatile变量？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#volatile%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E7%BA%BF%E7%A8%8B%E9%97%B4%E5%8F%AF%E8%A7%81%E5%92%8C%E9%81%BF%E5%85%8D%E6%8C%87%E4%BB%A4%E9%87%8D%E6%8E%92%EF%BC%9F"><span class="toc-number">76.</span> <span class="toc-text">volatile如何保证线程间可见和避免指令重排？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JVM"><span class="toc-number">76.1.</span> <span class="toc-text">JVM</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jre%E3%80%81jdk%E3%80%81jvm%E7%9A%84%E5%85%B3%E7%B3%BB%EF%BC%9A"><span class="toc-number">77.</span> <span class="toc-text">jre、jdk、jvm的关系：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JVM%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B%EF%BC%9F"><span class="toc-number">78.</span> <span class="toc-text">JVM内存模型？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A14%E7%A7%8D%E5%BC%95%E7%94%A8%EF%BC%9F"><span class="toc-number">79.</span> <span class="toc-text">对象4种引用？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%9E%84%E6%88%90%EF%BC%9F"><span class="toc-number">80.</span> <span class="toc-text">对象的构成？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E5%AD%98%E6%B4%BB%EF%BC%9F"><span class="toc-number">81.</span> <span class="toc-text">如果判断一个对象是否存活？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#java%E6%98%AF%E6%A0%B9%E6%8D%AE%E4%BB%80%E4%B9%88%E6%9D%A5%E6%89%A7%E8%A1%8C%E5%8F%AF%E8%BE%BE%E6%80%A7%E5%88%86%E6%9E%90%E7%9A%84%EF%BC%9F"><span class="toc-number">82.</span> <span class="toc-text">java是根据什么来执行可达性分析的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JVM-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E9%A1%BA%E5%BA%8F%EF%BC%9F"><span class="toc-number">83.</span> <span class="toc-text">JVM 类加载顺序？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JVM%E4%B8%89%E7%A7%8D%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8%EF%BC%9F"><span class="toc-number">84.</span> <span class="toc-text">JVM三种类加载器？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6%EF%BC%9F"><span class="toc-number">85.</span> <span class="toc-text">双亲委派机制？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%A8%A1%E5%9E%8B%E6%9C%89%E5%95%A5%E4%BD%9C%E7%94%A8%EF%BC%9F"><span class="toc-number">86.</span> <span class="toc-text">双亲委派模型有啥作用？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%89%93%E7%A0%B4%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%A8%A1%E5%9E%8B%EF%BC%9F"><span class="toc-number">87.</span> <span class="toc-text">如何打破双亲委派模型？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6%E7%BC%BA%E9%99%B7"><span class="toc-number">88.</span> <span class="toc-text">双亲委派机制缺陷?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%BC%E8%87%B4fullGC%E7%9A%84%E5%8E%9F%E5%9B%A0%EF%BC%9F"><span class="toc-number">89.</span> <span class="toc-text">导致fullGC的原因？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A0%86%E5%A4%96%E5%86%85%E5%AD%98%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F"><span class="toc-number">90.</span> <span class="toc-text">堆外内存的优缺点？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JVM%E4%B8%83%E7%A7%8D%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8%EF%BC%9F"><span class="toc-number">91.</span> <span class="toc-text">JVM七种垃圾收集器？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#arthas-%E7%9B%91%E6%8E%A7%E5%B7%A5%E5%85%B7%EF%BC%9F"><span class="toc-number">92.</span> <span class="toc-text">arthas 监控工具？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E4%BD%8D%E9%A2%91%E7%B9%81full-GC%EF%BC%8C%E5%A0%86%E5%86%85%E5%AD%98%E6%BB%A1-oom%EF%BC%9F"><span class="toc-number">93.</span> <span class="toc-text">定位频繁full GC，堆内存满 oom？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#G1%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%99%A8%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89%EF%BC%9F"><span class="toc-number">94.</span> <span class="toc-text">G1垃圾回收器（重点）？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%8F%91%E7%94%9FFull-GC%E5%91%A2%EF%BC%9F"><span class="toc-number">95.</span> <span class="toc-text">什么时候发生Full GC呢？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%82%A3%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E5%9C%A8%E5%BC%95%E7%94%A8%E8%B5%8B%E5%80%BC%E8%AF%AD%E5%8F%A5%E5%A4%84%E7%9B%B4%E6%8E%A5%E6%9B%B4%E6%96%B0RS%E5%91%A2%EF%BC%9F"><span class="toc-number">96.</span> <span class="toc-text">那为什么不在引用赋值语句处直接更新RS呢？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E6%9C%AC%E5%9C%B0%E5%88%86%E9%85%8D%E7%BC%93%E5%86%B2%E5%8C%BA%EF%BC%88TLAB%EF%BC%9AThread-Local-Allocation-Buffer%EF%BC%89"><span class="toc-number">97.</span> <span class="toc-text">线程本地分配缓冲区（TLAB：Thread Local Allocation Buffer）?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PLAB%EF%BC%9APromotion-Thread-Local-Allocation-Buffer%EF%BC%9F"><span class="toc-number">98.</span> <span class="toc-text">PLAB：Promotion Thread Local Allocation Buffer？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OOM%E9%97%AE%E9%A2%98%E5%AE%9A%E4%BD%8D%E6%96%B9%E6%B3%95%EF%BC%9F"><span class="toc-number">99.</span> <span class="toc-text">OOM问题定位方法？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CPU%E5%8D%A0%E7%94%A8%E8%BF%87%E9%AB%98%EF%BC%9F"><span class="toc-number">100.</span> <span class="toc-text">CPU占用过高？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DUBBO"><span class="toc-number">100.1.</span> <span class="toc-text">DUBBO</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#dubbo%E6%B5%81%E7%A8%8B%EF%BC%9F"><span class="toc-number">101.</span> <span class="toc-text">dubbo流程？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Dubbo%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8%E4%BB%80%E4%B9%88%E5%BA%8F%E5%88%97%E5%8C%96%E6%A1%86%E6%9E%B6%EF%BC%8C%E8%BF%98%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">102.</span> <span class="toc-text">Dubbo推荐使用什么序列化框架，还有哪些？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Dubbo%E9%BB%98%E8%AE%A4%E4%BD%BF%E7%94%A8%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%E9%80%9A%E4%BF%A1%E6%A1%86%E6%9E%B6%EF%BC%8C%E8%BF%98%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">103.</span> <span class="toc-text">Dubbo默认使用的是什么通信框架，还有哪些？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Dubbo%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%AD%96%E7%95%A5%EF%BC%8C%E9%BB%98%E8%AE%A4%E6%98%AF%E5%93%AA%E7%A7%8D"><span class="toc-number">104.</span> <span class="toc-text">Dubbo有哪几种负载均衡策略，默认是哪种?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RPC%E6%B5%81%E7%A8%8B%EF%BC%9F"><span class="toc-number">105.</span> <span class="toc-text">RPC流程？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E6%9A%B4%E9%9C%B2%EF%BC%9F"><span class="toc-number">106.</span> <span class="toc-text">服务暴露？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%BC%95%E7%94%A8%EF%BC%9F"><span class="toc-number">107.</span> <span class="toc-text">服务引用？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%EF%BC%9F"><span class="toc-number">108.</span> <span class="toc-text">服务调用？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Redis"><span class="toc-number">108.1.</span> <span class="toc-text">Redis</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#redis%E5%8D%95%E7%BA%BF%E7%A8%8B%E4%B8%BA%E4%BB%80%E4%B9%88%E6%89%A7%E8%A1%8C%E9%80%9F%E5%BA%A6%E8%BF%99%E4%B9%88%E5%BF%AB"><span class="toc-number">109.</span> <span class="toc-text">redis单线程为什么执行速度这么快?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Redis%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0"><span class="toc-number">110.</span> <span class="toc-text">Redis数据结构底层实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#redis%E4%BA%8B%E5%8A%A1"><span class="toc-number">111.</span> <span class="toc-text">redis事务?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#redis%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%AE%9E%E7%8E%B0%E7%89%B9%E5%BE%81"><span class="toc-number">112.</span> <span class="toc-text">redis事务的实现特征?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Redis%E7%9A%84%E5%90%8C%E6%AD%A5%E6%9C%BA%E5%88%B6%EF%BC%9F"><span class="toc-number">113.</span> <span class="toc-text">Redis的同步机制？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#redis%E9%9B%86%E7%BE%A4%E6%A8%A1%E5%BC%8F%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96"><span class="toc-number">114.</span> <span class="toc-text">redis集群模式性能优化?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Redis%E9%9B%86%E7%BE%A4%E6%96%B9%E6%A1%88"><span class="toc-number">115.</span> <span class="toc-text">Redis集群方案?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4%E4%B8%8D%E5%8F%AF%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-number">116.</span> <span class="toc-text">集群不可用场景?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#redis-%E6%9C%80%E9%80%82%E5%90%88%E7%9A%84%E5%9C%BA%E6%99%AF"><span class="toc-number">117.</span> <span class="toc-text">redis 最适合的场景?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%93%E5%AD%98%E6%B7%98%E6%B1%B0%E7%AD%96%E7%95%A5"><span class="toc-number">118.</span> <span class="toc-text">缓存淘汰策略?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#redis%E8%BF%87%E6%9C%9Fkey%E5%88%A0%E9%99%A4%E7%AD%96%E7%95%A5"><span class="toc-number">119.</span> <span class="toc-text">redis过期key删除策略?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Redis%E5%86%85%E5%AD%98%E6%B7%98%E6%B1%B0%E7%AD%96%E7%95%A5"><span class="toc-number">120.</span> <span class="toc-text">Redis内存淘汰策略?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9%E4%BB%A5%E5%8F%8A%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95"><span class="toc-number">121.</span> <span class="toc-text">缓存雪崩以及处理办法?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%93%E5%AD%98%E5%87%BB%E7%A9%BF%E5%8E%9F%E5%9B%A0%E4%BB%A5%E5%8F%8A%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95"><span class="toc-number">122.</span> <span class="toc-text">缓存击穿原因以及处理办法?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#redis%E9%98%BB%E5%A1%9E%E5%8E%9F%E5%9B%A0"><span class="toc-number">123.</span> <span class="toc-text">redis阻塞原因?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hot-key%E5%87%BA%E7%8E%B0%E9%80%A0%E6%88%90%E9%9B%86%E7%BE%A4%E8%AE%BF%E9%97%AE%E9%87%8F%E5%80%BE%E6%96%9C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95"><span class="toc-number">124.</span> <span class="toc-text">hot key出现造成集群访问量倾斜解决办法?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Redis%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81"><span class="toc-number">125.</span> <span class="toc-text">Redis分布式锁?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Redis%E5%A6%82%E4%BD%95%E5%81%9A%E6%8C%81%E4%B9%85%E5%8C%96"><span class="toc-number">126.</span> <span class="toc-text">Redis如何做持久化?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E6%96%B9%E8%BF%BD%E9%97%AE%E9%82%A3%E5%A6%82%E6%9E%9C%E7%AA%81%E7%84%B6%E6%9C%BA%E5%99%A8%E6%8E%89%E7%94%B5%E4%BC%9A%E6%80%8E%E6%A0%B7%EF%BC%9F"><span class="toc-number">127.</span> <span class="toc-text">对方追问那如果突然机器掉电会怎样？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#redis%E9%94%81%E7%BB%AD%E7%A7%9F%E9%97%AE%E9%A2%98"><span class="toc-number">128.</span> <span class="toc-text">redis锁续租问题?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bgsave%E7%9A%84%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">129.</span> <span class="toc-text">bgsave的原理是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RDB%E4%B8%8EAOF%E5%8C%BA%E5%88%AB"><span class="toc-number">130.</span> <span class="toc-text">RDB与AOF区别?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E4%BA%BF%E4%B8%AAkey%EF%BC%8C%E5%85%B6%E4%B8%AD%E6%9C%8910w%E4%B8%AAkey%E6%98%AF%E4%BB%A5%E6%9F%90%E4%B8%AA%E5%9B%BA%E5%AE%9A%E7%9A%84%E5%B7%B2%E7%9F%A5%E7%9A%84%E5%89%8D%E7%BC%80%E5%BC%80%E5%A4%B4%E7%9A%84%EF%BC%8C%E5%A6%82%E6%9E%9C%E5%B0%86%E5%AE%83%E4%BB%AC%E5%85%A8%E9%83%A8%E6%89%BE%E5%87%BA%E6%9D%A5%EF%BC%9F"><span class="toc-number">131.</span> <span class="toc-text">1亿个key，其中有10w个key是以某个固定的已知的前缀开头的，如果将它们全部找出来？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Redis%E5%81%9A%E5%BC%82%E6%AD%A5%E9%98%9F%E5%88%97"><span class="toc-number">132.</span> <span class="toc-text">如何使用Redis做异步队列?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%AF%E4%B8%8D%E5%8F%AF%E4%BB%A5%E4%B8%8D%E7%94%A8sleep%E5%91%A2%EF%BC%9F"><span class="toc-number">133.</span> <span class="toc-text">可不可以不用sleep呢？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%BD%E4%B8%8D%E8%83%BD%E7%94%9F%E4%BA%A7%E4%B8%80%E6%AC%A1%E6%B6%88%E8%B4%B9%E5%A4%9A%E6%AC%A1%E5%91%A2%EF%BC%9F"><span class="toc-number">134.</span> <span class="toc-text">能不能生产一次消费多次呢？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pub-sub%E6%9C%89%E4%BB%80%E4%B9%88%E7%BC%BA%E7%82%B9%EF%BC%9F"><span class="toc-number">135.</span> <span class="toc-text">pub&#x2F;sub有什么缺点？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#redis%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97%EF%BC%9F"><span class="toc-number">136.</span> <span class="toc-text">redis如何实现延时队列？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E5%95%A5redis-zset%E4%BD%BF%E7%94%A8%E8%B7%B3%E8%B7%83%E9%93%BE%E8%A1%A8%E8%80%8C%E4%B8%8D%E7%94%A8%E7%BA%A2%E9%BB%91%E6%A0%91%E5%AE%9E%E7%8E%B0"><span class="toc-number">137.</span> <span class="toc-text">为啥redis zset使用跳跃链表而不用红黑树实现?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#MYSQL"><span class="toc-number">137.1.</span> <span class="toc-text">MYSQL</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%89%E8%8C%83%E5%BC%8F"><span class="toc-number">138.</span> <span class="toc-text">数据库三范式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6%E5%8E%9F%E7%90%86"><span class="toc-number">139.</span> <span class="toc-text">数据库主从复制原理?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E5%88%B6%E6%96%B9%E5%BC%8F%E5%88%86%E7%B1%BB"><span class="toc-number">140.</span> <span class="toc-text">复制方式分类?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E"><span class="toc-number">141.</span> <span class="toc-text">存储引擎?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%81%9A%E9%9B%86%E7%B4%A2%E5%BC%95"><span class="toc-number">142.</span> <span class="toc-text">聚集索引?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%9E%E8%81%9A%E9%9B%86%E7%B4%A2%E5%BC%95"><span class="toc-number">143.</span> <span class="toc-text">非聚集索引?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E8%81%9A%E9%9B%86%E7%B4%A2%E5%BC%95%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9F%A5%E8%AF%A2%E9%80%9F%E5%BA%A6%E4%BC%9A%E5%8F%98%E5%BF%AB%EF%BC%9F"><span class="toc-number">144.</span> <span class="toc-text">使用聚集索引为什么查询速度会变快？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BB%BA%E7%AB%8B%E8%81%9A%E9%9B%86%E7%B4%A2%E5%BC%95%E6%9C%89%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E5%9C%B0%E6%96%B9%E5%90%97%EF%BC%9F"><span class="toc-number">145.</span> <span class="toc-text">建立聚集索引有什么需要注意的地方吗？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#innoDB%E5%92%8CMyIsam%E5%8C%BA%E5%88%AB"><span class="toc-number">146.</span> <span class="toc-text">innoDB和MyIsam区别?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#InnoDB-%E8%A1%A8%E5%AF%B9%E4%B8%BB%E9%94%AE%E7%94%9F%E6%88%90%E7%AD%96%E7%95%A5%E6%98%AF%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%EF%BC%9F"><span class="toc-number">147.</span> <span class="toc-text">InnoDB 表对主键生成策略是什么样的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%9E%E8%81%9A%E9%9B%86%E7%B4%A2%E5%BC%95%E6%9C%80%E5%A4%9A%E5%8F%AF%E4%BB%A5%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AA%EF%BC%9F"><span class="toc-number">148.</span> <span class="toc-text">非聚集索引最多可以有多少个？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BTree-%E4%B8%8E-Hash-%E7%B4%A2%E5%BC%95%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">149.</span> <span class="toc-text">BTree 与 Hash 索引有什么区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B4%A2%E5%BC%95%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-number">150.</span> <span class="toc-text">数据库索引优缺点?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E7%9A%84%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0%E6%98%AFB-%E6%A0%91%EF%BC%8C%E4%B8%BA%E4%BD%95%E4%B8%8D%E9%87%87%E7%94%A8%E7%BA%A2%E9%BB%91%E6%A0%91%EF%BC%8CB%E6%A0%91"><span class="toc-number">151.</span> <span class="toc-text">索引的底层实现是B+树，为何不采用红黑树，B树?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88%E6%9D%A1%E4%BB%B6"><span class="toc-number">152.</span> <span class="toc-text">索引失效条件?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%8B%E5%8A%A1%E7%89%B9%E7%82%B9"><span class="toc-number">153.</span> <span class="toc-text">数据库事务特点?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E7%A7%8D%E4%BA%8B%E5%8A%A1%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA"><span class="toc-number">154.</span> <span class="toc-text">七种事务传播行为?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%A7%E7%94%9F%E6%AD%BB%E9%94%81%E7%9A%84%E5%9B%9B%E4%B8%AA%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="toc-number">155.</span> <span class="toc-text">产生死锁的四个必要条件?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-number">156.</span> <span class="toc-text">解决方法：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Transaction"><span class="toc-number">157.</span> <span class="toc-text">@Transaction</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#MVCC"><span class="toc-number">157.1.</span> <span class="toc-text">MVCC</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MVCC%E4%BD%BF%E5%BE%97%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AF%BB%E4%B8%8D%E4%BC%9A%E5%AF%B9%E6%95%B0%E6%8D%AE%E5%8A%A0%E9%94%81%EF%BC%8C%E6%99%AE%E9%80%9A%E7%9A%84SELECT%E8%AF%B7%E6%B1%82%E4%B8%8D%E4%BC%9A%E5%8A%A0%E9%94%81%EF%BC%8C%E6%8F%90%E9%AB%98%E4%BA%86%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B9%B6%E5%8F%91%E5%A4%84%E7%90%86%E8%83%BD%E5%8A%9B%EF%BC%9F"><span class="toc-number">158.</span> <span class="toc-text">MVCC使得数据库读不会对数据加锁，普通的SELECT请求不会加锁，提高了数据库的并发处理能力？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1"><span class="toc-number">158.1.</span> <span class="toc-text">分布式事务</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#XA%E6%96%B9%E6%A1%88"><span class="toc-number">159.</span> <span class="toc-text">XA方案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCC%E6%96%B9%E6%A1%88%EF%BC%9F"><span class="toc-number">160.</span> <span class="toc-text">TCC方案？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%AF%E9%9D%A0%E6%B6%88%E6%81%AF%E6%9C%80%E7%BB%88%E4%B8%80%E8%87%B4%E6%80%A7%E6%96%B9%E6%A1%88"><span class="toc-number">161.</span> <span class="toc-text">可靠消息最终一致性方案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%A4%A7%E5%8A%AA%E5%8A%9B%E9%80%9A%E7%9F%A5%E6%80%A7%EF%BC%88%E5%AE%9A%E6%9C%9F%E6%A0%A1%E5%AF%B9%EF%BC%89"><span class="toc-number">162.</span> <span class="toc-text">最大努力通知性（定期校对）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Seata%EF%BC%88%E9%98%BF%E9%87%8C%EF%BC%89%EF%BC%9F"><span class="toc-number">163.</span> <span class="toc-text">Seata（阿里）？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C"><span class="toc-number">163.1.</span> <span class="toc-text">网络</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP%E5%92%8CUDP%E7%9A%84%E6%AF%94%E8%BE%83%EF%BC%9F"><span class="toc-number">164.</span> <span class="toc-text">TCP和UDP的比较？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B"><span class="toc-number">165.</span> <span class="toc-text">TCP三次握手?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTPS%E5%8E%9F%E7%90%86"><span class="toc-number">166.</span> <span class="toc-text">HTTPS原理?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E6%98%AF%E7%94%A8%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%EF%BC%9F"><span class="toc-number">167.</span> <span class="toc-text">为什么数据传输是用对称加密？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81-CA-%E8%AE%A4%E8%AF%81%E6%9C%BA%E6%9E%84%E9%A2%81%E5%8F%91%E8%AF%81%E4%B9%A6%EF%BC%9F"><span class="toc-number">168.</span> <span class="toc-text">为什么需要 CA 认证机构颁发证书？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#select%E3%80%81poll%E3%80%81epoll"><span class="toc-number">169.</span> <span class="toc-text">select、poll、epoll?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JDK1-8%E6%96%B0%E7%89%B9%E6%80%A7"><span class="toc-number">169.1.</span> <span class="toc-text">JDK1.8新特性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">170.</span> <span class="toc-text">Lambda表达式?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#default%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">171.</span> <span class="toc-text">default关键字?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E6%97%B6%E9%97%B4%E6%97%A5%E6%9C%9FAPILocalDate-LocalTime-LocalDateTime"><span class="toc-number">172.</span> <span class="toc-text">新时间日期APILocalDate | LocalTime | LocalDateTime?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JDK1-7%E4%B8%8EJDK1-8-ConcurrentHashMap%E5%AF%B9%E6%AF%94"><span class="toc-number">173.</span> <span class="toc-text">JDK1.7与JDK1.8 ConcurrentHashMap对比?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JDK1-8%E4%BD%BF%E7%94%A8synchronized%E6%9D%A5%E4%BB%A3%E6%9B%BF%E9%87%8D%E5%85%A5%E9%94%81ReentrantLock"><span class="toc-number">174.</span> <span class="toc-text">JDK1.8使用synchronized来代替重入锁ReentrantLock?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JDK1-9%E6%96%B0%E7%89%B9%E6%80%A7"><span class="toc-number">174.1.</span> <span class="toc-text">JDK1.9新特性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97%E7%B3%BB%E7%BB%9F%EF%BC%9A"><span class="toc-number">175.</span> <span class="toc-text">模块系统：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95"><span class="toc-number">176.</span> <span class="toc-text">集合工厂方法?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%B9%E8%BF%9B%E7%9A%84-Stream-API"><span class="toc-number">177.</span> <span class="toc-text">改进的 Stream API?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%B9%E8%BF%9B%E7%9A%84-Javadoc"><span class="toc-number">178.</span> <span class="toc-text">改进的 Javadoc?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E5%90%88"><span class="toc-number">178.1.</span> <span class="toc-text">集合</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#java%E7%9A%84%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D"><span class="toc-number">179.</span> <span class="toc-text">java的集合框架有哪几种?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#List%E4%BD%A0%E4%BD%BF%E7%94%A8%E8%BF%87%E5%93%AA%E4%BA%9B"><span class="toc-number">180.</span> <span class="toc-text">List你使用过哪些?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%A0%E7%9F%A5%E9%81%93vector%E5%92%8CArrayList%E5%92%8ClinkedList%E7%9A%84%E5%8C%BA%E5%88%AB%E5%98%9B"><span class="toc-number">181.</span> <span class="toc-text">你知道vector和ArrayList和linkedList的区别嘛?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hashMap%E5%92%8ChashTable%E5%92%8CConcurrentHashMap%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">182.</span> <span class="toc-text">hashMap和hashTable和ConcurrentHashMap的区别?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4%E4%BD%A0%E4%BA%86%E8%A7%A3%E7%9A%84hashmap%E5%90%A7"><span class="toc-number">183.</span> <span class="toc-text">说说你了解的hashmap吧?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#concurrentHashMap%E5%91%A2"><span class="toc-number">184.</span> <span class="toc-text">concurrentHashMap呢?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#concurrentHashMap%E7%9A%84%E6%89%A9%E5%AE%B9%E6%96%B9%E5%BC%8F"><span class="toc-number">185.</span> <span class="toc-text">concurrentHashMap的扩容方式?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hashMap%E7%9A%84put%E6%96%B9%E6%B3%95%E7%9A%84%E8%BF%87%E7%A8%8B"><span class="toc-number">186.</span> <span class="toc-text">hashMap的put方法的过程?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BF%AE%E6%94%B9hashcode%E6%96%B9%E6%B3%95%E8%A6%81%E4%BF%AE%E6%94%B9equals"><span class="toc-number">187.</span> <span class="toc-text">为什么修改hashcode方法要修改equals?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TreeMap%E4%BA%86%E8%A7%A3%E5%98%9B"><span class="toc-number">188.</span> <span class="toc-text">TreeMap了解嘛?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LinkedHashMap%E4%BA%86%E8%A7%A3%E5%98%9B"><span class="toc-number">189.</span> <span class="toc-text">LinkedHashMap了解嘛?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#rocketmq"><span class="toc-number">190.</span> <span class="toc-text">rocketmq?</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/10/17/%F0%9F%8D%B9TypeScript%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" title="🦀&quot;TypeScript知识点总结&quot;"><img src="https://pic.dmjnb.com/pic/1bc703de2be38fa1f15300627e1bf0fa?imageMogr2/thumbnail/x380/quality/90!" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="🦀&quot;TypeScript知识点总结&quot;"/></a><div class="content"><a class="title" href="/2022/10/17/%F0%9F%8D%B9TypeScript%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" title="🦀&quot;TypeScript知识点总结&quot;">🦀&quot;TypeScript知识点总结&quot;</a><time datetime="2022-10-17T05:08:55.000Z" title="发表于 2022-10-17 13:08:55">2022-10-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/16/%F0%9F%8E%A0Java%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9%E9%9B%86%E5%90%88/" title="🍉&quot;Java&quot;后端知识点集合"><img src="https://pic3.zhimg.com/v2-8a72afce30dc87600d65d9e10fecfd3a_r.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="🍉&quot;Java&quot;后端知识点集合"/></a><div class="content"><a class="title" href="/2022/10/16/%F0%9F%8E%A0Java%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9%E9%9B%86%E5%90%88/" title="🍉&quot;Java&quot;后端知识点集合">🍉&quot;Java&quot;后端知识点集合</a><time datetime="2022-10-16T05:08:55.000Z" title="发表于 2022-10-16 13:08:55">2022-10-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/29/%F0%9F%A5%AA%E3%80%90Redux%E3%80%91%E7%AE%80%E8%A7%A3%E5%8F%8A%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/" title="🐦【Redux】简解及工作流程分析"><img src="https://pic3.zhimg.com/v2-0963391e035d6fdcf11f90978e85e07f_r.jpg?source=172ae18b" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="🐦【Redux】简解及工作流程分析"/></a><div class="content"><a class="title" href="/2022/09/29/%F0%9F%A5%AA%E3%80%90Redux%E3%80%91%E7%AE%80%E8%A7%A3%E5%8F%8A%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/" title="🐦【Redux】简解及工作流程分析">🐦【Redux】简解及工作流程分析</a><time datetime="2022-09-28T16:08:20.659Z" title="发表于 2022-09-29 00:08:20">2022-09-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/29/%F0%9F%8D%94%E4%BB%80%E4%B9%88%E6%98%AFReact%E6%A1%86%E6%9E%B6/" title="🍁什么是【React】框架？它的基本原理是什么？"><img src="https://www.qinglvbizhi.com/uploads/202205/28/220528041651605.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="🍁什么是【React】框架？它的基本原理是什么？"/></a><div class="content"><a class="title" href="/2022/09/29/%F0%9F%8D%94%E4%BB%80%E4%B9%88%E6%98%AFReact%E6%A1%86%E6%9E%B6/" title="🍁什么是【React】框架？它的基本原理是什么？">🍁什么是【React】框架？它的基本原理是什么？</a><time datetime="2022-09-28T16:08:20.659Z" title="发表于 2022-09-29 00:08:20">2022-09-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/28/%F0%9F%8D%AD%E6%B5%85%E8%B0%88react%E8%B7%AF%E7%94%B1%E4%BC%A0%E5%8F%82%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/" title="🍉浅谈&quot;react&quot;路由传参的几种方式"><img src="https://pic.dmjnb.com/pic/23565cb330df7e8c8676ebc3eec5096b?imageMogr2/thumbnail/x380/quality/90!" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="🍉浅谈&quot;react&quot;路由传参的几种方式"/></a><div class="content"><a class="title" href="/2022/09/28/%F0%9F%8D%AD%E6%B5%85%E8%B0%88react%E8%B7%AF%E7%94%B1%E4%BC%A0%E5%8F%82%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/" title="🍉浅谈&quot;react&quot;路由传参的几种方式">🍉浅谈&quot;react&quot;路由传参的几种方式</a><time datetime="2022-09-28T14:44:27.766Z" title="发表于 2022-09-28 22:44:27">2022-09-28</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 李明轩</div><div class="framework-info"><span>♍🔞🏁</span><a href="Aslan-mx.github.io">博客</a><span class="footer-separator">|</span><span>🧬👑🎭</span><a target="_blank" rel="noopener" href="https://github.com/Aslan-mx">Github</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0 %</span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'ylgbnoj3zv7226Pu003aj3l4-gzGzoHsz',
+      appKey: 'sOAaxTQBTHNRP7kjilEslbYy',
+      avatar: 'monsterid',
+      serverURLs: '',
+      placeholder: '来呀 快活呀！！',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src="/js/custom/sun_moon.js" async></script><div class="aplayer no-destroy" data-id="5391510302" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div><script async data-pjax src="/js/sky.js"></script><script async data-pjax src="/js/custom/nav.js"></script><script> WIDGET = {"CONFIG":{"modules":"01234","background":"5","tmpColor":"1414A3","tmpSize":"16","cityColor":"9900FF","citySize":"16","aqiColor":"00FFFF","aqiSize":"16","weatherIconSize":"24","alertIconSize":"18","padding":"10px 10px 10px 10px","shadow":"0","language":"auto","fixed":"false","vertical":"top","horizontal":"left","key":"58f058e9e808406bb4f7c56c93e39920"}} </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script async src="/js/grayscale.js"></script><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="I,LOVE,YOU" data-fontsize="15px" data-random="true" async="async"></script><script src="//code.tidio.co/axu7fq2hyma9lhvuu1d0aky6hbq2nw8s.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+    function butterfly_categories_card_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<style>li.categoryBar-list-item{width:32.3%;}.categoryBar-list{max-height: 190px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 160px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"><li class="categoryBar-list-item" style="background:url(https://pic.dmjnb.com/pic/f22346548b5bdb9998155f84b281cccf?imageMogr2/thumbnail/x380/quality/90!);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/🍀React/&quot;);" href="javascript:void(0);">🍀React</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr">带你去浪漫旅行</span></li><li class="categoryBar-list-item" style="background:url(https://pic.dmjnb.com/pic/0e25d34ee6e9338bafbc9409e76215e8?imageMogr2/thumbnail/x380/quality/90!);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/🌵JavaScript/&quot;);" href="javascript:void(0);">🌵JavaScript</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">远帆的船</span></li><li class="categoryBar-list-item" style="background:url(https://pic.dmjnb.com/pic/c4bb304211e20f2806c73943a60eeffe?imageMogr2/thumbnail/x380/quality/90!);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/🥎CSS/&quot;);" href="javascript:void(0);">🥎CSS</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">浪漫满屋</span></li><li class="categoryBar-list-item" style="background:url(https://pic4.zhimg.com/v2-b4191ebcc39ae971098a18bff005c8b7_r.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/🌸Vue/&quot;);" href="javascript:void(0);">🌸Vue</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr">个人日记</span></li><li class="categoryBar-list-item" style="background:url(https://pic4.zhimg.com/v2-44555d92ba166d82d1f13b503481b8f3_r.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/☔Web前端开发/&quot;);" href="javascript:void(0);">☔Web前端开发</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">路遥知马力</span></li><li class="categoryBar-list-item" style="background:url(https://ts1.cn.mm.bing.net/th/id/R-C.f25a2d94de3bb416d82eb570d39b541c?rik=tCNozV44jaqsEQ&amp;riu=http%3a%2f%2fi0.hdslb.com%2fbfs%2farchive%2fe869ce8fd8e1a5dbea648e486ffbe8a260b54aff.jpg&amp;ehk=RiWG7MFO2z4%2feT5d2Mi5zrQ6vP0QWSM4%2fyaMWEDOTj8%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/🧁Java/&quot;);" href="javascript:void(0);">🧁Java</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">遥远海边</span></li><li class="categoryBar-list-item" style="background:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg-baofun.zhhainiao.com%2Ffs%2F315649687ac2cb6c19dcdff6cadc7358.jpg&amp;refer=http%3A%2F%2Fimg-baofun.zhhainiao.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1670142724&amp;t=8919a56b3a4f74f3e883fd7767dceca7);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/🎄TypeScript/&quot;);" href="javascript:void(0);">🎄TypeScript</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">云深不知处</span></li></ul></div></div>';
+      console.log('已挂载butterfly_categories_card')
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      }
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    butterfly_categories_card_injector_config()
+    }
+  </script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><div id="ghbdages" style="overflow:hidden;max-height:90px;height:auto;text-align:center;margin-top:10px"><div class="swiper-wrapper"><div class="swiper-slide"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v5.4.0"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v3.8.2"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://www.jsdelivr.com/" style="margin-inline:5px" title="本站使用JsDelivr为静态资源提供CDN加速"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&amp;logo=jsDelivr" alt=""/></a></div><div class="swiper-slide"><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站采用双线部署，默认线路托管于Vercel"><img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站采用双线部署，联通线路托管于Coding"><img src="https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&amp;logo=Codio" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本站项目由Github托管"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a></div><div class="swiper-slide"><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></div></div></div><style>a.github-badge:hover:before {display:none}</style>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="https://cdn.jsdelivr.net/gh/Aslan-mx/CDN@1.1.1/name.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/29/🍔什么是React框架/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://www.qinglvbizhi.com/uploads/202205/28/220528041651605.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-29</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/29/🍔什么是React框架/&quot;);" href="javascript:void(0);" alt="">🍁什么是【React】框架？它的基本原理是什么？</a><div class="blog-slider__text">🍁什么是react? React的基本原理与构建？</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/29/🍔什么是React框架/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/29/🥪【Redux】简解及工作流程分析/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic3.zhimg.com/v2-0963391e035d6fdcf11f90978e85e07f_r.jpg?source=172ae18b" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-29</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/29/🥪【Redux】简解及工作流程分析/&quot;);" href="javascript:void(0);" alt="">🐦【Redux】简解及工作流程分析</a><div class="blog-slider__text">🐦【Redux】简解及工作流程分析</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/29/🥪【Redux】简解及工作流程分析/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/28/🍭浅谈react路由传参的几种方式/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/23565cb330df7e8c8676ebc3eec5096b?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-28</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/28/🍭浅谈react路由传参的几种方式/&quot;);" href="javascript:void(0);" alt="">🍉浅谈&quot;react&quot;路由传参的几种方式</a><div class="blog-slider__text">🍉浅谈&quot;react&quot;路由传参的几种方式</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/28/🍭浅谈react路由传参的几种方式/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/28/🍬什么是Vue框架/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/bf5282b803628afac658fb368da6ce5a?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-28</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/28/🍬什么是Vue框架/&quot;);" href="javascript:void(0);" alt="">🍄什么是&quot;VUE&quot;框架</a><div class="blog-slider__text">🍄什么是&quot;VUE&quot;框架</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/28/🍬什么是Vue框架/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/02/🍹css常见知识点总结/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/1d4736d2993166512695500fcfd0e3b9?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-02</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/02/🍹css常见知识点总结/&quot;);" href="javascript:void(0);" alt="">🎉&quot;CSS&quot;常见知识点总结</a><div class="blog-slider__text">🎉&quot;css&quot;常见知识点总结!</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/02/🍹css常见知识点总结/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/28/🪅vue的生命周期的详解/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/5c009146dbf01847e3c33234f84847b2?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-28</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/28/🪅vue的生命周期的详解/&quot;);" href="javascript:void(0);" alt="">🎨&quot;Vue&quot;的生命周期的详解</a><div class="blog-slider__text">🎨&quot;Vue&quot;的生命周期的详解</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/28/🪅vue的生命周期的详解/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/27/🧮vue相关知识点详解/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/e581d7acd89f28062c1572ae5cf6d7d4?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-27</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/27/🧮vue相关知识点详解/&quot;);" href="javascript:void(0);" alt="">⏰&quot;Vue&quot;框架相关知识点</a><div class="blog-slider__text">⏰&quot;Vue&quot;框架相关知识点</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/27/🧮vue相关知识点详解/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/10/🦀JavaScript知识点小总结/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/fb3eba0531b752438439985fbeb90f7a?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-10</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/10/🦀JavaScript知识点小总结/&quot;);" href="javascript:void(0);" alt="">🐠&quot;JavaScript&quot;知识点小总结</a><div class="blog-slider__text">🐠&quot;JavaScript&quot;知识点小总结</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/10/🦀JavaScript知识点小总结/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/18/🏍vue路由相关知识/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/c4bb304211e20f2806c73943a60eeffe?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-18</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/18/🏍vue路由相关知识/&quot;);" href="javascript:void(0);" alt="">🍸&quot;Vue&quot;路由相关知识</a><div class="blog-slider__text">🍸关于&quot;Vue&quot;路由等基础方面知识</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/18/🏍vue路由相关知识/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/10/17/🍹TypeScript知识点总结/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/1bc703de2be38fa1f15300627e1bf0fa?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-10-17</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/10/17/🍹TypeScript知识点总结/&quot;);" href="javascript:void(0);" alt="">🦀&quot;TypeScript知识点总结&quot;</a><div class="blog-slider__text">🥪&quot;Java&quot;后端知识点集合</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/10/17/🍹TypeScript知识点总结/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/10/16/🎠Java后端知识点集合/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic3.zhimg.com/v2-8a72afce30dc87600d65d9e10fecfd3a_r.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-10-16</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/10/16/🎠Java后端知识点集合/&quot;);" href="javascript:void(0);" alt="">🍉&quot;Java&quot;后端知识点集合</a><div class="blog-slider__text">🥪&quot;Java&quot;后端知识点集合</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/10/16/🎠Java后端知识点集合/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/01/🎊前端网络知识点总结/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic2.zhimg.com/v2-55e93a226931e057f924aae992fe8ebd_r.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-01</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/01/🎊前端网络知识点总结/&quot;);" href="javascript:void(0);" alt="">🔫前端网络知识点总结</a><div class="blog-slider__text">🔫前端网络知识点总结</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/01/🎊前端网络知识点总结/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>

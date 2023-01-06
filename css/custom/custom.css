@@ -1,0 +1,97 @@
+@font-face{
+  font-family: 'Candy';  /* 字体名自定义即可 */
+  src: url('/fonts/Candy.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+@font-face{
+  font-family: 'Name';  /* 字体名自定义即可 */
+  src: url('/fonts/Name.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+/* 文章条+资料字体 */
+#recent-posts{
+  font-family: 'Name', sans-serif;
+}
+#aside-content{
+  font-family: 'Name', sans-serif;
+}
+/* 首页标题字体 */
+#site-subtitle{
+  font-family: 'Name', sans-serif;
+}
+#site-title{
+  font-family: 'Name', sans-serif;
+}
+/* 导航条 */
+#menu-container{
+  font-family: 'Name', sans-serif;
+}
+#message-date-box{
+  font-family: 'Name', sans-serif;
+}
+#site-name{
+  font-family: 'Name', sans-serif;
+}
+
+/* 点进文章的标题字体 */
+#post-info{
+  font-family: 'Name', sans-serif;
+}
+
+
+
+
+
+.aplayer.aplayer-fixed.aplayer-narrow.aplayer-body {
+    left: -66px !important;
+    /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+  }
+  
+  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0 !important;
+    /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+  }
+/* 返回顶部 */
+
+button#go-up #percent {
+  display: none;
+  font-weight: bold;
+  font-size: 15px !important;
+}
+
+button#go-up span {
+  font-size: 12px!important;
+  margin-right: -1px;
+}
+
+/* 鼠标滑动到按钮上时显示返回顶部图标 */
+button#go-up:hover i {
+  display: block !important;
+}
+
+button#go-up:hover #percent {
+  display: none !important;
+}
+
+
+  /* .post-copyright{
+    color: rgb(140, 0, 119);
+    box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080;
+    animation-delay: 0.7s;
+    margin: auto 30px;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+
+  }
+  @keyframes animate {
+    from {
+      filter: hue-rotate(0deg);
+    }
+    to {
+      filter: hue-rotate(360deg);
+    }
+  } */

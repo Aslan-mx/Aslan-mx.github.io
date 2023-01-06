@@ -1,0 +1,503 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>🎉&quot;CSS&quot;常见知识点总结 | LMXA</title><meta name="keywords" content="🧁CSS"><meta name="author" content="李明轩"><meta name="copyright" content="李明轩"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="🎉&quot;css&quot;常见知识点总结!">
+<meta property="og:type" content="article">
+<meta property="og:title" content="🎉&quot;CSS&quot;常见知识点总结">
+<meta property="og:url" content="http://example.com/2022/09/02/%F0%9F%8D%B9css%E5%B8%B8%E8%A7%81%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="LMXA">
+<meta property="og:description" content="🎉&quot;css&quot;常见知识点总结!">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic.dmjnb.com/pic/1d4736d2993166512695500fcfd0e3b9?imageMogr2/thumbnail/x380/quality/90!">
+<meta property="article:published_time" content="2022-09-02T07:48:00.000Z">
+<meta property="article:modified_time" content="2022-10-02T07:48:00.000Z">
+<meta property="article:author" content="李明轩">
+<meta property="article:tag" content="🧁CSS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.dmjnb.com/pic/1d4736d2993166512695500fcfd0e3b9?imageMogr2/thumbnail/x380/quality/90!"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/09/02/%F0%9F%8D%B9css%E5%B8%B8%E8%A7%81%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '🎉"CSS"常见知识点总结',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-10-02 15:48:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://widget.heweather.net/simple/static/css/he-simple.css?v=1.4.0" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/custom/custom.css"  media="defer" onload="this.media='all'"><script src="https://cyan-blog.oss-cn-shenzhen.aliyuncs.com/cdn/js/three.min.js"></script><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script async="async">const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();}, 5000);
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  document.getElementById('loading-box').addEventListener('click',()=> {preloader.endLoading()})
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://avatars.githubusercontent.com/u/46306801?s=400&amp;u=35f48272ca9e1e5279007be09883d870965a3373&amp;v=4" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comments"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="canvas-container" id="canvas"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.dmjnb.com/pic/1d4736d2993166512695500fcfd0e3b9?imageMogr2/thumbnail/x380/quality/90!')"><div class="menu-container" id="menu-container"><div class="menu-item"><div class="menu-item-main"><a class="site-page faa-parent animated-hover" href="/"><i class="fa-fw fas fa-home faa-tada"></i><span> 首页</span></a></div><div class="menu-item-main"><a class="site-page faa-parent animated-hover" href="/archives/"><i class="fa-fw fas fa-archive faa-tada"></i><span> 归档</span></a></div><div class="menu-item-main"><a class="site-page faa-parent animated-hover" href="/tags/"><i class="fa-fw fas fa-tags faa-tada"></i><span> 标签</span></a></div><div class="menu-item-main"><a class="site-page faa-parent animated-hover" href="/categories/"><i class="fa-fw fas fa-folder-open faa-tada"></i><span> 类别</span></a></div><div class="menu-item-main has-child"><div class="menu-item-parent"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><i class="fa-fw fas fa-list faa-tada"></i><span> 列表</span></a></div><div class="menu-item-child"><a class="faa-parent animated-hover site-page child" href="/music/"><i class="fa-fw fas fa-music faa-tada"></i><span> 音乐</span></a></div><div class="menu-item-child"><a class="faa-parent animated-hover site-page child" href="/movies/"><i class="fa-fw fas fa-video faa-tada"></i><span> 电影</span></a></div></div><div class="menu-item-main"><a class="site-page faa-parent animated-hover" href="/link/"><i class="fa-fw fas fa-link faa-tada"></i><span> 友链</span></a></div><div class="menu-item-main"><a class="site-page faa-parent animated-hover" href="/comments"><i class="fa-fw fas fa-comments faa-tada"></i><span> 留言板</span></a></div><div class="menu-item-main"><a class="site-page faa-parent animated-hover" href="/about/"><i class="fa-fw fas fa-heart faa-tada"></i><span> 关于</span></a></div></div><div class="top-bar"><div class="message-container"><div class="message-item message-weather" onclick="btf.scrollToDest(0, 500)"><div class="message-weather-box" id="he-plugin-simple"></div></div><div class="message-item message-date" onclick="Navvisible()"><div class="message-date-box" id="message-date-box"></div><div class="message-title-box" id="message-title-box"><a id="site-name" title="欢迎光临李明轩的糖果屋，愿你有愉快的一天">categories</a></div></div><div class="message-item message-function"><div id="search-button"><a class="site-page social-icon search faa-parent animated-hover"><svg class="faa-tada icon" style="height:25px;width:25px" aria-hidden="true"><use xlink:href="#icon-search-01"></use></svg><span> 搜索</span></a></div><a class="icon-V hidden faa-parent animated-hover" onclick="switchNightMode()" title="浅色和深色模式转换"><svg class="faa-tada" width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><div id="toggle-menu"><a class="site-page faa-parent animated-hover"><svg class="faa-tada icon" style="height:25px;width:25px" aria-hidden="true"><use xlink:href="#icon-multi-window-01"></use></svg></a></div></div></div></div><button class="active-button" onclick="Navvisible()"></button></div><div id="post-info"><h1 class="post-title">🎉&quot;CSS&quot;常见知识点总结</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-09-02T07:48:00.000Z" title="发表于 2022-09-02 15:48:00">2022-09-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-02T07:48:00.000Z" title="更新于 2022-10-02 15:48:00">2022-10-02</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%F0%9F%A5%8ECSS/">🥎CSS</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="🎉&quot;CSS&quot;常见知识点总结"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="什么是css？"><a href="#什么是css？" class="headerlink" title="什么是css？"></a>什么是css？</h2><p>CSS（Cascading Style Sheets）层叠样式表，专注于页面的表现层。</p>
+<h2 id="CSS引入方式"><a href="#CSS引入方式" class="headerlink" title="CSS引入方式?"></a>CSS引入方式?</h2><p>1.行内样式</p>
+<p>在开始标签上加style=”样式属性名1:样式属性值1;样式属性名2:样式属性值2;…” 属性</p>
+<p>内嵌式<br>把所有的css样式都写在<style>&lt;/style&gt;标签内，<style></style>放在head标签内</p>
+<p>外链式<br>把所有的css样式均放在一个css单独的文件里（后缀名xx.css）,在html里通过<link rel=”stylesheet” href=”css文件路径” />来引入外部的css。</p>
+<p>优先级：</p>
+<p>行内最大，其次 谁离标签近，谁的优先级高（最晚优先级最高）</p>
+<h2 id="display-的-block、inline-和-inline-block-的区别"><a href="#display-的-block、inline-和-inline-block-的区别" class="headerlink" title="display 的 block、inline 和 inline-block 的区别?"></a>display 的 block、inline 和 inline-block 的区别?</h2><p>block： 会独占一行，可以设置 width、height、margin 和 padding 属性；</p>
+<p>inline： 元素不会独占一行，设置 width、height 属性无效。但可以设置水平方向的 margin 和 padding 属性，不能设置垂直方向的 padding 和 margin；</p>
+<p>inline-block： 将对象设置为 inline 对象，但对象的内容作为 block 对象呈现，之后的内联对象会被排列在同一行内。</p>
+<h2 id="隐藏元素的方法有哪些"><a href="#隐藏元素的方法有哪些" class="headerlink" title="隐藏元素的方法有哪些?"></a>隐藏元素的方法有哪些?</h2><p>display: none: 渲染树不会渲染对象<br>visibility: hidden: 元素在页面中仍占据空间，但是不会响应绑定的监听事件。<br>opacity: 0: 元素在页面中仍然占据空间，并且能够响应元素绑定的监听事件。<br>position: absolute: 通过使用绝对定位将元素移除可视区域内，以此来实现元素的隐藏。<br>z-index: 负值:来使其他元素遮盖住该元素，以此来实现隐藏。<br>clip/clip-path: 元素仍在页面中占据位置，但是不会响应绑定的监听事件。<br>transform: scale(0,0): 将元素缩放为 0，元素仍在页面中占据位置，但是不会响应绑定的监听事件。</p>
+<h2 id="link-和-import-的区别"><a href="#link-和-import-的区别" class="headerlink" title="link 和@import 的区别?"></a>link 和@import 的区别?</h2><p>两者都是外部引用 CSS 的方式，它们的区别如下：</p>
+<p>link 是 XHTML 标签，除了加载 CSS 外，还可以定义 RSS 等其他事务； @import 只能加载 CSS。<br>link 引用 CSS 时，在页面载入时同时加载； @import 需要页面网页完全载入以后加载。<br>link 是 XHTML 标签，无兼容问题； @import 是在 CSS2.1 提出的，低版本的浏览器不支持。<br>link 支持使用 Javascript 控制 DOM 去改变样式； @import 不支持。</p>
+<p>transition 和 animation 的区别<br>transition 是过度属性，强调过度，它的实现需要触发一个事件（比如鼠标移动上去，焦点，点击等）才执行动画。它类似于 flash 的补间动画，设置一个开始关键帧，一个结束关键帧。</p>
+<p>animation 是动画属性，它的实现不需要触发事件，设定好时间之后可以自己执行，且可以循环一个动画。它也类似于 flash 的补间动画，但是它可以设置多个关键帧（用@keyframe 定义）完成动画。</p>
+<h2 id="display-none-与-visibility-hidden-的区别"><a href="#display-none-与-visibility-hidden-的区别" class="headerlink" title="display:none 与 visibility:hidden 的区别?"></a>display:none 与 visibility:hidden 的区别?</h2><p>这两个属性都是让元素隐藏，不可见。两者区别如下：</p>
+<ol>
+<li>在渲染树中</li>
+</ol>
+<p>display:none 不渲染元素<br>sibility:hidden渲染元素，只是不可见</p>
+<ol>
+<li>是否是继承属性</li>
+</ol>
+<p>display:none 是非继承属性，子孙节点会随着父节点从渲染树消失，通过修改子孙节点的属性也无法显示；<br>visibility:hidden 是继承属性，子孙节点消失是由于继承了hidden，通过设置visibility:visible可以让子孙节点显示；</p>
+<ol>
+<li>重排与重绘</li>
+</ol>
+<p>display:none 修改此属性，会导致整个文档重排<br>visibility:hidden 修改此属性，只会导致当前元素重绘</p>
+<h2 id="伪元素和伪类的区别和作用？"><a href="#伪元素和伪类的区别和作用？" class="headerlink" title="伪元素和伪类的区别和作用？"></a>伪元素和伪类的区别和作用？</h2><p>伪元素： 在内容元素的前后插入额外的元素或样式，但是这些元素实际上并不在文档中生成。它们只在外部显示可见，但不会在文档的源代码中找到它们，因此，称为“伪”元素。例如：</p>
+<p>p::before {content: “第一章：”;}p::after {content: “Hot!”;}p::first-line {background: red;}p::first-letter {font-size: 30px;}复制代码</p>
+<p>伪类： 将特殊的效果添加到特定选择器上。它是已有元素上添加类别的，不会产生新的元素。例如：</p>
+<p>a:hover {color: #FF00FF}p:first-child {color: red}复制代码</p>
+<h2 id="对盒模型的理解"><a href="#对盒模型的理解" class="headerlink" title="对盒模型的理解?"></a>对盒模型的理解?</h2><p>CSS3 中的盒模型有以下两种：标准盒模型、IE 盒模型</p>
+<p>盒模型是由四个部分组成的，分别是 margin、border、padding 和 content。</p>
+<p>标准盒模型和 IE 盒模型的区别在于设置 width 和 height 时，所对应的范围不同：<br>标准盒模型的 width 和 height 属性的范围只包含了 content，<br>IE 盒模型的 width 和 height 属性的范围包含了 border、padding 和 content。</p>
+<p>可以通过修改元素的 box-sizing 属性来改变元素的盒模型：<br>box-sizing: content-box表示标准盒模型（默认值）<br>box-sizing: border-box表示 IE 盒模型（怪异盒模型）</p>
+<h2 id="为什么有时候⽤translate来改变位置⽽不是定位？"><a href="#为什么有时候⽤translate来改变位置⽽不是定位？" class="headerlink" title="为什么有时候⽤translate来改变位置⽽不是定位？"></a>为什么有时候⽤translate来改变位置⽽不是定位？</h2><p>translate 不会触发浏览器重排和重绘,只会触发复合, 利用GPU效率高<br>绝对定位会导致重排, 进而触发重绘, 利用CPU效率低</p>
+<h2 id="li-与-li-之间有看不见的空白间隔是什么原因引起的？如何解决？"><a href="#li-与-li-之间有看不见的空白间隔是什么原因引起的？如何解决？" class="headerlink" title="li 与 li 之间有看不见的空白间隔是什么原因引起的？如何解决？"></a>li 与 li 之间有看不见的空白间隔是什么原因引起的？如何解决？</h2><p>浏览器会把 inline 内联元素间的空白字符（空格、换行、Tab 等）渲染成一个空格。为了美观，通常是一个<li>放在一行，这导致<li>换行后产生换行字符，它变成一个空格，占用了一个字符的宽度。</p>
+<p>解决办法：</p>
+<p>为<li>设置 float:left。不足：有些容器是不能设置浮动，如左右切换的焦点图等。<br>将所有<li>写在同一行。不足：代码不美观。<br>将<ul>内的字符尺寸直接设为 0，即 font-size:0。不足：<ul>中的其他字符尺寸也被设为 0，需要额外重新设定其他字符尺寸，且在 Safari 浏览器依然会出现空白间隔。<br>消除<ul>的字符间隔 letter-spacing:-8px，不足：这也设置了<li>内的字符间隔，因此需要将<li>内的字符间隔设为默认 letter-spacing:normal。</p>
+<h2 id="CSS3-中有哪些新特性"><a href="#CSS3-中有哪些新特性" class="headerlink" title="CSS3 中有哪些新特性?"></a>CSS3 中有哪些新特性?</h2><p>新增各种 CSS 选择器 nth not<br>圆角 border-radius<br>旋转 transform<br>阴影 ext-shadow<br>其他<br>GIF 动图<br>JPEG 有损色彩丰富，适合存储照片, 文件较大。<br>PNG 无损，体积小，支持透明度<br>SVG 放大不失真，适合 logo icon<br>BMP 无损, 不压缩, 文件较大。<br>WebP 谷歌新出的图片格式, 体积比 png 更小, 兼容性不好。</p>
+<h2 id="对-CSS-Sprites-的理解"><a href="#对-CSS-Sprites-的理解" class="headerlink" title="对 CSS Sprites 的理解?"></a>对 CSS Sprites 的理解?</h2><p>CSS Sprites（精灵图），将一个页面涉及到的所有图片都包含到一张大图中去，然后利用 CSS 的 background-image，background-repeat，background-position 属性的组合进行背景定位。</p>
+<p>优点：</p>
+<p>利用 CSS Sprites 能很好地减少网页的 http 请求，从而大大提高了页面的性能，这是 CSS Sprites 最大的优点；<br>CSS Sprites 能减少图片的字节，把 3 张图片合并成 1 张图片的字节总是小于这 3 张图片的字节总和。<br>缺点：</p>
+<p>在图片合并时，要把多张图片有序的、合理的合并成一张图片，还要留好足够的空间，防止板块内出现不必要的背景。在宽屏及高分辨率下的自适应页面，如果背景不够宽，很容易出现背景断裂；<br>CSS Sprites 在开发的时候相对来说有点麻烦，需要借助photoshop或其他工具来对每个背景单元测量其准确的位置。<br>维护方面：CSS Sprites 在维护的时候比较麻烦，页面背景有少许改动时，就要改这张合并的图片，无需改的地方尽量不要动，这样避免改动更多的CSS，</p>
+<h2 id="什么是物理像素，逻辑像素和像素密度，为什么在移动端开发时需要用到-3x-2x-这种图片？"><a href="#什么是物理像素，逻辑像素和像素密度，为什么在移动端开发时需要用到-3x-2x-这种图片？" class="headerlink" title="什么是物理像素，逻辑像素和像素密度，为什么在移动端开发时需要用到@3x, @2x 这种图片？"></a>什么是物理像素，逻辑像素和像素密度，为什么在移动端开发时需要用到@3x, @2x 这种图片？</h2><p>以 iPhone XS 为例，当写 CSS 代码时，针对于单位 px，其宽度为 414px &amp; 896px，也就是说当赋予一个 div 元素宽度为 414px，这个 div 就会填满手机的宽度；</p>
+<p>而如果有一把尺子来实际测量这部手机的物理像素，实际为 1242*2688 物理像素；经过计算可知，1242/414=3，也就是说，在单边上，一个逻辑像素 = 3 个物理像素，就说这个屏幕的像素密度为 3，也就是常说的 3 倍屏。</p>
+<p>对于图片来说，为了保证其不失真，1 个图片像素至少要对应一个物理像素，假如原始图片是 500<em>300 像素，那么在 3 倍屏上就要放一个 1500</em>900 像素的图片才能保证 1 个物理像素至少对应一个图片像素，才能不失真。</p>
+<p>当然，也可以针对所有屏幕，都只提供最高清图片。虽然低密度屏幕用不到那么多图片像素，而且会因为下载多余的像素造成带宽浪费和下载延迟，但从结果上说能保证图片在所有屏幕上都不会失真。</p>
+<p>还可以使用 CSS 媒体查询来判断不同的像素密度，从而选择不同的图片:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">my-image &#123; background: (low.png); &#125;@media only screen and (min-device-pixel-ratio: 1.5) &#123;</span><br><span class="line"></span><br><span class="line">#my-image &#123; background: (high.png); &#125;</span><br><span class="line"></span><br><span class="line">&#125;复制代码</span><br></pre></td></tr></table></figure></p>
+<h2 id="CSS-优化和提高性能的方法有哪些？"><a href="#CSS-优化和提高性能的方法有哪些？" class="headerlink" title="CSS 优化和提高性能的方法有哪些？"></a>CSS 优化和提高性能的方法有哪些？</h2><p>加载性能：</p>
+<p>css 压缩, 减小文件体积。<br>css 单一样式 margin-bottom:bottom； margin-left:left；比 margin:top 0 bottom 0；执行效率高。<br>减少使用 @import，建议使用 link，因为 link 在页面加载时一起加载，import 是页面加载完成之后再加载。<br>选择器性能：</p>
+<p>关键选择器, 减少层级, 最高不超过3层<br>尽量使用 class, 避免使用html标签选择<br>少使用后代选择器, 后代选择器开销高<br>避免对可继承的属性重复定义<br>避免使用通配规则, 只对需要的元素进行处理`<br>渲染性能：</p>
+<p>慎重使用高性能属性：浮动、定位。<br>尽量减少页面重排、重绘。<br>属性值为 0 时，不加单位。<br>属性值为浮动小数 0.**，可以省略小数点之前的 0。<br>不使用 @import 前缀，它会影响 css 的加载速度。<br>可维护性：</p>
+<p>抽离 css, 提高可复用性。<br>样式与内容分离, 提高可维护性。</p>
+<h2 id="CSS-预处理器-后处理器是什么？为什么要使用它们？"><a href="#CSS-预处理器-后处理器是什么？为什么要使用它们？" class="headerlink" title="CSS 预处理器/后处理器是什么？为什么要使用它们？"></a>CSS 预处理器/后处理器是什么？为什么要使用它们？</h2><p>预处理器， 如：less，sass，用来预编译 sass或者less，增加了 css 代码的复用性。层级，循环， 变量，循环等功能对UI组件更易开发与维护。</p>
+<p>后处理器， 如： PostCSS，通常是在完成的样式表中根据 CSS 规范处理 CSS有效。最常做的是添加浏览器私有前缀，解决跨浏览器兼容性的问题。</p>
+<p>使用原因：</p>
+<p>结构清晰， 便于扩展<br>可以很方便的屏蔽浏览器私有语法的差异<br>完美的兼容了 CSS 代码，可以应用到老项目中<br>可以轻松实现多重继承</p>
+<h2 id="inline-block-什么时候会显示间隙？"><a href="#inline-block-什么时候会显示间隙？" class="headerlink" title="inline-block 什么时候会显示间隙？"></a>inline-block 什么时候会显示间隙？</h2><p>主要有以下三种情形:</p>
+<p>有空格时会有间隙，可以删除空格解决；<br>margin 正值时，可以让 margin 使用负值解决；<br>使用 font-size 时，可通过设置 font-size:0、letter-spacing、word-spacing 解决；</p>
+<h2 id="单行、多行文本溢出隐藏"><a href="#单行、多行文本溢出隐藏" class="headerlink" title="单行、多行文本溢出隐藏?"></a>单行、多行文本溢出隐藏?</h2><p>单行文本溢出</p>
+<p>overflow: hidden;            // 溢出隐藏text-overflow: ellipsis;      // 溢出用省略号显示white-space: nowrap;         // 规定段落中的文本不进行换行复制代码</p>
+<p>多行文本溢出</p>
+<p>overflow: hidden;            // 溢出隐藏text-overflow: ellipsis;     // 溢出用省略号显示display: -webkit-box;         // 作为弹性伸缩盒子模型显示。</p>
+<p>-webkit-box-orient: vertical; // 设置伸缩盒子的子元素排列方式：从上到下垂直排列</p>
+<p>-webkit-line-clamp: 3;        // 显示的行数复制代码</p>
+<h2 id="对媒体查询的理解？"><a href="#对媒体查询的理解？" class="headerlink" title="对媒体查询的理解？"></a>对媒体查询的理解？</h2><p><!-- link元素中的CSS媒体查询 --><link rel="stylesheet" media="(max-width: 800px)" href="example.css" /><!-- 样式表中的CSS媒体查询 -->&lt;style&gt;@media (max-width: 600px) {</p>
+<p>  .facet_sidebar {</p>
+<pre><code>display: none;
+</code></pre><p>  }</p>
+<p>}&lt;/style&gt;复制代码</p>
+<p>简单来说，@media 可以针对不同的屏幕尺寸设置不同的样式，特别是需要设置设计响应式的页面。</p>
+<h2 id="对-CSS-工程化的理解"><a href="#对-CSS-工程化的理解" class="headerlink" title="对 CSS 工程化的理解?"></a>对 CSS 工程化的理解?</h2><p>CSS 工程化是为了解决以下问题：<br>宏观设计： CSS 代码如何组织、如何拆分、模块结构怎样设计？<br>编码优化： 怎样写出更好的 CSS ？<br>构建： 如何处理我的 CSS，才能让它的打包结果最优？<br>可维护性： 容易变更, 容易接手</p>
+<p>以下三个方向都是时下比较流行的、普适性非常好的 CSS 工程化实践：<br>预处理器： Less、 Sass 等；<br>后处理器： PostCSS<br>Webpack loader 等 。</p>
+<p>如何用 Webpack 实现对 CSS 的处理：<br>css-loader： 导入 CSS 模块，对 CSS 代码进行编译处理；<br>style-loader： 创建 style 标签，把 CSS 内容写入标签。</p>
+<p>在实际使用中，css-loader 的执行顺序一定要安排在 style-loader 的前面。因为只有完成了编译过程，才可以对 css 代码进行插入；若提前插入了未编译的代码，那么 webpack 是无法理解这坨东西的，它会无情报错。</p>
+<h2 id="如何判断元素是否到达可视区域"><a href="#如何判断元素是否到达可视区域" class="headerlink" title="如何判断元素是否到达可视区域?"></a>如何判断元素是否到达可视区域?</h2><p>以图片显示为例：</p>
+<p>window.innerHeight 是浏览器可视区的高度；<br>document.body.scrollTop || document.documentElement.scrollTop 是浏览器滚动的过的距离；<br>imgs.offsetTop 是元素顶部距离文档顶部的高度（包括滚动条的距离）；<br>内容达到显示区域的：img.offsetTop &lt; window.innerHeight + document.body.scrollTop;</p>
+<h2 id="z-index-属性在什么情况下会失效"><a href="#z-index-属性在什么情况下会失效" class="headerlink" title="z-index 属性在什么情况下会失效?"></a>z-index 属性在什么情况下会失效?</h2><p>通常 z-index 的使用是在有两个重叠的标签，z-index 值越大就越是在上层。z-index 元素的 position 属性需要是 relative，absolute 或是 fixed。</p>
+<p>z-index 属性在下列情况下会失效：</p>
+<p>父元素 position 为 relative 时，子元素的 z-index 失效。解决：父元素 position 改为 absolute 或 static；<br>元素没有设置 position 属性为非 static 属性。解决：设置该元素的 position 属性为 relative，absolute 或是 fixed；<br>元素在设置 z-index 的同时还设置了 float 浮动。解决：去除 float，改为 display：inline-block；<br>translate 位移<br>rotate 旋转<br>scale 缩放<br>skew 斜切</p>
+<h2 id="CSS3-中的-transform-有哪些属性"><a href="#CSS3-中的-transform-有哪些属性" class="headerlink" title="CSS3 中的 transform 有哪些属性?"></a>CSS3 中的 transform 有哪些属性?</h2><p>常见的 CSS 布局单位<br>像素px 基本布局单位<br>百分比% ，相对于父元素的百分比，从而实现响应式的效果。<br>em 相对于父元素的文本的倍数。如果父元素未设置 font-size，则相对于浏览器的默认字体尺寸(默认 16px)。<br>rem 相对于根元素 font-size 的倍数。作用：利用 rem 可以实现简单的响应式布局，可以利用 html 元素中字体的大小与屏幕间的比值来设置 font-size 的值，以此实现当屏幕分辨率变化时让元素也随之变化。</p>
+<p>vw： 相对于视窗的宽度，视窗宽度是 100vw；<br>vh： 相对于视窗的高度，视窗高度是 100vh；<br>vmin： vw 和 vh 中的较小值；<br>vmax： vw 和 vh 中的较大值；</p>
+<p>vw 和百分比的区别是: vw 相对于视窗, % 相对于父元素</p>
+<h2 id="px、em、rem-的区别及使用场景"><a href="#px、em、rem-的区别及使用场景" class="headerlink" title="px、em、rem 的区别及使用场景?"></a>px、em、rem 的区别及使用场景?</h2><p>三者的区别：</p>
+<p>px 是固定的像素，一旦设置了就无法因为适应页面大小而改变。<br>em 和 rem 相对于 px 更具有灵活性，他们是相对长度单位，其长度不是固定的，更适用于响应式布局。<br>em 是相对于其父元素来设置字体大小，这样就会存在一个问题，进行任何元素设置，都有可能需要知道他父元素的大小。而 rem 是相对于根元素，这样就意味着，只需要在根元素确定一个参考值。<br>使用场景：</p>
+<p>对于只需要适配少部分移动设备，且分辨率对页面影响不大的，使用 px 即可 。<br>对于需要适配各种移动设备，使用 rem，例如需要适配 iPhone 和 iPad 等分辨率差别比较挺大的设备。</p>
+<h2 id="如何根据设计稿进行移动端适配？"><a href="#如何根据设计稿进行移动端适配？" class="headerlink" title="如何根据设计稿进行移动端适配？"></a>如何根据设计稿进行移动端适配？</h2><p>移动端适配主要有两个维度：</p>
+<p>适配不同像素密度，针对不同的像素密度，使用 CSS 媒体查询，选择不同精度的图片，以保证图片不会失真；<br>适配不同屏幕大小，由于不同的屏幕有着不同的逻辑像素大小，所以如果直接使用 px 单位，会使得开发的页面在某一款手机上可以准确显示，但是在另一款手机上就会失真。为了适配不同屏幕的大小，应按照比例来还原设计稿的内容。</p>
+<p>为了能让页面的尺寸自适应，可以使用 rem，em，vw，vh 等相对单位。</p>
+<h2 id="响应式设计的概念及基本原理"><a href="#响应式设计的概念及基本原理" class="headerlink" title="响应式设计的概念及基本原理?"></a>响应式设计的概念及基本原理?</h2><p>响应式网站是指一个网站能够兼容多个终端。</p>
+<p>关于原理： 基本原理是通过媒体查询（@media）查询检测不同的设备屏幕尺寸做处理。</p>
+<p>关于兼容： 页面头部必须有 meta 声明的 viewport。</p>
+<p><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />复制代码</p>
+<h2 id="为什么需要清除浮动？清除浮动的方式"><a href="#为什么需要清除浮动？清除浮动的方式" class="headerlink" title="为什么需要清除浮动？清除浮动的方式?"></a>为什么需要清除浮动？清除浮动的方式?</h2><p>浮动的定义： 非 IE 浏览器下，容器不设高度且子元素浮动时，容器高度不能被内容撑开。 此时，内容会溢出到容器外面而影响布局。这种现象被称为浮动（溢出）。</p>
+<p>浮动的工作原理：</p>
+<p>浮动元素脱离文档流，不占据空间（引起“高度塌陷”现象）<br>浮动元素碰到包含它的边框或者其他浮动元素的边框停留<br>浮动元素可以左右移动，直到遇到另一个浮动元素或者遇到它外边缘的包含框。浮动框不属于文档流中的普通流，当元素浮动之后，不会影响块级元素的布局，只会影响内联元素布局。此时文档流中的普通流就会表现得该浮动框不存在一样的布局模式。当包含框的高度小于浮动框的时候，此时就会出现“高度塌陷”。</p>
+<p>浮动元素引起的问题？</p>
+<p>父元素的高度无法被撑开，影响与父元素同级的元素<br>与浮动元素同级的非浮动元素会跟随其后<br>若浮动的元素不是第一个元素，则该元素之前的元素也要浮动，否则会影响页面的显示结构</p>
+<h2 id="使用-clear-属性清除浮动的原理？"><a href="#使用-clear-属性清除浮动的原理？" class="headerlink" title="使用 clear 属性清除浮动的原理？"></a>使用 clear 属性清除浮动的原理？</h2><p>使用 clear 属性清除浮动，其语法如下：</p>
+<p>clear: none|left|right|both复制代码</p>
+<p>如果单看字面意思，clear:left 是“清除左浮动”，clear:right 是“清除右浮动”，实际上，这种解释是有问题的，因为浮动一直还在，并没有清除。</p>
+<p>官方对 clear 属性解释：“元素盒子的边不能和前面的浮动元素相邻”，对元素设置 clear 属性是为了避免浮动元素对该元素的影响，而不是清除掉浮动。</p>
+<p>还需要注意 clear 属性指的是元素盒子的边不能和前面的浮动元素相邻，注意这里“前面的”3 个字，也就是 clear 属性对“后面的”浮动元素是不闻不问的。考虑到 float 属性要么是 left，要么是 right，不可能同时存在，同时由于 clear 属性对“后面的”浮动元素不闻不问，因此，当 clear:left 有效的时候，clear:right 必定无效，也就是此时 clear:left 等同于设置 clear:both；同样地，clear:right 如果有效也是等同于设置 clear:both。由此可见，clear:left 和 clear:right 这两个声明就没有任何使用的价值，至少在 CSS 世界中是如此，直接使用 clear:both 吧。</p>
+<p>一般使用伪元素的方式清除浮动：</p>
+<p>.clear::after{</p>
+<p>  content: ‘’;</p>
+<p>  display: block;</p>
+<p>  clear: both;</p>
+<p>}复制代码</p>
+<p>clear 属性只有块级元素才有效的，而::after 等伪元素默认都是内联水平，这就是借助伪元素清除浮动影响时需要设置 display 属性值的原因。</p>
+<h2 id="对-BFC-的理解，如何创建-BFC"><a href="#对-BFC-的理解，如何创建-BFC" class="headerlink" title="对 BFC 的理解，如何创建 BFC?"></a>对 BFC 的理解，如何创建 BFC?</h2><p>先来看两个相关的概念：</p>
+<p>Box: Box 是 CSS 布局的对象和基本单位，⼀个⻚⾯是由很多个 Box 组成的，这个 Box 就是我们所说的盒模型。<br>Formatting context：块级上下⽂格式化，它是⻚⾯中的⼀块渲染区域，并且有⼀套渲染规则，它决定了其⼦元素将如何定位，以及和其他元素的关系和相互作⽤。<br>块格式化上下文（Block Formatting Context，BFC）是 Web 页面的可视化 CSS 渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。</p>
+<p>通俗来讲：BFC 是一个独立的布局环境，可以理解为一个容器，在这个容器中按照一定规则进行物品摆放，并且不会影响其它环境中的物品。如果一个元素符合触发 BFC 的条件，则 BFC 中的元素布局不受外部影响。</p>
+<p>创建 BFC 的条件：</p>
+<p>根元素：body；<br>元素设置浮动：float 除 none 以外的值；<br>元素设置绝对定位：position (absolute、fixed)；<br>display 值为：inline-block、table-cell、table-caption、flex 等；<br>overflow 值为：hidden、auto、scroll；<br>BFC 的特点：</p>
+<p>垂直方向上，自上而下排列，和文档流的排列方式一致。<br>在 BFC 中上下相邻的两个容器的 margin 会重叠<br>计算 BFC 的高度时，需要计算浮动元素的高度<br>BFC 区域不会与浮动的容器发生重叠<br>BFC 是独立的容器，容器内部元素不会影响外部元素<br>每个元素的左 margin 值和容器的左 border 相接触<br>BFC 的作用：</p>
+<p>解决 margin 的重叠问题：由于 BFC 是一个独立的区域，内部的元素和外部的元素互不影响，将两个元素变为两个 BFC，就解决了 margin 重叠的问题。<br>解决高度塌陷的问题：在对子元素设置浮动后，父元素会发生高度塌陷，也就是父元素的高度变为 0。解决这个问题，只需要把父元素变成一个 BFC。常用的办法是给父元素设置overflow:hidden。<br>创建自适应两栏布局：可以用来创建自适应两栏布局：左边的宽度固定，右边的宽度自适应。</p>
+<div class="left"></div>
+
+<div class="right"></div>
+
+<p>.left{</p>
+<pre><code> width: 100px;
+
+ height: 200px;
+
+ background: red;
+
+ float: left;
+</code></pre><p> }</p>
+<p> .right{</p>
+<pre><code> height: 300px;
+
+ background: blue;
+
+ overflow: hidden;
+</code></pre><p> }复制代码</p>
+<p>左侧设置float:left，右侧设置overflow: hidden。这样右边就触发了 BFC，BFC 的区域不会与浮动元素发生重叠，所以两侧就不会发生重叠，实现了自适应两栏布局。</p>
+<h2 id="什么是-margin-重叠问题？如何解决？"><a href="#什么是-margin-重叠问题？如何解决？" class="headerlink" title="什么是 margin 重叠问题？如何解决？"></a>什么是 margin 重叠问题？如何解决？</h2><p>问题描述：</p>
+<p>两个块级元素的上外边距和下外边距可能会合并（折叠）为一个外边距，其大小会取其中外边距值大的那个，这种行为就是外边距折叠。需要注意的是，浮动的元素和绝对定位这种脱离文档流的元素的外边距不会折叠。重叠只会出现在垂直方向。</p>
+<p>计算原则：</p>
+<p>折叠合并后外边距的计算原则如下：</p>
+<p>如果两者都是正数，取大者<br>如果是一正一负，取正值减去负值的绝对值<br>两个都是负值时，取绝对值大者<br>解决办法：</p>
+<p>对于折叠的情况，主要有两种：兄弟之间重叠和父子之间重叠</p>
+<p>兄弟之间重叠<br>底部元素变为行内盒子：display: inline-block<br>底部元素设置浮动：float<br>底部元素的 position 的值为absolute/fixed<br>父子之间重叠<br>父元素加入：overflow: hidden<br>父元素添加透明边框：border:1px solid transparent<br>子元素变为行内盒子：display: inline-block<br>子元素加入浮动属性或定位</p>
+<h2 id="元素的层叠顺序"><a href="#元素的层叠顺序" class="headerlink" title="元素的层叠顺序?"></a>元素的层叠顺序?</h2><p>层叠顺序，英文称作 stacking order，表示元素发生层叠时有着特定的垂直显示顺序。下面是盒模型的层叠规则：</p>
+<p>对于上图，由上到下分别是：</p>
+<p>背景和边框：建立当前层叠上下文元素的背景和边框。<br>负的 z-index：当前层叠上下文中，z-index 属性值为负的元素。<br>块级盒：文档流内非行内级非定位后代元素。<br>浮动盒：非定位浮动元素。<br>行内盒：文档流内行内级非定位后代元素。<br>z-index:0：层叠级数为 0 的定位元素。<br>正 z-index：z-index 属性值为正的定位元素。<br>::: tip 提示 当定位元素 z-index:auto，生成盒在当前层叠上下文中的层级为 0，不会建立新的层叠上下文，除非是根元素。 :::</p>
+<h2 id="position-的属性有哪些，区别是什么"><a href="#position-的属性有哪些，区别是什么" class="headerlink" title="position 的属性有哪些，区别是什么?"></a>position 的属性有哪些，区别是什么?</h2><p>relative： 元素的定位永远是相对于元素自身位置的，和其他元素没关系，也不会影响其他元素。</p>
+<p>fixed： 元素的定位是相对于 window （或者 iframe）边界的，和其他元素没有关系。但是它具有破坏性，会导致其他元素位置的变化。</p>
+<p>absolute： 元素的定位相对于前两者要复杂许多。如果为 absolute 设置了 top、left，浏览器会根据什么去确定它的纵向和横向的偏移量呢？答案是浏览器会递归查找该元素的所有父元素，如果找到一个设置了position:relative/absolute/fixed的元素，就以该元素为基准定位，如果没找到，就以浏览器边界定位。如下两个图所示：</p>
+<h2 id="display、float、position-的关系"><a href="#display、float、position-的关系" class="headerlink" title="display、float、position 的关系?"></a>display、float、position 的关系?</h2><p>首先判断 display 属性是否为 none，如果为 none，则 position 和 float 属性的值不影响元素最后的表现。<br>然后判断 position 的值是否为 absolute 或者 fixed，如果是，则 float 属性失效，并且 display 的值应该被设置为 table 或者 block，具体转换需要看初始转换值。<br>如果 position 的值不为 absolute 或者 fixed，则判断 float 属性的值是否为 none，如果不是，则 display 的值则按上面的规则转换。注意，如果 position 的值为 relative 并且 float 属性的值存在，则 relative 相对于浮动后的最终位置定位。<br>如果 float 的值为 none，则判断元素是否为根元素，如果是根元素则 display 属性按照上面的规则转换，如果不是，则保持指定的 display 属性值不变。<br>总的来说，可以把它看作是一个类似优先级的机制，position:absolute 和 position:fixed 优先级最高，有它存在的时候，浮动不起作用，display 的值也需要调整；其次，元素的 float 特性的值不是 none 的时候或者它是根元素的时候，调整 display 的值；最后，非根元素，并且非浮动元素，并且非绝对定位的元素，display 特性值同设置值。</p>
+<h2 id="absolute-与-fixed-共同点与不同点"><a href="#absolute-与-fixed-共同点与不同点" class="headerlink" title="absolute 与 fixed 共同点与不同点?"></a>absolute 与 fixed 共同点与不同点?</h2><p>共同点：</p>
+<p>改变行内元素的呈现方式，将 display 置为 inline-block<br>使元素脱离普通文档流，不再占据文档物理空间<br>覆盖非定位文档元素<br>不同点：</p>
+<p>absolute 与 fixed 的根元素不同，absolute 的根元素可以设置，fixed 根元素是浏览器。<br>在有滚动条的页面中，absolute 会跟着父元素进行移动，fixed 固定在页面的具体位置。</p>
+<h2 id="对-sticky-定位的理解"><a href="#对-sticky-定位的理解" class="headerlink" title="对 sticky 定位的理解?"></a>对 sticky 定位的理解?</h2><p>sticky 英文字面意思是粘贴，所以可以把它称之为粘性定位。语法：position: sticky; 基于用户的滚动位置来定位。</p>
+<p>粘性定位的元素是依赖于用户的滚动，在 position:relative 与 position:fixed 定位之间切换。它的行为就像 position:relative; 而当页面滚动超出目标区域时，它的表现就像 position:fixed;，它会固定在目标位置。元素定位表现为在跨越特定阈值前为相对定位，之后为固定定位。这个特定阈值指的是 top, right, bottom 或 left 之一，换言之，指定 top, right, bottom 或 left 四个阈值其中之一，才可使粘性定位生效。否则其行为与相对定位相同。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">李明轩</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2022/09/02/%F0%9F%8D%B9css%E5%B8%B8%E8%A7%81%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">http://example.com/2022/09/02/%F0%9F%8D%B9css%E5%B8%B8%E8%A7%81%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">LMXA</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%F0%9F%A7%81CSS/">🧁CSS</a></div><div class="post_share"><div class="social-share" data-image="https://pic.dmjnb.com/pic/1d4736d2993166512695500fcfd0e3b9?imageMogr2/thumbnail/x380/quality/90!" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/09/10/%F0%9F%A6%80JavaScript%E7%9F%A5%E8%AF%86%E7%82%B9%E5%B0%8F%E6%80%BB%E7%BB%93/"><img class="prev-cover" src="https://pic.dmjnb.com/pic/fb3eba0531b752438439985fbeb90f7a?imageMogr2/thumbnail/x380/quality/90!" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">🐠&quot;JavaScript&quot;知识点小总结</div></div></a></div><div class="next-post pull-right"><a href="/2022/09/01/%F0%9F%8E%8A%E5%89%8D%E7%AB%AF%E7%BD%91%E7%BB%9C%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"><img class="next-cover" src="https://pic2.zhimg.com/v2-55e93a226931e057f924aae992fe8ebd_r.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">🔫前端网络知识点总结</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://avatars.githubusercontent.com/u/46306801?s=400&amp;u=35f48272ca9e1e5279007be09883d870965a3373&amp;v=4" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">李明轩</div><div class="author-info__description">李明轩的博客呀</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Aslan-mx"><i class="fab fa-github"></i><span>引导站</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://im.qq.com/index" target="_blank" title="953081241"><i class="fab fa-qq"></i></a><a class="social-icon" href="https://weixin.qq.com/" target="_blank" title="WeiXin"><i class="fab fa-weixin"></i></a><a class="social-icon" href="https://github.com/Aslan-mx" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://weibo.com/" target="_blank" title="WeiBo"><i class="fab fa-weibo"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这是我的博客站呀 分享一些有的没的···</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFcss%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">什么是css？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">CSS引入方式?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#display-%E7%9A%84-block%E3%80%81inline-%E5%92%8C-inline-block-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">3.</span> <span class="toc-text">display 的 block、inline 和 inline-block 的区别?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B"><span class="toc-number">4.</span> <span class="toc-text">隐藏元素的方法有哪些?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#link-%E5%92%8C-import-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">5.</span> <span class="toc-text">link 和@import 的区别?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#display-none-%E4%B8%8E-visibility-hidden-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">6.</span> <span class="toc-text">display:none 与 visibility:hidden 的区别?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%AA%E5%85%83%E7%B4%A0%E5%92%8C%E4%BC%AA%E7%B1%BB%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E4%BD%9C%E7%94%A8%EF%BC%9F"><span class="toc-number">7.</span> <span class="toc-text">伪元素和伪类的区别和作用？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E7%9B%92%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-number">8.</span> <span class="toc-text">对盒模型的理解?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E6%97%B6%E5%80%99%E2%BD%A4translate%E6%9D%A5%E6%94%B9%E5%8F%98%E4%BD%8D%E7%BD%AE%E2%BD%BD%E4%B8%8D%E6%98%AF%E5%AE%9A%E4%BD%8D%EF%BC%9F"><span class="toc-number">9.</span> <span class="toc-text">为什么有时候⽤translate来改变位置⽽不是定位？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#li-%E4%B8%8E-li-%E4%B9%8B%E9%97%B4%E6%9C%89%E7%9C%8B%E4%B8%8D%E8%A7%81%E7%9A%84%E7%A9%BA%E7%99%BD%E9%97%B4%E9%9A%94%E6%98%AF%E4%BB%80%E4%B9%88%E5%8E%9F%E5%9B%A0%E5%BC%95%E8%B5%B7%E7%9A%84%EF%BC%9F%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%EF%BC%9F"><span class="toc-number">10.</span> <span class="toc-text">li 与 li 之间有看不见的空白间隔是什么原因引起的？如何解决？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS3-%E4%B8%AD%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B0%E7%89%B9%E6%80%A7"><span class="toc-number">11.</span> <span class="toc-text">CSS3 中有哪些新特性?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9-CSS-Sprites-%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-number">12.</span> <span class="toc-text">对 CSS Sprites 的理解?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%A9%E7%90%86%E5%83%8F%E7%B4%A0%EF%BC%8C%E9%80%BB%E8%BE%91%E5%83%8F%E7%B4%A0%E5%92%8C%E5%83%8F%E7%B4%A0%E5%AF%86%E5%BA%A6%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%A8%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E6%97%B6%E9%9C%80%E8%A6%81%E7%94%A8%E5%88%B0-3x-2x-%E8%BF%99%E7%A7%8D%E5%9B%BE%E7%89%87%EF%BC%9F"><span class="toc-number">13.</span> <span class="toc-text">什么是物理像素，逻辑像素和像素密度，为什么在移动端开发时需要用到@3x, @2x 这种图片？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-%E4%BC%98%E5%8C%96%E5%92%8C%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">14.</span> <span class="toc-text">CSS 优化和提高性能的方法有哪些？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8-%E5%90%8E%E5%A4%84%E7%90%86%E5%99%A8%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8%E5%AE%83%E4%BB%AC%EF%BC%9F"><span class="toc-number">15.</span> <span class="toc-text">CSS 预处理器&#x2F;后处理器是什么？为什么要使用它们？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#inline-block-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%BC%9A%E6%98%BE%E7%A4%BA%E9%97%B4%E9%9A%99%EF%BC%9F"><span class="toc-number">16.</span> <span class="toc-text">inline-block 什么时候会显示间隙？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E8%A1%8C%E3%80%81%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E9%9A%90%E8%97%8F"><span class="toc-number">17.</span> <span class="toc-text">单行、多行文本溢出隐藏?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F"><span class="toc-number">18.</span> <span class="toc-text">对媒体查询的理解？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9-CSS-%E5%B7%A5%E7%A8%8B%E5%8C%96%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-number">19.</span> <span class="toc-text">对 CSS 工程化的理解?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E5%85%83%E7%B4%A0%E6%98%AF%E5%90%A6%E5%88%B0%E8%BE%BE%E5%8F%AF%E8%A7%86%E5%8C%BA%E5%9F%9F"><span class="toc-number">20.</span> <span class="toc-text">如何判断元素是否到达可视区域?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#z-index-%E5%B1%9E%E6%80%A7%E5%9C%A8%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%B8%8B%E4%BC%9A%E5%A4%B1%E6%95%88"><span class="toc-number">21.</span> <span class="toc-text">z-index 属性在什么情况下会失效?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS3-%E4%B8%AD%E7%9A%84-transform-%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B1%9E%E6%80%A7"><span class="toc-number">22.</span> <span class="toc-text">CSS3 中的 transform 有哪些属性?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#px%E3%80%81em%E3%80%81rem-%E7%9A%84%E5%8C%BA%E5%88%AB%E5%8F%8A%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-number">23.</span> <span class="toc-text">px、em、rem 的区别及使用场景?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%A0%B9%E6%8D%AE%E8%AE%BE%E8%AE%A1%E7%A8%BF%E8%BF%9B%E8%A1%8C%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%EF%BC%9F"><span class="toc-number">24.</span> <span class="toc-text">如何根据设计稿进行移动端适配？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E6%A6%82%E5%BF%B5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86"><span class="toc-number">25.</span> <span class="toc-text">响应式设计的概念及基本原理?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%EF%BC%9F%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-number">26.</span> <span class="toc-text">为什么需要清除浮动？清除浮动的方式?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-clear-%E5%B1%9E%E6%80%A7%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E7%9A%84%E5%8E%9F%E7%90%86%EF%BC%9F"><span class="toc-number">27.</span> <span class="toc-text">使用 clear 属性清除浮动的原理？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9-BFC-%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%8C%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA-BFC"><span class="toc-number">28.</span> <span class="toc-text">对 BFC 的理解，如何创建 BFC?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-margin-%E9%87%8D%E5%8F%A0%E9%97%AE%E9%A2%98%EF%BC%9F%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%EF%BC%9F"><span class="toc-number">29.</span> <span class="toc-text">什么是 margin 重叠问题？如何解决？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%83%E7%B4%A0%E7%9A%84%E5%B1%82%E5%8F%A0%E9%A1%BA%E5%BA%8F"><span class="toc-number">30.</span> <span class="toc-text">元素的层叠顺序?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#position-%E7%9A%84%E5%B1%9E%E6%80%A7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%8C%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">31.</span> <span class="toc-text">position 的属性有哪些，区别是什么?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#display%E3%80%81float%E3%80%81position-%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">32.</span> <span class="toc-text">display、float、position 的关系?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#absolute-%E4%B8%8E-fixed-%E5%85%B1%E5%90%8C%E7%82%B9%E4%B8%8E%E4%B8%8D%E5%90%8C%E7%82%B9"><span class="toc-number">33.</span> <span class="toc-text">absolute 与 fixed 共同点与不同点?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9-sticky-%E5%AE%9A%E4%BD%8D%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-number">34.</span> <span class="toc-text">对 sticky 定位的理解?</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/10/17/%F0%9F%8D%B9TypeScript%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" title="🦀&quot;TypeScript知识点总结&quot;"><img src="https://pic.dmjnb.com/pic/1bc703de2be38fa1f15300627e1bf0fa?imageMogr2/thumbnail/x380/quality/90!" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="🦀&quot;TypeScript知识点总结&quot;"/></a><div class="content"><a class="title" href="/2022/10/17/%F0%9F%8D%B9TypeScript%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" title="🦀&quot;TypeScript知识点总结&quot;">🦀&quot;TypeScript知识点总结&quot;</a><time datetime="2022-10-17T05:08:55.000Z" title="发表于 2022-10-17 13:08:55">2022-10-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/16/%F0%9F%8E%A0Java%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9%E9%9B%86%E5%90%88/" title="🍉&quot;Java&quot;后端知识点集合"><img src="https://pic3.zhimg.com/v2-8a72afce30dc87600d65d9e10fecfd3a_r.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="🍉&quot;Java&quot;后端知识点集合"/></a><div class="content"><a class="title" href="/2022/10/16/%F0%9F%8E%A0Java%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9%E9%9B%86%E5%90%88/" title="🍉&quot;Java&quot;后端知识点集合">🍉&quot;Java&quot;后端知识点集合</a><time datetime="2022-10-16T05:08:55.000Z" title="发表于 2022-10-16 13:08:55">2022-10-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/29/%F0%9F%A5%AA%E3%80%90Redux%E3%80%91%E7%AE%80%E8%A7%A3%E5%8F%8A%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/" title="🐦【Redux】简解及工作流程分析"><img src="https://pic3.zhimg.com/v2-0963391e035d6fdcf11f90978e85e07f_r.jpg?source=172ae18b" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="🐦【Redux】简解及工作流程分析"/></a><div class="content"><a class="title" href="/2022/09/29/%F0%9F%A5%AA%E3%80%90Redux%E3%80%91%E7%AE%80%E8%A7%A3%E5%8F%8A%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/" title="🐦【Redux】简解及工作流程分析">🐦【Redux】简解及工作流程分析</a><time datetime="2022-09-28T16:08:20.659Z" title="发表于 2022-09-29 00:08:20">2022-09-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/29/%F0%9F%8D%94%E4%BB%80%E4%B9%88%E6%98%AFReact%E6%A1%86%E6%9E%B6/" title="🍁什么是【React】框架？它的基本原理是什么？"><img src="https://www.qinglvbizhi.com/uploads/202205/28/220528041651605.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="🍁什么是【React】框架？它的基本原理是什么？"/></a><div class="content"><a class="title" href="/2022/09/29/%F0%9F%8D%94%E4%BB%80%E4%B9%88%E6%98%AFReact%E6%A1%86%E6%9E%B6/" title="🍁什么是【React】框架？它的基本原理是什么？">🍁什么是【React】框架？它的基本原理是什么？</a><time datetime="2022-09-28T16:08:20.659Z" title="发表于 2022-09-29 00:08:20">2022-09-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/28/%F0%9F%8D%AD%E6%B5%85%E8%B0%88react%E8%B7%AF%E7%94%B1%E4%BC%A0%E5%8F%82%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/" title="🍉浅谈&quot;react&quot;路由传参的几种方式"><img src="https://pic.dmjnb.com/pic/23565cb330df7e8c8676ebc3eec5096b?imageMogr2/thumbnail/x380/quality/90!" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="🍉浅谈&quot;react&quot;路由传参的几种方式"/></a><div class="content"><a class="title" href="/2022/09/28/%F0%9F%8D%AD%E6%B5%85%E8%B0%88react%E8%B7%AF%E7%94%B1%E4%BC%A0%E5%8F%82%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/" title="🍉浅谈&quot;react&quot;路由传参的几种方式">🍉浅谈&quot;react&quot;路由传参的几种方式</a><time datetime="2022-09-28T14:44:27.766Z" title="发表于 2022-09-28 22:44:27">2022-09-28</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 李明轩</div><div class="framework-info"><span>♍🔞🏁</span><a href="Aslan-mx.github.io">博客</a><span class="footer-separator">|</span><span>🧬👑🎭</span><a target="_blank" rel="noopener" href="https://github.com/Aslan-mx">Github</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0 %</span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'ylgbnoj3zv7226Pu003aj3l4-gzGzoHsz',
+      appKey: 'sOAaxTQBTHNRP7kjilEslbYy',
+      avatar: 'monsterid',
+      serverURLs: '',
+      placeholder: '来呀 快活呀！！',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src="/js/custom/sun_moon.js" async></script><div class="aplayer no-destroy" data-id="5391510302" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div><script async data-pjax src="/js/sky.js"></script><script async data-pjax src="/js/custom/nav.js"></script><script> WIDGET = {"CONFIG":{"modules":"01234","background":"5","tmpColor":"1414A3","tmpSize":"16","cityColor":"9900FF","citySize":"16","aqiColor":"00FFFF","aqiSize":"16","weatherIconSize":"24","alertIconSize":"18","padding":"10px 10px 10px 10px","shadow":"0","language":"auto","fixed":"false","vertical":"top","horizontal":"left","key":"58f058e9e808406bb4f7c56c93e39920"}} </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script async src="/js/grayscale.js"></script><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="I,LOVE,YOU" data-fontsize="15px" data-random="true" async="async"></script><script src="//code.tidio.co/axu7fq2hyma9lhvuu1d0aky6hbq2nw8s.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+    function butterfly_categories_card_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<style>li.categoryBar-list-item{width:32.3%;}.categoryBar-list{max-height: 190px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 160px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"><li class="categoryBar-list-item" style="background:url(https://pic.dmjnb.com/pic/f22346548b5bdb9998155f84b281cccf?imageMogr2/thumbnail/x380/quality/90!);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/🍀React/&quot;);" href="javascript:void(0);">🍀React</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr">带你去浪漫旅行</span></li><li class="categoryBar-list-item" style="background:url(https://pic.dmjnb.com/pic/0e25d34ee6e9338bafbc9409e76215e8?imageMogr2/thumbnail/x380/quality/90!);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/🌵JavaScript/&quot;);" href="javascript:void(0);">🌵JavaScript</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">远帆的船</span></li><li class="categoryBar-list-item" style="background:url(https://pic.dmjnb.com/pic/c4bb304211e20f2806c73943a60eeffe?imageMogr2/thumbnail/x380/quality/90!);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/🥎CSS/&quot;);" href="javascript:void(0);">🥎CSS</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">浪漫满屋</span></li><li class="categoryBar-list-item" style="background:url(https://pic4.zhimg.com/v2-b4191ebcc39ae971098a18bff005c8b7_r.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/🌸Vue/&quot;);" href="javascript:void(0);">🌸Vue</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr">个人日记</span></li><li class="categoryBar-list-item" style="background:url(https://pic4.zhimg.com/v2-44555d92ba166d82d1f13b503481b8f3_r.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/☔Web前端开发/&quot;);" href="javascript:void(0);">☔Web前端开发</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">路遥知马力</span></li><li class="categoryBar-list-item" style="background:url(https://ts1.cn.mm.bing.net/th/id/R-C.f25a2d94de3bb416d82eb570d39b541c?rik=tCNozV44jaqsEQ&amp;riu=http%3a%2f%2fi0.hdslb.com%2fbfs%2farchive%2fe869ce8fd8e1a5dbea648e486ffbe8a260b54aff.jpg&amp;ehk=RiWG7MFO2z4%2feT5d2Mi5zrQ6vP0QWSM4%2fyaMWEDOTj8%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/🧁Java/&quot;);" href="javascript:void(0);">🧁Java</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">遥远海边</span></li><li class="categoryBar-list-item" style="background:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg-baofun.zhhainiao.com%2Ffs%2F315649687ac2cb6c19dcdff6cadc7358.jpg&amp;refer=http%3A%2F%2Fimg-baofun.zhhainiao.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1670142724&amp;t=8919a56b3a4f74f3e883fd7767dceca7);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/🎄TypeScript/&quot;);" href="javascript:void(0);">🎄TypeScript</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">云深不知处</span></li></ul></div></div>';
+      console.log('已挂载butterfly_categories_card')
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      }
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    butterfly_categories_card_injector_config()
+    }
+  </script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><div id="ghbdages" style="overflow:hidden;max-height:90px;height:auto;text-align:center;margin-top:10px"><div class="swiper-wrapper"><div class="swiper-slide"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v5.4.0"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v3.8.2"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://www.jsdelivr.com/" style="margin-inline:5px" title="本站使用JsDelivr为静态资源提供CDN加速"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&amp;logo=jsDelivr" alt=""/></a></div><div class="swiper-slide"><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站采用双线部署，默认线路托管于Vercel"><img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站采用双线部署，联通线路托管于Coding"><img src="https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&amp;logo=Codio" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本站项目由Github托管"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a></div><div class="swiper-slide"><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></div></div></div><style>a.github-badge:hover:before {display:none}</style>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="https://cdn.jsdelivr.net/gh/Aslan-mx/CDN@1.1.1/name.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/29/🍔什么是React框架/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://www.qinglvbizhi.com/uploads/202205/28/220528041651605.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-29</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/29/🍔什么是React框架/&quot;);" href="javascript:void(0);" alt="">🍁什么是【React】框架？它的基本原理是什么？</a><div class="blog-slider__text">🍁什么是react? React的基本原理与构建？</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/29/🍔什么是React框架/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/29/🥪【Redux】简解及工作流程分析/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic3.zhimg.com/v2-0963391e035d6fdcf11f90978e85e07f_r.jpg?source=172ae18b" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-29</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/29/🥪【Redux】简解及工作流程分析/&quot;);" href="javascript:void(0);" alt="">🐦【Redux】简解及工作流程分析</a><div class="blog-slider__text">🐦【Redux】简解及工作流程分析</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/29/🥪【Redux】简解及工作流程分析/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/28/🍭浅谈react路由传参的几种方式/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/23565cb330df7e8c8676ebc3eec5096b?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-28</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/28/🍭浅谈react路由传参的几种方式/&quot;);" href="javascript:void(0);" alt="">🍉浅谈&quot;react&quot;路由传参的几种方式</a><div class="blog-slider__text">🍉浅谈&quot;react&quot;路由传参的几种方式</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/28/🍭浅谈react路由传参的几种方式/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/28/🍬什么是Vue框架/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/bf5282b803628afac658fb368da6ce5a?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-28</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/28/🍬什么是Vue框架/&quot;);" href="javascript:void(0);" alt="">🍄什么是&quot;VUE&quot;框架</a><div class="blog-slider__text">🍄什么是&quot;VUE&quot;框架</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/28/🍬什么是Vue框架/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/02/🍹css常见知识点总结/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/1d4736d2993166512695500fcfd0e3b9?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-02</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/02/🍹css常见知识点总结/&quot;);" href="javascript:void(0);" alt="">🎉&quot;CSS&quot;常见知识点总结</a><div class="blog-slider__text">🎉&quot;css&quot;常见知识点总结!</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/02/🍹css常见知识点总结/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/28/🪅vue的生命周期的详解/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/5c009146dbf01847e3c33234f84847b2?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-28</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/28/🪅vue的生命周期的详解/&quot;);" href="javascript:void(0);" alt="">🎨&quot;Vue&quot;的生命周期的详解</a><div class="blog-slider__text">🎨&quot;Vue&quot;的生命周期的详解</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/28/🪅vue的生命周期的详解/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/27/🧮vue相关知识点详解/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/e581d7acd89f28062c1572ae5cf6d7d4?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-27</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/27/🧮vue相关知识点详解/&quot;);" href="javascript:void(0);" alt="">⏰&quot;Vue&quot;框架相关知识点</a><div class="blog-slider__text">⏰&quot;Vue&quot;框架相关知识点</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/27/🧮vue相关知识点详解/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/10/🦀JavaScript知识点小总结/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/fb3eba0531b752438439985fbeb90f7a?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-10</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/10/🦀JavaScript知识点小总结/&quot;);" href="javascript:void(0);" alt="">🐠&quot;JavaScript&quot;知识点小总结</a><div class="blog-slider__text">🐠&quot;JavaScript&quot;知识点小总结</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/10/🦀JavaScript知识点小总结/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/18/🏍vue路由相关知识/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/c4bb304211e20f2806c73943a60eeffe?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-18</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/18/🏍vue路由相关知识/&quot;);" href="javascript:void(0);" alt="">🍸&quot;Vue&quot;路由相关知识</a><div class="blog-slider__text">🍸关于&quot;Vue&quot;路由等基础方面知识</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/18/🏍vue路由相关知识/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/10/17/🍹TypeScript知识点总结/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic.dmjnb.com/pic/1bc703de2be38fa1f15300627e1bf0fa?imageMogr2/thumbnail/x380/quality/90!" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-10-17</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/10/17/🍹TypeScript知识点总结/&quot;);" href="javascript:void(0);" alt="">🦀&quot;TypeScript知识点总结&quot;</a><div class="blog-slider__text">🥪&quot;Java&quot;后端知识点集合</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/10/17/🍹TypeScript知识点总结/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/10/16/🎠Java后端知识点集合/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic3.zhimg.com/v2-8a72afce30dc87600d65d9e10fecfd3a_r.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-10-16</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/10/16/🎠Java后端知识点集合/&quot;);" href="javascript:void(0);" alt="">🍉&quot;Java&quot;后端知识点集合</a><div class="blog-slider__text">🥪&quot;Java&quot;后端知识点集合</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/10/16/🎠Java后端知识点集合/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/01/🎊前端网络知识点总结/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://pic2.zhimg.com/v2-55e93a226931e057f924aae992fe8ebd_r.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-01</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/01/🎊前端网络知识点总结/&quot;);" href="javascript:void(0);" alt="">🔫前端网络知识点总结</a><div class="blog-slider__text">🔫前端网络知识点总结</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/01/🎊前端网络知识点总结/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
